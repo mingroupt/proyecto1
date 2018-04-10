@@ -1,0 +1,1130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>WelCare</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800' rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="css/ipad.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="css/responsive.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="css/mobile.css" rel="stylesheet" media="screen" type="text/css" />
+
+<!--[if lt IE 7]><link rel="stylesheet" href="css/style-ie-lt7.css" type="text/css" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="css/style-ie7.css" type="text/css" /><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="css/style-ie8.css" type="text/css" /><![endif]-->
+<!--[if IE 9]><link rel="stylesheet" href="css/style-ie-gt8.css" type="text/css" /><![endif]-->
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/jquery.fancydropdown.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<!-- Scrolling Script -->
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" media="screen" type="text/css" />
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+
+<!-- Custom Slide -->
+<script type="text/javascript" src="js/modernizr.custom.04022.js"></script>
+<link href="css/parallax.css" rel="stylesheet" media="screen" type="text/css" />
+<script type="text/javascript" src="js/customSlide.js"></script>
+<link href="css/customSlide.html" rel="stylesheet" media="screen" type="text/css" />
+
+</head>
+
+<body>
+<!-- Main Container -->
+<div id="main-container"> 
+    
+    <!-- Header -->
+    <div class="header">
+        <div class="logo"><a href="index-2.html"><img src="images/logo.png" alt="WelCare" /></a></div>
+        <div class="righthead">
+            <div class="top-menu inline">
+                <ul>
+                    <li class="register"><a href="#">Register</a></li>
+                    <li class="signin"> <a href="#" id="signin">Sign In</a> 
+                        
+                        <!-- SignIn Dialog -->
+                        <div id="signinbox" class="gray_gradient"> <img src="images/sign_in_arrow.png" alt="" class="boxArrow" />
+                            <div id="signin_menu">
+                                <div class="box_heading"> Sign In <a href="#" class="close"><img id="fadeouta" src="images/close.png" alt="" width="16" height="16" /></a> </div>
+                                <form method="post" action="index.html">
+                                    <input type="text" class="textbox" onfocus="if(this.value == 'Email Address') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Email Address'; }" name="s" value="Email Address" />
+                                    <input type="password" class="textbox" onfocus="if(this.value == 'Search best hospital') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search best hospital'; }" name="s" value="Search best hospital" />
+                                    <div class="signinStrip">
+                                        <input id="remember" name="remember_me" value="1" type="checkbox" />
+                                        <label for="remember">Remember me</label>
+                                        <span class="forgot"> <a href="#" id="resend_password_link">Forgot password?</a> </span>
+                                        <input class="signin_submit" value="Submit" type="submit" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contact"> <a href="#" id="contact">contact</a> 
+                        <!-- Contact Dialog -->
+                        <div id="contactbox" class="gray_gradient"> <img src="images/sign_in_arrow.png" alt="" class="boxArrow" />
+                            <div class="box_heading"> Contact us <a href="#" class="close"><img id="fadeout" src="images/close.png" alt="" width="16" height="16" /></a> </div>
+                            <h6>USA OFFICE</h6>
+                            <span>Office timings 9 am to 1 pm (EST)</span>
+                            <div class="coll_left left">195 State Avenue<br />
+                                Suite # 201<br />
+                                New York CT 06032</div>
+                            <div class="coll_right right">Tel:  +1 (860) 674 8865<br />
+                                Fax: +1 (860) 674 9007<br />
+                                Email: shkm2@sbcglobal.net</div>
+                            <div class="clear"></div>
+                            
+                            <!-- Google Map -->
+                            <div class="google_map margin_bottom margin_top">
+                                <iframe width="301" height="135" src="http://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=fenway+park&amp;daddr=uk&amp;hl=en&amp;geocode=FYoohgId1STD-yEEVXpkyw2Aog%3BFYMATQMdO5LL_ympkcdCETtaAjF6JYgyQ6D4xA&amp;aq=&amp;sll=43.084937,-73.740234&amp;sspn=9.530831,19.753418&amp;t=h&amp;mra=dme&amp;ie=UTF8&amp;ll=43.084937,-73.740234&amp;spn=2.16612,6.328125&amp;z=6&amp;output=embed"></iframe>
+                            </div>
+                            
+                            <!-- Contact Form -->
+                            <div id="contact_menu">
+                                <form method="post" action="http://www.wpnukes.com/demo/html/welcare/index.html">
+                                    <input type="text" onfocus="if(this.value == 'Name ') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Name '; }" name="s" value="Name " />
+                                    <input type="text" onfocus="if(this.value == 'Email') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Email'; }" name="s" value="Email" />
+                                    <input type="text" onfocus="if(this.value == 'Phone ') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Phone '; }" name="s" value="Phone " />
+                                    <p>
+                                        <textarea name="" cols="5" rows="5"></textarea>
+                                    </p>
+                                    <input class="contact_submit" value="Submit" tabindex="6" type="submit" />
+                                    <input class="contact_submit" value="Reset" tabindex="6" type="submit" />
+                                    <div class="clear"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Helpline -->
+            <div class="contactinfo"> <span class="black_text">24/7 HELPLINE</span> <span class="phonenumber">800-5234-987</span> </div>
+            
+            <!-- Live Chat -->
+            <div class="livechat"><span><a href="#">LIVE CHAT</a></span></div>
+        </div>
+    </div>
+    
+    <!-- Mega Menu starts -->
+    <div class="menu container">
+        <ul id="menu">
+            <li class="column"><a href="index-2.html">Home</a>
+                <div class="dropdown_columns">
+                    <div class="col_3">
+                        <h2>Welcome !</h2>
+                    </div>
+                    <div class="col_3">
+                        <p><strong>welcome to Welcare medical portal !</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    </div>
+                    <div class="col_3">
+                        <h2>Sample Heading</h2>
+                    </div>
+                    <div class="col_3">
+                        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset </p>
+                    </div>
+                </div>
+            </li>
+            <li><a href="blog_detail.html">Blog Detail</a>
+                <div class="dropdown_full_columns">
+                    <div class="col_8">
+                        <div class="col_2 red">
+                            <h3>Sample Heading One</h3>
+                            <div class="image"><img src="images/resource/pic_01.jpg" alt="pic 01" /></div>
+                            <p>Donec elit orci, interdum eu bibendum quis, sagittis vitae elit. Phasellus semper ligula id elit molestie faucibus, interdum eu bibendum quis. <a href="#">read more</a></p>
+                        </div>
+                        <div class="col_2 orange">
+                            <h3>Sample Heading Two</h3>
+                            <div class="image"><img src="images/resource/pic_02.jpg" alt="pic 02" /></div>
+                            <div class="col_1">
+                                <ul>
+                                    <li><a href="#">Acid Reflux</a></li>
+                                    <li><a href="#">Breast Lumps</a></li>
+                                    <li><a href="#">Breast Pain</a></li>
+                                </ul>
+                            </div>
+                            <div class="col_1">
+                                <ul>
+                                    <li><a href="#">Chest Pain</a></li>
+                                    <li><a href="#">Coughs n Colds</a></li>
+                                    <li><a href="#">Hot Flashes</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col_2 green">
+                            <h3>Sample Heading Three</h3>
+                            <div class="image"><img src="images/resource/pic_03.jpg" alt="pic 03" /></div>
+                            <div class="col_1">
+                                <ul>
+                                    <li><a href="#">Acid Reflux</a></li>
+                                    <li><a href="#">Breast Lumps</a></li>
+                                    <li><a href="#">Breast Pain</a></li>
+                                </ul>
+                            </div>
+                            <div class="col_1">
+                                <ul>
+                                    <li><a href="#">Chest Pain</a></li>
+                                    <li><a href="#">Coughs n Colds</a></li>
+                                    <li><a href="#">Hot Flashes</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col_2 blue">
+                            <h3>Sample Heading Four</h3>
+                            <p>Donec elit orci, interdum eu bibendum quis, ittis vitae elit. Phasellus semper ligula id elit molestie faucibus. Aliquam luctus get.</p>
+                            <ul>
+                                <li><a href="#">Donec elit orci, interdum eu</a></li>
+                                <li><a href="#">Hasellus semper ligula ipoulearn</a></li>
+                                <li><a href="#">Phasellus semper ligula id elit</a></li>
+                                <li><a href="#">Donec elit orci, interdum eu</a></li>
+                                <li><a href="#">Hasellus semper ligula ipoulearn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="column"><a href="blog_listing.html">Blog Listing</a>
+                <div class="dropdown_columns">
+                    <div class="col_5">
+                        <h2>Three Column Menu with different width columns</h2>
+                    </div>
+                    <div class="col_2">
+                        <h3>Sample Heading One</h3>
+                        <ul>
+                            <li><a href="#">Anticoagulation</a></li>
+                            <li><a href="#">Dermatology Surgery</a></li>
+                            <li><a href="#">Diabetes Clinic</a></li>
+                            <li><a href="#">Dermatology Surgery</a></li>
+                            <li> <a href="#">Diabetes Clinic</a></li>
+                        </ul>
+                    </div>
+                    <div class="col_2">
+                        <h3>Sample Heading Two</h3>
+                        <ul>
+                            <li><a href="#">Breast Health Center</a></li>
+                            <li><a href="#">Cardiology Procedures</a></li>
+                            <li><a href="#">Breast Health Center</a></li>
+                            <li><a href="#">Bronchoscopy/PFT</a></li>
+                            <li><a href="#">Cardiology</a></li>
+                        </ul>
+                    </div>
+                    <div class="col_1">
+                        <h3>Heading Three</h3>
+                        <ul>
+                            <li><a href="#">Link One</a></li>
+                            <li><a href="#">Link Two</a></li>
+                            <li><a href="#">Link Three</a></li>
+                            <li><a href="#">Link Four</a></li>
+                            <li><a href="#">Link Five</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="column"><a href="gallery.html">Gallery</a>
+                <div class="dropdown_columns">
+                    <div class="col_4">
+                        <h3>Menu with Grid style links</h3>
+                    </div>
+                    <div class="col_2">
+                        <ul class="greybox">
+                            <li><a href="#">Medical Surgery</a></li>
+                            <li><a href="#">Operation Theater</a></li>
+                            <li><a href="#">Doctor's Award</a></li>
+                            <li><a href="#">Annual Meetings</a></li>
+                            <li><a href="#">Doctor's Award</a></li>
+                        </ul>
+                    </div>
+                    <div class="col_2">
+                        <ul class="greybox">
+                            <li><a href="#">Young Association</a></li>
+                            <li><a href="#">Operation Theater</a></li>
+                            <li><a href="#">Medical Surgery</a></li>
+                            <li><a href="#">Operation Theater</a></li>
+                            <li><a href="#">Medical Surgery</a></li>
+                        </ul>
+                    </div>
+                    <div class="col_4">
+                        <h3>paragraphs with images</h3>
+                    </div>
+                    <div class="col_4"> <img src="images/resource/gallery/sub-gallery-pic-4.jpg" class="left frame" width="70" alt="" />
+                        <p>Maecenas eget eros lorem, nec pellentesque lacus. Aenean dui orci, rhoncus sit amet tristique eu, tristique sed odio. Praesent ut interdum elit. <a href="#">Read more...</a></p>
+                    </div>
+                    <div class="col_4"> <img src="images/resource/gallery/sub-gallery-pic-5.jpg" class="left frame" width="70" alt="" />
+                        <p>Aliquam elementum felis quis felis consequat scelerisque. Fusce sed lectus at arcu mollis accumsan at nec nisi. Aliquam pretium mollis fringilla. <a href="#">Read more...</a></p>
+                    </div>
+                </div>
+            </li>
+            <li class="column"><a href="gallery_side.html">Side Gallery</a>
+                <div class="dropdown_columns">
+                    <div class="col_2">
+                        <ul>
+                            <li><a href="#">Anticoagulation</a></li>
+                            <li><a href="#">Dermatology Surgery</a></li>
+                            <li><a href="#">Diabetes Clinic</a></li>
+                            <li><a href="#">Dermatology Surgery</a></li>
+                            <li> <a href="#">Diabetes Clinic</a></li>
+                            <li><a href="#">Breast Health Center</a></li>
+                            <li><a href="#">Cardiology Procedures</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li> <a href="listing.html">Doctor Listing</a> </li>
+            <li class="column"> <a href="video_detail.html">Video Listing</a>
+                <div class="dropdown_columns align_right">
+                    <div class="col_4">
+                        <h3>Right Aligned Menu</h3>
+                    </div>
+                    <div class="col_2">
+                        <ul class="greybox">
+                            <li><a href="#">Medical Surgery</a></li>
+                            <li><a href="#">Operation Theater</a></li>
+                            <li><a href="#">Doctor's Award</a></li>
+                            <li><a href="#">Annual Meetings</a></li>
+                            <li><a href="#">Doctor's Award</a></li>
+                        </ul>
+                    </div>
+                    <div class="col_2">
+                        <ul class="greybox">
+                            <li><a href="#">Young Association</a></li>
+                            <li><a href="#">Operation Theater</a></li>
+                            <li><a href="#">Medical Surgery</a></li>
+                            <li><a href="#">Operation Theater</a></li>
+                            <li><a href="#">Medical Surgery</a></li>
+                        </ul>
+                    </div>
+                    <div class="col_4">
+                        <h3>Paragraphs with Images</h3>
+                    </div>
+                    <div class="col_4"> <img src="images/resource/gallery/sub-gallery-pic-4.jpg" class="left frame" width="70" alt="" />
+                        <p>Maecenas eget eros lorem, nec pellentesque lacus. Aenean dui orci, rhoncus sit amet tristique eu, tristique sed odio. Praesent ut interdum elit. <a href="#">Read more...</a></p>
+                    </div>
+                    <div class="col_4"> <img src="images/resource/gallery/sub-gallery-pic-5.jpg" class="left frame" width="70" alt="" />
+                        <p>Aliquam elementum felis quis felis consequat scelerisque. Fusce sed lectus at arcu mollis accumsan at nec nisi. Aliquam pretium mollis fringilla. <a href="#">Read more...</a></p>
+                    </div>
+                </div>
+            </li>
+            <li> <a href="typography.html">Typography</a> </li>
+        </ul>
+        <!-- #menu ends -->
+        <div id="searchico"> <a href="#"><img src="images/ico-search.png" alt="" /></a>
+            <div id="quicksearchbox" class="gray_gradient"> <img src="images/sign_in_arrow.png" alt="" class="boxArrow" />
+                <fieldset id="signin_menu2">
+                    <form method="post" action="http://www.wpnukes.com/demo/html/welcare/index.html">
+                        <label>Search</label>
+                        <div class="quickSearchField">
+                            <input id="searchBox" class="txtfield" type="text" onfocus="if(this.value == 'Enter any Keyword') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Enter any Keyword'; }" name="s" value="Enter any Keyword" />
+                            <input id="signin_submit2" value="Submit" tabindex="6" type="submit" />
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <div class="custom_slides">
+        <form method="get" action="http://www.wpnukes.com/demo/html/welcare/index.html">
+            <div class="slideBanner">
+                <div class="sp-slideshow">
+                    <input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
+                    <label for="button-1" class="button-label-1"></label>
+                    <input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
+                    <label for="button-2" class="button-label-2"></label>
+                    <input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
+                    <label for="button-3" class="button-label-3"></label>
+                    <input id="button-4" type="radio" name="radio-set" class="sp-selector-4" />
+                    <label for="button-4" class="button-label-4"></label>
+                    <input id="button-5" type="radio" name="radio-set" class="sp-selector-5" />
+                    <label for="button-5" class="button-label-5"></label>
+                    <label for="button-1" class="sp-arrow sp-a1"></label>
+                    <label for="button-2" class="sp-arrow sp-a2"></label>
+                    <label for="button-3" class="sp-arrow sp-a3"></label>
+                    <label for="button-4" class="sp-arrow sp-a4"></label>
+                    <label for="button-5" class="sp-arrow sp-a5"></label>
+                    <div class="sp-content">
+                        <div class="sp-parallax-bg"></div>
+                        <ul class="sp-slider clearfix">
+                            <li>
+                                <div class="slide_text"> <span class="thin">SYMPTOM</span> <span class="thick">CHECKER</span>
+                                    <p> Now diagnose your disease online </p>
+                                    <a href="#" class="startHere">Start Here</a> </div>
+                                <!-- slide_text ends --> 
+                                <img src="images/resource/custom_slides/doctor_slider.png" alt="doctor" class="right_slider" /> </li>
+                            <li>
+                                <div class="slide_container">
+                                    <div class="left_sect">
+                                        <h3>RESPONSIVE DESIGN</h3>
+                                        <p><strong>Perfect view on all devices and resolutions</strong></p>
+                                        <h4>Cross Browser Compatible</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel enim nibh, id dictum purus. Establiellentesque tincidunt adipiscing justo, quis eleifend diam dignissim in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel enim nibh, id dictum purus. Establiellentesque tincidunt adipiscing. </p>
+                                        <h4>Supported Browsers</h4>
+                                        <p> <img src="images/resource/custom_slides/icon_ie.png" alt="internet explorer" /> <img src="images/resource/custom_slides/icon_safari.png" alt="safari" /> <img src="images/resource/custom_slides/icon_chrome.png" alt="google chrome" /> <img src="images/resource/custom_slides/icon_ff.png" alt="firefox" /> </p>
+                                    </div>
+                                    <img src="images/resource/custom_slides/responsive_view.png" alt="responsive view" class="img_responsive_view img1" /> </div>
+                            </li>
+                            <li>
+                                <div class="slide_container">
+                                    <div class="left_sect">
+                                        <h3>layout overview</h3>
+                                        <p><strong>Perfect view on all devices and resolutions</strong></p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel enim nibh, id dictum purus. Establiellentesque tincidunt adipiscing justo, quis eleifend diam dignissim in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel enim nibh, id dictum purus. Establiellentesque tincidunt adipiscing. </p>
+                                        <p class="gray"> &quot; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel enim nibh, id dictum purus. Establiellentesque tincidunt adipiscing justo. &quot; </p>
+                                    </div>
+                                    <img src="images/resource/custom_slides/layout_img.png" alt="layout view" class="right_float img2" /> </div>
+                            </li>
+                            <li>
+                                <div class="slide_container">
+                                    <div class="left_sect">
+                                        <h3>Features</h3>
+                                        <p><strong>Perfect view on all devices and resolutions</strong></p>
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel enim nibh, id dictum purus. Establiellentesque tincidunt adipiscing justo, quis eleifend diam dignissim in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel enim nibh, id dictum purus. Establiellentesque tincidunt adipiscing. </p>
+                                        <ul class="style3">
+                                            <li>Symptom Checker</li>
+                                            <li>Donation</li>
+                                            <li>Event Widget</li>
+                                            <li>Profile</li>
+                                        </ul>
+                                        <ul class="style3">
+                                            <li>Blood Availability</li>
+                                            <li>Gallery &amp; Sub Gallery</li>
+                                            <li>Video Post</li>
+                                        </ul>
+                                    </div>
+                                    <img src="images/resource/custom_slides/symptonChecker_img.png" alt="symptom checker view" class="right_float middle img3" /> </div>
+                            </li>
+                            <li>
+                                <div class="slide_container">
+                                    <div class="left_sect">
+                                        <h3>Pages</h3>
+                                        <p><strong>Perfect view on all devices and resolutions</strong></p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel enim nibh, id dictum purus. Establiellentesque tincidunt adipiscing justo, quis eleifend diam dignissim in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel enim nibh, id dictum purus. Establiellentesque tincidunt adipiscing.</p>
+                                        <ul class="style3">
+                                            <li>Home Page</li>
+                                            <li>Doctor Profile Page</li>
+                                            <li>Blog Posts Page</li>
+                                            <li>Blog Details Page</li>
+                                        </ul>
+                                        <ul class="style3">
+                                            <li>Gallery Page</li>
+                                            <li>Gallery With Sidebar</li>
+                                            <li>Video Post Page</li>
+                                            <li>Typography Page</li>
+                                        </ul>
+                                    </div>
+                                    <img src="images/resource/custom_slides/pages.png" alt="pages" class="right_float img4" /> </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- sp-content --> 
+                </div>
+                <!-- sp-slideshow --> 
+            </div>
+            <div class="slider_nav" id="step_one"> <a href="#" class="cancel_symptom_check"></a>
+                <ul class="skelScroll">
+                    <li>
+                        <div class="cell"> <span class="thin">Select</span> <span class="thick">Gender</span>
+                            <div class="left_bar"></div>
+                        </div>
+                    </li>
+                    <li class="skeletonBox">
+                        <div class="manSkel"></div>
+                    </li>
+                    <li class="sp"></li>
+                    <li class="skeletonBox">
+                        <div class="womanSkel"></div>
+                    </li>
+                    <li class="sp"></li>
+                    <li class="skeletonBox">
+                        <div class="kidSkel"></div>
+                    </li>
+                    <li>
+                        <div class="cell">
+                            <div class="next_step inactive">Next Step</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- slider_nav Step One ends -->
+            <div class="slider_nav" id="step_two"> <a href="#" class="cancel_symptom_check"></a>
+                <ul class="skelScroll">
+                    <li>
+                        <div class="cell"> <span class="thin">Select</span> <span class="thick">Gender</span> <span class="thick">View</span>
+                            <div class="left_bar"></div>
+                        </div>
+                    </li>
+                    <li class="skeletonBox">
+                        <div class="manSkel"></div>
+                    </li>
+                    <li class="sp"></li>
+                    <li class="skeletonBox">
+                        <div class="manSkel_back"></div>
+                    </li>
+                    <li>
+                        <div class="cell">
+                            <div class="next_step inactive">Next Step</div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="terms">
+                    <h2>Terms of Use</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages. <br/>
+                        <br/>
+                        <span class="checkBox">
+                        <input type="checkbox" id="termsOfUse" />
+                        </span> I have read and agree to WelCare's <a href="#">Privacy Policy</a>. </p>
+                </div>
+                <div class="clear"></div>
+                <div class="buttons"> <a href="#" class="button goBack">Go Back</a> <a href="#" class="button startOver">Start Over</a> </div>
+            </div>
+            <!-- slider_nav Step Two ends -->
+            <div class="slider_nav" id="step_three"> <a href="#" class="cancel_symptom_check"></a>
+                <div class="skelResults">
+                    <div class="skeleton">
+                        <div class="man">
+                            <ul class="parts">
+                                <li class="head"><a href="#"></a></li>
+                                <li class="neck"><a href="#"></a></li>
+                                <li class="arm"><a href="#"></a></li>
+                                <li class="chest"><a href="#"></a></li>
+                                <li class="forearm"><a href="#"></a></li>
+                                <li class="hands"><a href="#"></a></li>
+                                <li class="stomach"><a href="#"></a></li>
+                                <li class="thigh"><a href="#"></a></li>
+                                <li class="calf"><a href="#"></a></li>
+                                <li class="foot"><a href="#"></a></li>
+                            </ul>
+                            <div class="view_buttons"> <a href="#" class="back_view">Back View</a> | <a href="#" class="front_view_selected">Front View</a> </div>
+                        </div>
+                    </div>
+                    <div class="sympton_stats">
+                        <div class="level_one cyan_bg">
+                            <div class="caption"><span class="steps">01</span><span class="step_title">Body parts</span></div>
+                            <div class="cntnt">
+                                <div class="block1 inline_msg"> <strong>Step #1</strong> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget orci vitae felis malesuada. </div>
+                            </div>
+                            <div class="popup-box hidden"></div>
+                        </div>
+                        <div class="level_two skin_bg">
+                            <div class="caption"><span class="steps">02</span><span class="step_title">Selected Symptoms</span></div>
+                            <div class="cntnt">
+                                <div class="block1 inline_msg"> <strong>Step #2</strong> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget orci vitae felis malesuada.</div>
+                            </div>
+                        </div>
+                        <div class="level_three purple_bg">
+                            <div class="caption"><span class="steps">03</span><span class="step_title">Possible Condition</span></div>
+                            <div class="cntnt">
+                                <div class="block1 inline_msg"> <strong>Step #3</strong> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget orci vitae felis malesuada.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="buttons"> <a href="#" class="button goBack">Go Back</a> <a href="#" class="button startOver">Start Over</a> <a href="#" class="restart_selection">Reset Selection</a> </div>
+            </div>
+            <!-- slider_nav Step Three ends -->
+        </form>
+        <div class="slide_overlay"></div>
+    </div>
+    <!-- custom slides end --> 
+    
+    <!-- Advance Search -->
+    <div id="advsearch" class="container relative">
+        <div id="letwelcareknow">Let Wel Care Know</div>
+        <form method="post" action="http://www.wpnukes.com/demo/html/welcare/index.html">
+            <div id="iam"> <span>I am</span>
+                <select name="" id="select-iam">
+                    <option >Tell us who are you</option>
+                    <option >a patient</option>
+                    <option >a visitor</option>
+                    <option >a physician</option>
+                    <option >an employee</option>
+                    <option >a job seeker</option>
+                    <option >a media representative</option>
+                </select>
+            </div>
+            <div id="helpme"> <span>Help me</span>
+                <select name="" id="select-helpme">
+                    <option >--Select--</option>
+                    <option >--Select 1--</option>
+                    <option >--Select 2--</option>
+                    <option >--Select 3--</option>
+                    <option >--Select 4--</option>
+                    <option >--Select 5--</option>
+                </select>
+            </div>
+            <span class="go">
+            <input class="submit" type="submit" value="GO" />
+            </span>
+        </form>
+        <div class="clear"></div>
+    </div>
+    <div class="container">
+        <div class="tabs">
+            <ul id="tabMenu">
+                <li class="tab_1 selected"> <a href="javascript:void(0);"> <span class="image"> <img src="images/icon_find.png" alt="" /> </span> <span class="up">Find a</span> <span class="down">Doctor</span> </a> <span class="poparr"></span> </li>
+                <li class="tab_2"> <a href="javascript:void(0);"> <span class="image"> <img src="images/icon-appointment.png" alt="" /> </span> <span class="up">Request An</span> <span class="down">Appointment</span> </a> <span class="poparr"></span> </li>
+                <li class="tab_3"> <a href="javascript:void(0);"> <span class="image"> <img src="images/icon-admin.png" alt="" /> </span> <span class="up">Admit A</span> <span class="down">Patient</span> </a> <span class="poparr"></span> </li>
+                <li class="tab_4"> <a href="javascript:void(0);"> <span class="image"> <img src="images/icon_onlinetest.png" alt="" /> </span> <span class="up">Online</span> <span class="down">Lab Test</span> </a> <span class="poparr"></span> </li>
+                <li class="tab_5"> <a href="javascript:void(0);"> <span class="image"> <img src="images/icon-symptomchecker.png" alt="" /> </span> <span class="up">Symptom</span> <span class="down">Checker</span> </a> <span class="poparr"></span> </li>
+            </ul>
+        </div>
+        <div class="boxBody">
+            <div id="tab_1" class="show parent tab_bg1">
+                <div class="col-3">
+                    <h1><span class="gray thin">ONLINE </span><span class="blue thick">PHYSICIAN</span></h1>
+                    <div class="block">
+                        <h3>Choose a Specialization</h3>
+                        <select id="select-spec1" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                        <h3>Physician Type</h3>
+                        <select id="select-spec2" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                    </div>
+                    <div class="block last-child">
+                        <h3>Physician Information</h3>
+                        <select id="select-spec3" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                        <h3>Language of Service</h3>
+                        <select id="select-spec4" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                        <div class="form2"> <a class="button" href="javascript:;">Submit</a>&nbsp;&nbsp; <a class="button" href="javascript:;">Reset</a> </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab_2" class="parent">
+                <div class="col-3">
+                	<div class="block">
+						<div class="seperator">
+                        	<img src="images/online_physician.png" alt="online physician" />
+                            <p>Proin iaculis purus consequat sem cursus digni sim. Donec porttitor entume suscipit. Aeneano odio in tincidunt. Proin iaculis purus consequat.</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <h3>Choose a Specialization</h3>
+                        <select id="select-spec5" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                        <h3>Physician Type</h3>
+                        <select id="select-spec6" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                    </div>
+                    <div class="block last-child">
+                        <h3>Physician Information</h3>
+                        <select id="select-spec7" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                        <h3>Language of Service</h3>
+                        <select id="select-spec8" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                        <div class="form2"><a class="button" href="javascript:;">Submit</a>&nbsp;&nbsp;<a class="button" href="javascript:;">Reset</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab_3" class="parent">
+                <div class="col-3">
+                	<div class="block">
+						<div class="seperator">
+                        	<img src="images/online_physician.png" alt="online physician" />
+                            <p>Proin iaculis purus consequat sem cursus digni sim. Donec porttitor entume suscipit. Aeneano odio in tincidunt. Proin iaculis purus consequat.</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <h3>Disease Name</h3>
+                        <select id="select-spec9" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                        <h3>Disease Proof</h3>
+                        <select id="select-spec10" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                    </div>
+                    <div class="block last-child">
+                        <h3>Physician Information</h3>
+                        <select id="select-spec11" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                        <h3>Language of Service</h3>
+                        <select id="select-spec12" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                        <div class="form2"><a class="button" href="javascript:;">Submit</a>&nbsp;&nbsp;<a class="button" href="javascript:;">Reset</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab_4" class="parent">
+                <div class="col-3">
+                	<div class="block">
+						<div class="seperator">
+                        	<img src="images/online_physician.png" alt="online physician" />
+                            <p>Proin iaculis purus consequat sem cursus digni sim. Donec porttitor entume suscipit. Aeneano odio in tincidunt. Proin iaculis purus consequat.</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <h3>Select Blood Laboratory Test</h3>
+                        <select id="select-spec13" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                        <h3>Urine Laboratory Tests</h3>
+                        <select id="select-spec14" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                    </div>
+                    <div class="block last-child">
+                        <h3>Serological Laboratory Tests</h3>
+                        <select id="select-spec15" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                        <h3>Immunohematology</h3>
+                        <select id="select-spec16" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                        <div class="form2"><a class="button" href="javascript:;">Submit</a>&nbsp;&nbsp;<a class="button" href="javascript:;">Reset</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab_5" class="parent">
+                <div class="col-3">
+                	<div class="block">
+						<div class="seperator">
+                        	<img src="images/online_physician.png" alt="online physician" />
+                            <p>Proin iaculis purus consequat sem cursus digni sim. Donec porttitor entume suscipit. Aeneano odio in tincidunt. Proin iaculis purus consequat.</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <h3>Choose your Gender</h3>
+                        <select id="select-spec17" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                        <h3>Select Part of Body</h3>
+                        <select id="select-spec18" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                    </div>
+                    <div class="block last-child">
+                        <h3>Disease Type</h3>
+                        <select id="select-spec19" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                        <h3>Language of Service</h3>
+                        <select id="select-spec20" class="dropbox">
+                            <option>Select</option>
+                            <option>Value One</option>
+                            <option>Value Two</option>
+                            <option>Value Three</option>
+                            <option>Value Four</option>
+                            <option>Value Five</option>
+                            <option>Value Six</option>
+                        </select>
+                        <div class="form2"><a class="button" href="javascript:;">Submit</a>&nbsp;&nbsp;<a class="button" href="javascript:;">Reset</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container ends -->
+    
+    <div class="container">
+        <div class="grids">
+            <div class="double_column">
+                <div class="block">
+                <div class="heading">Health Experts and Community</div>
+                <div class="blog">
+                    <div class="post">
+                        <div class="image"><img src="images/resource/blogimg1.jpg" alt="" /></div>
+                        <div class="matter">
+                            <h3><a href="#">Post with right sidebar and embeded video</a></h3>
+                            <p>Nam sed metus velit, vel faucibus odio. Nullam a urna at lectus aliquetd. est vestibulum vestibulum odio ut congue. Cras amet dui eu purus interdum ollis sit amt sed nunc. Nam sed metus velit, vel faucibus odionam sed metus velit. Nam sed metus velit, vel faucibus odio. Nullam a urna at lectus aliquetd. est vestibulum vestibulum odio ut congue. <a href="#" class="read_more">Read More</a></p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="image"><img src="images/resource/blogimg2.jpg" alt="" /></div>
+                        <div class="matter">
+                            <h3><a href="#">Post with right sidebar and embeded video</a></h3>
+                            <p>Nam sed metus velit, vel faucibus odio. Nullam a urna at lectus aliquetd. est vestibulum vestibulum odio ut congue. Cras amet dui eu purus interdum ollis sit amt sed nunc. Nam sed metus velit, vel faucibus odionam. Nam sed metus velit, vel faucibus ves odio. <a href="#" class="read_more">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Block ends --> 
+            </div>
+            <!-- Col 1 ends --> 
+            <div class="single_column">
+                <div class="block">
+                    <div class="heading">Success Stories</div>
+                    	<div class="comment">
+                        	<h3>Welcare gave me a second chance at life!</h3>
+                        	<blockquote>
+                                <span>
+                                        Proin iaculis purus consequat sem cursus digni sim. Donec porttitor entume suscipit. Aeneanoncusre odio in tincidunt.                                     Proin iaculis purus consequat sem cursus digni sim. Donec porttitor entume suscipitodio.
+                                </span>
+                            </blockquote>
+                            <span class="tip"></span>
+                        </div>
+                        <div class="comment_snap"><img src="images/resource/snap-1.jpg" alt="" /></div>
+                        <ul class="patient">
+                        	<li><strong>Liver Transplantation for Maple Syrup Urine Disease</strong></li>
+                            <li><span class="user_icon">Patient: </span> <span class="blue_text">Heal Taylor's</span></li>
+                        </ul>
+                </div>
+                <!-- Block ends --> 
+            </div>
+        </div>
+        <!-- grids end -->
+        
+        <div class="grids">
+            <div class="col-3">
+                <div class="block">
+                    <div class="heading">Health Blog</div>
+                    <div class="blog">
+                        <div class="image">
+                            <a href="#"><img src="images/resource/image-1.jpg" alt="" /></a>
+                            <div class="image_hover">
+                                <h3>ENT Specialization in North</h3>
+                                <div class="post_info"><span class="">September 8, 2012</span>|<span class="comment_icon"><a href="#">5 Comments</a></span></div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="matter">
+                                <h3><a href="#">Mauris Imperdiet Eros Adipiscing Entume</a></h3>
+                                <p>Lorem ipsum dolor sit amet, adipiscing elit. Proin iaculis purus consequat sem cursus digni sim.</p>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="matter">
+                                <h3><a href="#">Mauris Imperdiet Eros Elit Lacus</a></h3>
+                                <p>Lorem ipsum dolor sit amet, adipiscing elit. Proin iaculis purus consequat sem cursus digni sim.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Block ends -->
+                <div class="block">
+                    <div class="heading">Health News</div>
+                    <div class="news">
+                        <div class="image">
+                            <a href="#"> <img src="images/resource/image-2.jpg" alt="" /></a>
+                            <div class="image_hover">
+                                <h3>Pragnancy Guide</h3>
+                                <div class="post_info"><span class="">September 8, 2012</span>|<span class="comment_icon"><a href="#">5 Comments</a></span></div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="matter">
+                                <h3><a href="#">SND Update: New appointments for SND</a></h3>
+                                <div class="post_info"><span class="grey_text">September 8, 2012</span>|<span class="grey_text"><a href="#">5 Comments</a></span></div>
+                                <p>Proin iaculis purus consequat sem cursussim.</p>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="matter">
+                                <h3><a href="#">SND Update: New appointments for SND</a></h3>
+                                <div class="post_info"><span class="grey_text">September 8, 2012</span>|<span class="grey_text"><a href="#">5 Comments</a></span></div>
+                                <p>Proin iaculis purus consequat sem cursussim.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Block ends -->
+                <div class="block">
+                    <div class="heading">Upcoming Events</div>
+                    <div class="events">
+                        <div class="image">
+                            <a href="#"><img src="images/resource/image-3.jpg" alt="" /></a>
+                            <div class="image_hover">
+                                <h3>Internation Diabetes Conference</h3>
+                                <div class="post_info"><span class="">September 8, 2012</span>|<span class="comment_icon"><a href="#">5 Comments</a></span></div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <h3><a href="#">A Journey to control diabetes in children</a></h3>
+                            <ul class="event_info">
+                                <li><span class="tag">Newyork City</span></li>
+                                <li><span class="calendar">Sep 8, 2012</span></li>
+                                <li class="last-child"><span  class="time">5-6pm</span></li>
+                            </ul>
+                            <p class="venudesc">
+                            	Proin iaculis purus consequat sem cursus digni sim. Donec porttitor entume suscipit. Aenean rhoncusre odio in tincidunt. Proin iaculis purus consequat sem cursus digni sim. Donec poreor entume suscipit. Donec porttitor entume suscipit. <a href="#" class="read_more">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Block ends --> 
+            </div>
+            <!-- Col 3 ends --> 
+        </div>
+        <div class="grids">
+            <div class="col-3">
+                <div class="block">
+                    <div class="banner">
+                        <div class="post">
+                            <div class="image dpt">
+                            	<img src="images/resource/dpt_img1.jpg" alt="" />
+                                <div class="dpt_info">
+                                    <span class="title">Neurology Deptt.</span>
+                                    <span class="txt">Proin iaculis purus consequat sem cursus digni im. Donec porttitor entume suscipit. Aenean rhoncusre odio. <a href="javascript:void(0);" class="read_more_white">read more</a></span>                               
+                             	</div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Block ends -->
+                <div class="block">
+                    <div class="banner">
+                        <div class="post">
+                            <div class="image dpt">
+                            	<img src="images/resource/dpt_img2.jpg" alt="" />
+                                <div class="dpt_info">
+                                    <span class="title">Neurology Deptt.</span>
+                                    <span class="txt">Proin iaculis purus consequat sem cursus digni im. Donec porttitor entume suscipit. Aenean rhoncusre odio. <a href="javascript:void(0);" class="read_more_white">read more</a></span>                               
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Block ends -->
+                <div class="block">
+                    <div class="banner">
+                        <div class="post">
+                            <div class="image dpt">
+                            	<img src="images/resource/dpt_img3.jpg" alt="" />
+                                <div class="dpt_info">
+                                    <span class="title">Neurology Deptt.</span>
+                                    <span class="txt">Proin iaculis purus consequat sem cursus digni im. Donec porttitor entume suscipit. Aenean rhoncusre odio. <a href="javascript:void(0);" class="read_more_white">read more</a></span>                               
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Block ends --> 
+            </div>
+            <!-- Col 3 ends --> 
+        </div>
+        <!-- grids end --> 
+    </div>
+    <!-- Container ends -->
+    
+    <div class="container">
+        <div id="insurance-companies">
+            <h2>Insurance Companies</h2>
+            <div id="scrollright"><a href="#"></a></div>
+            <div id="scrollleft"><a href="#"></a></div>
+            <div id="companieslist">
+                <div class="company first">
+                    <div><a href="#"><img src="images/company_img1.png" alt="" /></a></div>
+                </div>
+                <div class="company">
+                    <div><a href="#"><img src="images/company_img2.png" alt="" /></a></div>
+                </div>
+                <div class="company">
+                    <div><a href="#"><img src="images/company_img3.png" alt="" /></a></div>
+                </div>
+                <div class="company">
+                    <div><a href="#"><img src="images/company_img4.png" alt="" /></a></div>
+                </div>
+                <div class="company">
+                    <div><a href="#"><img src="images/company_img5.png" alt="" /></a></div>
+                </div>
+                <div class="company">
+                    <div><a href="#"><img src="images/company_img1.png" alt="" /></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="footer">
+            <div id="twiterfeed">
+                <div class="leftside">
+                    <h1>Our Twitter Feed</h1>
+                    <p>Find out what's happening right now with health services you care about.</p>
+                </div>
+                <div class="rightside">
+                    <div class="twiterpic left"></div>
+                    <p>Welcare Hospital Surgery Milestone: <br />
+                        Region to Remove Gallbladder with Single, Belly Button Incision. Welcare Hospital Surgery Milestone.</p>
+                    <span class="poparr"></span> </div>
+            </div>
+            <div class="col-4">
+                <div class="block flickr_sect">
+                    <div class="title">
+                        <h1>Flickr Gallery</h1>
+                    </div>
+                    <div class="flickrgallery"> <a href="#"><img src="images/resource/flickrimg1.jpg" alt="" /></a> <a href="#"><img src="images/resource/flickrimg2.jpg" alt="" /></a> <a href="#"><img src="images/resource/flickrimg3.jpg" alt="" /></a> <a href="#"><img src="images/resource/flickrimg4.jpg" alt="" /></a> <a href="#"><img src="images/resource/flickrimg5.jpg" alt="" /></a> <a href="#"><img src="images/resource/flickrimg6.jpg" alt="" /></a> <a href="#"><img src="images/resource/flickrimg7.jpg" alt="" /></a> <a href="#"><img src="images/resource/flickrimg8.jpg" alt="" /></a> </div>
+                </div>
+                <div class="block p-care">
+                    <div class="title">
+                        <h1>Patient Care</h1>
+                    </div>
+                    <div class="content">
+                        <ul class="dotted">
+                            <li><a href="#">Improving Medication Adherence</a></li>
+                            <li><a href="#">Testing the Re-Engineered Discharge</a></li>
+                            <li><a href="#">Reducing Central Line Bloodstream</a></li>
+                            <li><a href="#">Improving Medication Adherence</a></li>
+                            <li><a href="#">The Emergency Department Pharm</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block getintouch">
+                    <div class="title">
+                        <h1>Get in Touch</h1>
+                    </div>
+                    <div class="content"> <a href="#" class="phone">(907) 555-55555</a> <a href="#" class="email">company@youremail.com</a> <a href="#" class="contactform">Medical Contact form</a> <a href="#" class="skype">Medical Skype Name</a> <a href="#" class="feedback">Give Your Feedback</a> </div>
+                </div>
+                <div class="block newsletter last-child">
+                    <div class="title">
+                        <h1>Subscribe Newsletter</h1>
+                    </div>
+                    <div class="content">
+                        <p>Our bi - weekly Newsletter about health issues, news, up - coming events.</p>
+                        <div id="formnewsletter">
+                            <form action="http://www.wpnukes.com/demo/html/welcare/index.html" method="get">
+                                <input class="text" type="text" onfocus="if(this.value == 'Enter your email') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Enter your email'; }" name="" value="Enter your email" />
+                                <input name="submit" value="submit" class="submit" type="button" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer ends -->
+        <div id="copyrightarea">
+            <div id="copyrighttext"> &copy; 2012 Welcare Wordpress Premium Theme by <a href="http://www.wpnukes.com/" title="wordpress premium themes">wp nukes</a>, all rights reserved. </div>
+            <div id="socialicons">
+                <ul class="social-icon">
+                    <li><a href="javascript:void(0);" class="facebook_link" ></a></li>
+                    <li><a href="javascript:void(0);" class="twiter_link"></a></li>
+                    <li><a href="javascript:void(0);" class="linkedin_link"></a></li>
+                    <li><a href="javascript:void(0);" class="flicker_link"></a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#" class="pageup"><img src="images/ico-pup.png" alt="" /></a> </div>
+    <div class="overlay"></div>
+</div>
+<img src="#" id="preloading" class="hidden" alt="" />
+</body>
+</html>

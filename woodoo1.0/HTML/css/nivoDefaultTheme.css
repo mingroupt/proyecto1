@@ -1,0 +1,89 @@
+
+.slider-wrapper { 
+	width:960px;
+	margin: 0 auto;
+}
+
+
+.theme-default .nivoSlider {
+	width: 940px;
+	height: 350px;
+	position:relative;
+	background:#000 url(../images/style2/loading.gif) no-repeat 50% 50%;
+    margin:20px auto;
+    overflow:hidden;
+    box-shadow: 0 3px 8px #000000;
+    /* Border radius */
+    /* Firefox */
+    -moz-border-radius: 3px;
+    /* Chrome, Safari */
+    -webkit-border-radius: 3px;
+    /* default */
+    border-radius: 3px;
+    behavior: url(js/PIE.php);
+    
+}
+.theme-default .nivoSlider img {
+	position:absolute;
+	width: 940px;
+	height: 350px;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.theme-default .nivoSlider a {
+	border:0;
+	display:block;
+}
+
+.theme-default .nivo-controlNav {
+	position:absolute;
+	left:50%;
+	bottom: 10px;
+    margin-left:-40px; /* Tweak this to center bullets */
+}
+.theme-default .nivo-controlNav a {
+	display:block;
+	width:15px;
+	height:14px;
+	background:url(../images/slider/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+
+.theme-default .nivo-controlNav a:hover {
+	background-position:0 -28px;
+}
+
+.theme-default .nivo-controlNav a.active {
+	background-position:0 -14px;
+}
+
+.theme-default .nivo-directionNav a {
+	display:block;
+	width:24px;
+	height:43px;
+	text-indent:-9999px;
+	border:0;
+}
+.theme-default a.nivo-nextNav {
+	background: url(../images/slider/next.png) no-repeat;
+	
+}
+.theme-default a.nivo-prevNav {
+	background: url(../images/slider/prev.png) no-repeat;
+	left:15px;
+}
+
+.theme-default .nivo-caption {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.theme-default .nivo-caption a {
+    color:#fff;
+    border-bottom:1px dotted #fff;
+}
+.theme-default .nivo-caption a:hover {
+    color:#fff;
+}

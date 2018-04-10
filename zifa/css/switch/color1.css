@@ -1,0 +1,12 @@
+::selection {background-color:#269ccc; color:#fff;}
+span {color:#269ccc; font-size:12px;}
+.about_info p, .service p, .portfolio p {color: #d9f4ff;}
+.main_screen .button a {background-color: #269ccc;}
+.home_message h4 span {color: #269ccc; font-size:20px;}
+.portfolio_container {background:url(../../img/about_img5.jpg) repeat-y;padding: 200px 0;}
+#about_us_container {background: url(../../img/about_img5.jpg) no-repeat;}
+.line_shadow {display: none;}
+.option-set li a, .option-set li a.selected {background-color: #269ccc;}
+input#submit {background-color: #269ccc;}
+.sponsors h5 {background-color: #269ccc}
+.about_info .button.pink a {background-color: #269ccc;}

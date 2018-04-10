@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Charset and a "fix" for responsiveness on mobile devices -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<!-- Page title - will need changing -->
+		<title>ZHOT Personal Gallery & Portfolio Single Page HTML Template</title>
+		
+		<!-- Links including favicon, primary stylesheet, menu font and logo font respectively -->
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css_family=Oswald:300.html" type="text/css" />
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css_family=Dosis:300.html" type="text/css" />
+		
+		<!-- Scripts, including jQuery, scrollTo plugin and ZHOT's scripts -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+		<script type="text/javascript" src="js/slimbox2.js"></script>
+		<script type="text/javascript" src="js/waypoints.min.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+		<script type="text/javascript" src="js/gmap3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.zhot.js"></script>
+		<script type="text/javascript" src="js/jquery.placeholder-enhanced.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tweet.js"></script>
+		<script type="text/javascript" src="js/jflickrfeed.min.js"></script>
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function($) { 
+				// script for contact us section map. Replace address with your address.
+				$("#map-container").gmap3({
+					marker:{
+					  address: "London, UK"
+					},
+					map: {
+						options: {
+							zoom: 12,
+							// this is set to false to stop the map zooming when scrolling down the page, which was preventing 
+							// the footer ever being seen on smaller screens -->
+							scrollwheel: false
+						}
+					}
+				});
+				// tweet widget. Replace username with your twitter username
+				$(".tweet").tweet({
+					join_text: "none",
+					username: "fresh_creations",
+					count: 2,
+					loading_text: "loading tweets...",
+					template: "{avatar}{text} <br/> {time}"
+				});
+				// flickr widget. Replace id with your flickr ID, can be found using http://idgettr.com/
+				var flickrid = '25442264@N06';
+				$('#flickr-widget').jflickrfeed({
+					limit: 8,
+					qstrings: {
+						id: flickrid
+					},
+					itemTemplate: '<a href="{{image_b}}\autoname.htm" target="_blank"><img src="{{image_s}}" alt="{{title}}" /></a>'
+				});
+				$('#flickr-widget').after('<a href="http://www.flickr.com/photos/' + flickrid + '">See more on Flickr</a>')
+			});
+		</script>
+		
+		<!-- HTML5Shiv, as IE8 doesn't support HTML5 and unfortunately alot of people still use IE8 -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<nav id="nav">
+			<ul>
+				<li class="active"><a href="#gallery-section">Home</a><div class="clear"></div></li>
+				<li><a href="#blog-section">Blog</a><div class="clear"></div></li>
+				<li><a href="#portfolio-section">Portfolio</a><div class="clear"></div></li>
+				<li><a href="#about-section">About</a><div class="clear"></div></li>
+				<li><a href="#contact-section">Contact</a><div class="clear"></div></li>
+			</ul>
+		</nav>
+		<div id="nav-toggle">
+			<img src="images/nav-toggle.png" alt="Toggle Navigation" />
+		</div>
+		<div id="header-outer">
+			<header id="header">
+				<h1 id="logo">ZHOT</h1>
+			</header>
+		</div>
+		<div id="main-page">
+			<!-- First section - "My Photo Gallery" -->
+			<div class="blue-background section" id="gallery-section">
+				<div class="section-heading-area">
+					<h1>My Photo Gallery</h1>
+					<nav class="gallery-category-nav category-nav">
+						<ul>
+							<li class="active"><a href="#">All</a>/</li>
+							<li><a href="#">Animals</a>/</li>
+							<li><a href="#">Children</a>/</li>
+							<li><a href="#">Portraits</a>/</li>
+							<li><a href="#">Travel</a>/</li>
+							<li><a href="#">Weddings</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="gallery">
+					<!-- Images are in columns, as the gallery can be scrolled left and right -->
+					<!-- If image code is dynamically generated (as in WP version) generate markup for new column every 4 images,
+						also use image resizer script to generate thumbs to reduce load times. Set div below to 95 * number of cols -->
+					<div style="width: 1425px;">
+						<div class="gallery-column">
+							<a href="images/gallery/gallery-1.png" class="lightbox"><img src="images/gallery/gallery-thumb-1.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-2.png" class="lightbox"><img src="images/gallery/gallery-thumb-2.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-3.png" class="lightbox"><img src="images/gallery/gallery-thumb-3.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-4.png" class="lightbox"><img src="images/gallery/gallery-thumb-4.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column">
+							<a href="images/gallery/gallery-5.png" class="lightbox"><img src="images/gallery/gallery-thumb-5.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-6.png" class="lightbox"><img src="images/gallery/gallery-thumb-6.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-1.png" class="lightbox"><img src="images/gallery/gallery-thumb-1.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-2.png" class="lightbox"><img src="images/gallery/gallery-thumb-2.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column">
+							<a href="images/gallery/gallery-3.png" class="lightbox"><img src="images/gallery/gallery-thumb-3.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-4.png" class="lightbox"><img src="images/gallery/gallery-thumb-4.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-5.png" class="lightbox"><img src="images/gallery/gallery-thumb-5.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-6.png" class="lightbox"><img src="images/gallery/gallery-thumb-6.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column">
+							<a href="images/gallery/gallery-1.png" class="lightbox"><img src="images/gallery/gallery-thumb-1.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-2.png" class="lightbox"><img src="images/gallery/gallery-thumb-2.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-3.png" class="lightbox"><img src="images/gallery/gallery-thumb-3.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-4.png" class="lightbox"><img src="images/gallery/gallery-thumb-4.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column">
+							<a href="images/gallery/gallery-5.png" class="lightbox"><img src="images/gallery/gallery-thumb-5.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-6.png" class="lightbox"><img src="images/gallery/gallery-thumb-6.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-1.png" class="lightbox"><img src="images/gallery/gallery-thumb-1.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-2.png" class="lightbox"><img src="images/gallery/gallery-thumb-2.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column">
+							<a href="images/gallery/gallery-3.png" class="lightbox"><img src="images/gallery/gallery-thumb-3.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-4.png" class="lightbox"><img src="images/gallery/gallery-thumb-4.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-5.png" class="lightbox"><img src="images/gallery/gallery-thumb-5.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-6.png" class="lightbox"><img src="images/gallery/gallery-thumb-6.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column">
+							<a href="images/gallery/gallery-1.png" class="lightbox"><img src="images/gallery/gallery-thumb-1.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-2.png" class="lightbox"><img src="images/gallery/gallery-thumb-2.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-3.png" class="lightbox"><img src="images/gallery/gallery-thumb-3.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-4.png" class="lightbox"><img src="images/gallery/gallery-thumb-4.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column">
+							<a href="images/gallery/gallery-1.png" class="lightbox"><img src="images/gallery/gallery-thumb-1.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-2.png" class="lightbox"><img src="images/gallery/gallery-thumb-2.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-3.png" class="lightbox"><img src="images/gallery/gallery-thumb-3.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-4.png" class="lightbox"><img src="images/gallery/gallery-thumb-4.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column">
+							<a href="images/gallery/gallery-5.png" class="lightbox"><img src="images/gallery/gallery-thumb-5.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-6.png" class="lightbox"><img src="images/gallery/gallery-thumb-6.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-1.png" class="lightbox"><img src="images/gallery/gallery-thumb-1.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-2.png" class="lightbox"><img src="images/gallery/gallery-thumb-2.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column">
+							<a href="images/gallery/gallery-3.png" class="lightbox"><img src="images/gallery/gallery-thumb-3.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-4.png" class="lightbox"><img src="images/gallery/gallery-thumb-4.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-5.png" class="lightbox"><img src="images/gallery/gallery-thumb-5.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-6.png" class="lightbox"><img src="images/gallery/gallery-thumb-6.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column">
+							<a href="images/gallery/gallery-1.png" class="lightbox"><img src="images/gallery/gallery-thumb-1.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-2.png" class="lightbox"><img src="images/gallery/gallery-thumb-2.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-3.png" class="lightbox"><img src="images/gallery/gallery-thumb-3.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-4.png" class="lightbox"><img src="images/gallery/gallery-thumb-4.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column">
+							<a href="images/gallery/gallery-1.png" class="lightbox"><img src="images/gallery/gallery-thumb-1.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-2.png" class="lightbox"><img src="images/gallery/gallery-thumb-2.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-3.png" class="lightbox"><img src="images/gallery/gallery-thumb-3.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-4.png" class="lightbox"><img src="images/gallery/gallery-thumb-4.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column">
+							<a href="images/gallery/gallery-5.png" class="lightbox"><img src="images/gallery/gallery-thumb-5.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-6.png" class="lightbox"><img src="images/gallery/gallery-thumb-6.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-1.png" class="lightbox"><img src="images/gallery/gallery-thumb-1.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-2.png" class="lightbox"><img src="images/gallery/gallery-thumb-2.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column">
+							<a href="images/gallery/gallery-3.png" class="lightbox"><img src="images/gallery/gallery-thumb-3.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-4.png" class="lightbox"><img src="images/gallery/gallery-thumb-4.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-5.png" class="lightbox"><img src="images/gallery/gallery-thumb-5.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-6.png" class="lightbox"><img src="images/gallery/gallery-thumb-6.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column">
+							<a href="images/gallery/gallery-1.png" class="lightbox"><img src="images/gallery/gallery-thumb-1.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-2.png" class="lightbox"><img src="images/gallery/gallery-thumb-2.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-3.png" class="lightbox"><img src="images/gallery/gallery-thumb-3.png" alt="image description" /></a>
+							<a href="images/gallery/gallery-4.png" class="lightbox"><img src="images/gallery/gallery-thumb-4.png" alt="image description" /></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="arrow-area">
+					<!-- Only needs to be shown if cols > 12 -->
+					<div>
+						<a class="left-arrow-blue gallery-left">Scroll Left</a>
+						<a class="right-arrow-blue gallery-right">Scroll Right</a>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<!-- End first section -->
+			
+			<!-- Second section - "My Recent Blogs -->
+			<div id="blog-section" class="section">
+				<div class="section-heading-area">
+					<h1>My Recent Blogs</h1><a href="#" class="blog-go-back">Go Back</a>
+				</div>
+				<div class="blog">
+					<!-- width = 381 * num of posts -->
+					<div style="width: 2286px;">
+						<article id="blog-excerpt-1" class="blog-post">
+							<h1>Family Snaps</h1>
+							<img src="images/blog-thumb-1.png" alt="image description" />
+							<p>Donec interdum vehicula dolor, at dictum quam tempor ut. Ut ut nulla nunc, eget ullamcorper ligula. Etiam interdum mollis erat.<br/>
+							<a href="http://www.justinmezzell.com/">http://www.justinmezzell.com/</a></p>
+							<a href="#" class="read-more">Read More</a>
+							<time datetime="2012-12-15">15-12-2012</time>
+						</article>
+						<article id="blog-excerpt-2" class="blog-post">
+							<h1>Lucha No Libre</h1>
+							<img src="images/blog-thumb-2.png" alt="image description" />
+							<p>Donec interdum vehicula dolor, at dictum quam tempor ut. Ut ut nulla nunc, eget ullamcorper ligula. Etiam interdum mollis erat.<br/>
+							<a href="http://www.justinmezzell.com/">http://www.justinmezzell.com/</a></p>
+							<a href="#" class="read-more">Read More</a>
+							<time datetime="2012-12-15">15-12-2012</time>
+						</article>
+						<article id="blog-excerpt-3" class="blog-post">
+							<h1>Tufty Bear</h1>
+							<iframe src="http://player.vimeo.com/video/9379302?title=0&amp;byline=0&amp;color=e94c1b" width="300" height="169" style="border: 0;"></iframe>
+							<p>Donec interdum vehicula dolor, at dictum quam tempor ut. Ut ut nulla nunc, eget ullamcorper ligula. Etiam interdum mollis erat.<br/>
+							<a href="http://www.justinmezzell.com/">http://www.justinmezzell.com/</a></p>
+							<a href="#" class="read-more">Read More</a>
+							<time datetime="2012-12-15">15-12-2012</time>
+						</article>
+						<article id="blog-excerpt-4" class="blog-post">
+							<h1>Family Snaps</h1>
+							<img src="images/blog-thumb-1.png" alt="image description" />
+							<p>Donec interdum vehicula dolor, at dictum quam tempor ut. Ut ut nulla nunc, eget ullamcorper ligula. Etiam interdum mollis erat.<br/>
+							<a href="http://www.justinmezzell.com/">http://www.justinmezzell.com/</a></p>
+							<a href="#" class="read-more">Read More</a>
+							<time datetime="2012-12-15">15-12-2012</time>
+						</article>
+						<article id="blog-excerpt-5" class="blog-post">
+							<h1>Lucha No Libre</h1>
+							<img src="images/blog-thumb-2.png" alt="image description" />
+							<p>Donec interdum vehicula dolor, at dictum quam tempor ut. Ut ut nulla nunc, eget ullamcorper ligula. Etiam interdum mollis erat.<br/>
+							<a href="http://www.justinmezzell.com/">http://www.justinmezzell.com/</a></p>
+							<a href="#" class="read-more">Read More</a>
+							<time datetime="2012-12-15">15-12-2012</time>
+						</article>
+						<article id="blog-excerpt-6" class="blog-post">
+							<h1>Tufty Bear</h1>
+							<iframe src="http://player.vimeo.com/video/9379302?title=0&amp;byline=0&amp;color=e94c1b" width="300" height="169" style="border: 0;"></iframe>
+							<p>Donec interdum vehicula dolor, at dictum quam tempor ut. Ut ut nulla nunc, eget ullamcorper ligula. Etiam interdum mollis erat.<br/>
+							<a href="http://www.justinmezzell.com/">http://www.justinmezzell.com/</a></p>
+							<a href="#" class="read-more">Read More</a>
+							<time datetime="2012-12-15">15-12-2012</time>
+						</article>
+						<div class="clear"></div>
+					</div>
+					<!-- Needs to be duplicated for other blog posts, only one example given to prevent cluttering of this file. 
+						Excerpt and full post must use the naming convention used here, ie. blog-post-n and blog-excerpt-n . -->
+					<article id="blog-post-1" class="full-blog-post">
+						<h1 class="full-blog-post-title">Family Snaps</h1>
+						<img class="blog-post-left-image" src="images/blog-1.jpg" alt="image description" />
+						<p>Donec interdum vehicula dolor, at dictum quam tempor ut. Ut ut nulla nunc, eget ullamcorper ligula. Etiam interdum mollis erat.</p> 
+						<p>Vestibulum lobortis turpis aliquam nunc commodo volutpat. </p>
+						<p>Ut elementum pharetra congue. Quisque ornare risus et mi porttitor pellentesque. Nunc ullamcorper pharetra turpis, eget pharetra nulla convallis at. Ut adipiscing faucibus nulla, 
+						et feugiat libero accumsan egestas. Maecenas ut magna neque, sit amet interdum orci. Donec iaculis tempor adipiscing. Phasellus accumsan quam et enim pellentesque placerat. 
+						Quisque rhoncus malesuada urna, ac euismod nisi convallis vitae. Maecenas gravida rhoncus libero, a tincidunt elit dignissim non. Praesent mauris elit, sollicitudin sed tempor vitae,
+						rutrum viverra ligula. Aliquam lectus tellus, venenatis sollicitudin pulvinar non, dictum quis nisi. Pellentesque imperdiet lorem eu magna venenatis ac ultrices erat fringilla.</p>
+						<p><br/><a href="http://www.justinmezzell.com">Credits: http://www.justinmezzell.com</a></p>
+						<div class="comments">
+							<h1 class="comments-title">Comments <span class="comments-number">3</span></h1>
+							<ol class="comments-list">
+								<li>
+									<article class="comment">
+										<img class="comment-avatar" src="images/avatar-1.jpg" alt="Jennifer" />
+										<div class="comment-meta">
+											Jennifer - <a href="#">Reply</a>
+										</div>
+										<div class="comment-content">
+											<p>Morbi neque ante, volutpat in cursus imperdiet, sollicitudin at lorem. Aenean feugiat est nec libero.</p>
+										</div>
+										<ol class="comments-list">
+											<li>
+												<article class="comment">
+													<img class="comment-avatar" src="images/avatar-2.jpg" alt="Goku" />
+													<div class="comment-meta">
+														Goku - <a href="#">Reply</a>
+													</div>
+													<div class="comment-content">
+														<p>Morbi neque ante, volutpat in cursus imperdiet, sollicitudin at lorem. Aenean feugiat est nec libero.</p>
+													</div>
+												</article>
+											</li>
+										</ol>
+									</article>
+								</li>
+								<li>
+									<article class="comment">
+										<img class="comment-avatar" src="images/avatar-3.jpg" alt="Adrien" />
+										<div class="comment-meta">
+											Adrien - <a href="#">Reply</a>
+										</div>
+										<div class="comment-content">
+											<p>Morbi neque ante, volutpat in cursus imperdiet, sollicitudin at lorem. Aenean feugiat est nec libero.</p>
+										</div>
+									</article>
+								</li>
+							</ol>
+						</div>
+						<!-- can apply clear class to comments if comments form is shown. This is here in case comments form is disabled -->
+						<div class="clear"></div>
+						<h1 class="comments-title">Post a Comment</h1>
+						<form id="submit-comment" name="comment-form">
+							<input type="text" name="name" placeholder="Name" style="float: left;" />
+							<input type="text" name="email" placeholder="Email address" style="float: left; margin-left: 3%;" />
+							<input type="text" name="website" placeholder="Website" style="float: right;" />
+							<textarea name="message" placeholder="Message"></textarea>
+							<input type="submit" value="Send" />
+							<div class="clear"></div>
+						</form>
+					</article>
+				</div>
+				<div class="arrow-area">				
+					<!-- Only needs to be shown if posts > 3 -->
+					<div>
+						<a class="left-arrow-light blog-left">Scroll Left</a>
+						<a class="right-arrow-light blog-right">Scroll Right</a>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<!-- end second section -->
+			
+			<!-- Third section - "My Portfolio" -->			
+			<div class="grey-background section" id="portfolio-section">
+				<div class="section-heading-area">
+					<h1>My Portfolio</h1>
+					<nav class="gallery-category-nav category-nav">
+						<ul>
+							<li><a href="#">All</a>/</li>
+							<li><a href="#">Illustration</a>/</li>
+							<li><a href="#">3D</a>/</li>
+							<li class="active"><a href="#">Portraits</a>/</li>
+							<li><a href="#">Webdesign</a>/</li>
+							<li><a href="#">Print</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="portfolio">
+					<!-- width = 380 * num cols or (380 * num images) / 2 -->
+					<div style="width: 2280px;">
+						<div class="gallery-column portfolio-column">
+							<a href="images/portfolio-1.jpg" class="lightbox"><img src="images/portfolio-thumb-1.png" alt="image description" /></a>
+							<a href="images/portfolio-2.jpg" class="lightbox"><img src="images/portfolio-thumb-2.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column portfolio-column">
+							<a href="images/portfolio-3.jpg" class="lightbox"><img src="images/portfolio-thumb-3.png" alt="image description" /></a>
+							<a href="images/portfolio-4.jpg" class="lightbox"><img src="images/portfolio-thumb-4.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column portfolio-column">
+							<a href="images/portfolio-5.jpg" class="lightbox"><img src="images/portfolio-thumb-5.png" alt="image description" /></a>
+							<a href="images/portfolio-6.jpg" class="lightbox"><img src="images/portfolio-thumb-6.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column portfolio-column">
+							<a href="images/portfolio-1.jpg" class="lightbox"><img src="images/portfolio-thumb-1.png" alt="image description" /></a>
+							<a href="images/portfolio-2.jpg" class="lightbox"><img src="images/portfolio-thumb-2.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column portfolio-column">
+							<a href="images/portfolio-3.jpg" class="lightbox"><img src="images/portfolio-thumb-3.png" alt="image description" /></a>
+							<a href="images/portfolio-4.jpg" class="lightbox"><img src="images/portfolio-thumb-4.png" alt="image description" /></a>
+						</div>
+						<div class="gallery-column portfolio-column">
+							<a href="images/portfolio-5.jpg" class="lightbox"><img src="images/portfolio-thumb-5.png" alt="image description" /></a>
+							<a href="images/portfolio-6.jpg" class="lightbox"><img src="images/portfolio-thumb-6.png" alt="image description" /></a>
+						</div>
+					</div>
+				</div>
+				<div class="arrow-area">				
+					<!-- Only needs to be shown if portfolio images > 6 -->
+					<div>
+						<a class="left-arrow-grey portfolio-left">Scroll Left</a>
+						<a class="right-arrow-grey portfolio-right">Scroll Right</a>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<!-- end third section -->
+			
+			<!-- Fourth section - "About Me" -->
+			<div id="about-section" class="section">
+				<div class="section-heading-area">
+					<h1>About Me</h1>
+				</div>
+				<div class="about">
+					<img class="about-background" src="images/about-bg.png" alt="image description" />
+					<article class="about-overlay">
+						<h1>Hello my name is Brianna</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/>
+						Donec fringilla neque nec urna pulvinar vitae rhoncus elit fermentum. 
+						Curabitur ut felis ut nulla molestie mattis. Sed scelerisque luctus magna. Curabitur ut tortor diam, sed faucibus sem. Cras congue metus sed tortor imperdiet eget rhoncus metus bibendum. </p>
+						<p>Nunc rhoncus tellus sed est laoreet pulvinar. Etiam justo dolor, 
+						adipiscing eu auctor eget, vehicula in felis. Vivamus arcu lorem posuere quis pharetra vel, pretium sed ipsum.</p>
+						
+						<h2 class="follow">Follow Me Also On</h2>
+						<a href="#" class="facebook">Facebook</a>
+						<a href="#" class="linkedin">linkedin</a>
+						<a href="#" class="dribble">dribble</a>
+						<a href="#" class="stumbleupon">stumbleupon</a>
+						<a href="#" class="friendfeed">friendfeed</a>
+						<a href="#" class="twitter">twitter</a>
+						<a href="#" class="deviantart">deviantart</a>
+					</article>
+				</div>
+			</div>
+			<!-- end fourth section -->
+			
+			<!-- Fifth section - "Contact Us" -->
+			<div id="contact-section" class="section">
+				<div class="section-heading-area">
+					<h1>Contact Us</h1>
+				</div>
+				<div class="contact">
+					<div id="map-container"></div>
+					<div id="contact-form-container">
+						<h1>Lets Get in Touch</h1>
+						<form id="contact-form">
+							<input type="text" name="name" placeholder="Name" />
+							<input type="text" name="email" placeholder="Email" />
+							<input type="text" name="subject" placeholder="Subject" />
+							<textarea name="message"></textarea>
+							<a href="#" id="hide-contact-form">Hide Form</a>
+							<input type="submit" value="Send" />
+						</form>
+					</div>
+					<div id="show-contact-form">
+						Show Form
+					</div>
+				</div>
+			</div>
+			<!-- end fifth section -->
+			
+			<footer id="footer">
+				<div class="footer-column">
+					<h1>Recent Blog Posts</h1>
+					<ul>
+						<li>Blog post title</li>
+						<li>Simple, Elegant Landing page Wordpress</li>
+						<li>Proud, Ashamed, Shocked or Suprised</li>
+						<li>Reject due to usage of TimThumb??</li>
+						<li>Spam on previews contact forms</li>
+						<li>Dubstep - this is music?</li>
+						<li>What do you think about this template?</li>
+						<li>Partner that converts my Admin Template</li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h1>Twitter Widget</h1>
+					<div class="tweet"></div>
+				</div>
+				<div class="footer-column">
+					<h1>Flickr Stream</h1>
+					<div id="flickr-widget">
+					
+					</div>
+				</div>
+				<div class="clear"></div>
+			</footer>
+			<div id="copyright-area">
+				© Copyright <span class="highlight">2013</span> Zhot. Design by FreshCreations
+			</div>
+		</div>
+	</body>
+</html>

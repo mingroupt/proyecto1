@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+ 
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Woodoo | Message Sent!</title>
+	<!-- Get Playball webfont from google fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+	<!-- Main stylesheet -->
+	<link rel="stylesheet" href="css/Style-White&Purple.css">
+	<!-- jQuery text shadow stylesheet -->
+	<link rel="stylesheet" href="css/jquery.textshadow.css">
+	<!-- Modernizr -->
+	<script type="text/javascript" src="js/modernizr-2.5.2.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+	<!-- JQuery text shadow -->
+	<script src="js/jquery.textshadow.js"></script>
+	<!-- topBar animate -->
+	<script>
+		$(window).load(function() { 
+			/* When everything is loaded, animate the topbar */
+			$(function() { $("#topbar").animate({ marginTop: "0px"}, 500 );}); 
+			/* Fades in all the content inside the wrapper when the document is loaded */
+			$('#pageWrapper').fadeIn(2500);
+		});
+		$(document).ready(function() {
+			if (!Modernizr.textshadow) {
+				 $('.contactFormNotificationButton').textshadow();
+			}
+		});	
+	</script>
+
+</head>
+
+<body>
+	<span id="topbar"></span>
+	
+	<!-- Wraps all elements in the page -->
+	<div id="pageWrapper">
+	
+	<!-- container all -->
+	<div class="container">
+				
+	<h1 class="contactFormNotificationLogo">Woodoo!<h1>
+	<p class="contactFormNotificationMessage">Your message was sent successfully. We will reply to you as soon as possible. Thank you!<p>
+	<a href="index.html" class="contactFormNotificationButton">Back to previous page</a>
+													
+ 	</div><!--container all -->
+ 		
+	</div><!-- pageWrapper ends -->
+</body>
+</html>

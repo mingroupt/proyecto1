@@ -1,0 +1,50 @@
+html{
+	height: 100%;
+	overflow-x: hidden;
+	
+}
+
+.curtains{
+    width: 100%;
+    z-index:1;
+    position:relative;
+}
+
+.curtains>li{
+    background: white;
+    display:block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    z-index:1;
+	position: fixed;
+	*position: relative;
+	_position: relative;
+	position: relative\0/; /* ie8 hack */
+}
+
+
+.curtains>li.hidden{display:none;}
+.curtains>li:first-child{z-index:2;}
+
+
+/* Sliding panels */
+
+
+ol.curtains {margin: 0;}
+
+.curtains>li {
+	box-shadow:0 0 6px #222;
+	-moz-box-shadow:0 0 6px #222;
+	-webkit-box-shadow:0 0 6px #222;
+
+	margin: 0px;
+	padding: 0px;	
+	
+}
+.cover-background{
+    position:fixed;
+    top:0;left:0;
+}

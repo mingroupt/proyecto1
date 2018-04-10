@@ -1,0 +1,437 @@
+/*
+* Wrapper Coming Soon
+* Copyright 2013, JPThemes
+* www.jpthemes.com
+*/
+
+/* Table of Content
+==================================================
+    #Import Section
+	#Site Styles
+	#Menu
+	#Slide
+	#Porfolio 
+	#Widget Service
+	#Our Team
+	#Contact
+	#Media Queries
+	*/
+	
+/* ======================================================= */
+/* #IMPORT SECTION */
+/* ======================================================= */
+
+@import url("bootstrap.css");/* Default Reset, Typography, Forms, etc. */ 
+@import url("bootstrap-responsive.css");
+@import url("curtain.css");
+@import url("font-awesome.css");
+@import url("http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
+
+
+
+
+	
+
+/* ======================================================= */
+/* Site Styles
+/* ======================================================= */
+
+
+
+body {
+	color: #848D9B;
+	font: 14px/22px 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+	font-style: normal;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: 0px;
+	word-spacing: 0em;
+	line-height: 21px;
+	background-repeat: repeat;
+	background-color: #fff;
+	color: #555;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+
+.input-size {
+	height: 40px!important;
+	width: 87%;
+}
+
+.btn-size {
+	height: 50px!important;
+}
+
+@media (max-width: 767px) {
+  body { padding-right: 0px; padding-left: 0px; }
+  .container {margin-right: 20px; margin-left: 20px;}
+ }
+
+
+/* Links */
+
+a {
+	border-bottom: 1px dotted #222;
+	color: #222;
+	padding: 0 1px;
+	margin: 0 -1px;
+	text-decoration: none;
+    -webkit-transition: background-color .2s linear, color .2s linear;
+	-moz-transition: background-color .2s linear, color .2s linear;
+	-o-transition: background-color .2s linear, color .2s linear;
+	-ms-transition: background-color .2s linear, color .2s linear;
+	transition: background-color .2s linear, color .2s linear;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+a:hover {
+	border-bottom: 1px dotted transparent;
+	background-color: #F8E443;
+	color: #fff;
+	text-decoration: none;
+}
+
+a img:hover{
+	border: none;
+	vertical-align: bottom;
+	
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	color: #222;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	padding: 0;
+}
+
+h1 {
+	font-size: 24px;
+	line-height: 28px;
+}
+
+h2 {
+	font-size: 20px;
+	line-height: 22px;
+	margin: 0 0 20px 0;
+}
+
+h3 {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+h4 {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+h5 {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+h6 {
+	font-size: 10px;
+	line-height: 16px;
+}
+
+
+
+
+
+/* Responsive Images - Combined with Sencha.io on the frontend */
+.full-width img {max-width: 100%; height: auto;}
+
+
+.full-width{
+	width: 100%;
+	
+}
+
+.wrapper-full {
+	padding-top: 40px;
+	padding-bottom: 80px;
+	box-shadow: 0 -2px 2px rgba(0,0,0,0.04);
+	-moz-box-shadow: 0 -2px 2px rgba(0,0,0,0.04);
+	-webkit-box-shadow: 0 -2px 2px rgba(0,0,0,0.04);
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #D4D7DB;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	width: 100%;
+	
+}
+
+
+
+
+/* Basic alignment */
+.align-left{float: left;}
+.align-center{text-align: center;}
+.align-right{float: right}
+
+img.align-left{float: left; margin: 0 15px 0px 0;}
+img.align-center{text-align: center; clear: both; margin: 15px auto; display: block;}
+img.align-right{float: right; margin: 0 0 12px 15px;}
+
+h1.title-section{
+	margin-bottom: 40px;
+	margin-top: 0px;
+	padding: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	font-weight: 800;
+	font-size: 50px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+
+.blk {
+	border-top-width: 2px;
+	border-top-style: dotted;
+	border-top-color: #000;
+	border-bottom-style: none;
+}
+
+/* ======================================================= */
+/* Sections
+/* ======================================================= */
+
+a.logo:hover {background: none;}
+
+.top {
+	background-image: url(img/header.jpg);
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	background-position: center bottom;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	background-attachment:fixed;
+}
+
+.top a {
+	border-bottom: 1px dotted transparent;
+	background-color: #F8E443;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+.top h1{
+	text-shadow: 1px 1px 1px black;
+	color: #FFF;
+	font-size: 48px;
+	text-transform: uppercase;
+	line-height: 80px;
+	margin-top: 5%;
+}
+
+.top h3 {
+	text-shadow: 1px 1px 1px black;
+	-moz-text-shadow: 1px 1px 1px black;
+	-webkit-text-shadow:1px 1px 1px black;
+	color: #FFF;
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-bottom: 120px;
+	line-height: 30px;
+	
+}
+
+#section-1{}
+
+@media only screen and (max-width: 767px) {
+#section-1{
+	height: 2000px!important;
+}
+}
+
+
+#section-2{
+	background-color: #f8e443;
+	background-image: url(img/pat.png);
+	background-repeat: repeat;
+}
+
+#section-3{
+	background-color: #FFF;
+}
+
+#section-4{   
+	background-image: url(img/pats.png);
+}
+
+#section-5{
+    background-color: #FFF;
+}
+    
+	
+	
+	
+
+
+/* ======================================================= */
+/* Contact
+/* ======================================================= */
+
+.element .textarea {
+	height:120px; 
+	width:70%;
+	padding-left:20px;
+}
+.element .hightlight {
+	border:2px solid #ffa5a5;
+	background:url(images/iconCaution.gif) no-repeat 2px
+}
+.element #submit {
+}
+.loading {
+	float:left;
+
+	height:28px;
+	width:28px;
+	display:none;
+}
+.done {
+
+	padding-left:20px;
+	font-family:arial;
+	font-size:12px; 
+	width:100%; 
+	margin:20px auto; 
+	display:none
+}
+
+	
+#map_canvas {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: -2;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}	
+
+
+
+/* ======================================================= */
+/* Countdown
+/* ======================================================= */
+
+.container-zik {
+	margin: auto;
+	width: 50%;
+	
+}
+
+
+.countdown_section {
+	display: block;
+	float: left;
+	color: #fff;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	text-transform: uppercase;
+	font-weight: 800;
+	background-color: #F8E443;
+	background-image: url(img/pat.png);
+	text-shadow: 1px 1px 1px #666;
+	-moz-text-shadow: 1px 1px 1px #666;
+	-webkit-text-shadow: 1px 1px 1px #666;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+	padding-top: 20px;
+	padding-right: 25px;
+	padding-bottom: 20px;
+	padding-left: 25px;
+	border: 5px solid rgba(0, 0, 0, 0.2);
+	
+}
+
+.countdown_amount {
+	display: inline-block;
+	font-size: 48px;
+	width: 70px;
+	height: 53px;
+	line-height: 53px;
+	margin-bottom: 8px;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	color: #fff;
+}
+
+
+
+/* ======================================================= */
+/* Twitter
+/* ======================================================= */
+
+
+ul#tweet-list li{
+	list-style-type: none!important;
+	margin-bottom: 20px;
+	background-image: url(img/tw.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 30px;
+}
+
+ul, ol {
+padding: 0;
+margin: 0 0 0px 0px!important;
+}
+
+
+ul.social {
+	font-size: 30px;
+	text-align: center;
+	padding-top: 20px;	
+}
+
+ul.social a{
+	margin-top: 80px!important;
+	border: none!important;
+	}
+
+
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+	
+
+::selection {
+background: #000;
+color: white;
+text-shadow: none;
+}

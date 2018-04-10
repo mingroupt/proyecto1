@@ -1,0 +1,18 @@
+/* These are just the demo styles and these can be removed and Orbit 
+will still work like a champ (except any content block needs a background which
+our demo gets from this sheet) */
+    
+.orbitContent { background: url(dummy-images/coffee.jpg); }
+.orbitContent h1 {
+	font-size: 40px; 
+	text-transform: uppercase; 
+	font-weight: bold; 
+	text-align: center;
+	margin-top: 180px;
+	color: #222;
+	line-height: 50px;  }
+.orbitContent h3 {
+	text-align: center; 
+	font-size: 22px; 
+	color: #222; }
+    

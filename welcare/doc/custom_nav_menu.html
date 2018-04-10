@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Welcare Customize Navigation Menu</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link type="text/css" rel="stylesheet" href="css/reset.css" />				
+<link rel="stylesheet" type="text/css" href="css/foundation.css"  />
+<link rel="stylesheet" type="text/css" href="css/style.css"  />
+<link rel="stylesheet" href="css/jqtransform.css" type="text/css" media="all" />
+
+<script type="text/javascript" src="js/jquery.js" ></script>
+<script type="text/javascript" src="js/jqtransformplugin/jquery.jqtransform.js" ></script>
+<script language="javascript">
+		jQuery(document).ready(function($){
+			$('.styling').jqTransform({imgPath:'jqtransformplugin/img/'});
+		});
+	</script>
+<script type="text/javascript" src="js/default_text.js" ></script>
+<script type="text/javascript" src="js/script.js" ></script>
+
+<!-- Syntax Highlighter -->
+<script type="text/javascript" src="js/highlighter/shCore.js"></script>
+<script type="text/javascript" src="js/highlighter/shBrushJScript.js"></script>
+<link type="text/css" rel="stylesheet" href="js/highlighter/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+</head>
+
+<body>
+
+<div class="banner">
+    <div class="container">
+        <div class="bannerIn">
+        	<div class="thick"><strong>WEL</strong>CARE <strong>DOCUMENTATION</strong></div>
+            we can design and develop what you have in your mind.
+            <a href="../../../../../themeforest.net/user/wpnukes" class="theme_sbmt">Customization Request</a>
+        </div>
+    </div>
+</div><!-- Banner ends -->
+<div class="container">
+    <div class="left_side_container">
+        <div class="heading">
+            <h3>How to change the width Layout of Navigation Menu</h3>
+        </div>
+        <div class="contents txt_lineheight">
+            <div class="content_container pattern tutorials">
+                <p>User can change the navigation menu style in two different styles. One is mega-menu, set according to the 960 grid. The other one is designed in various widths as user can change the width of sub-menu by just giving the column-number. User can change the menu style according to 960 grid by giving the class 'dropdown_full_column' to a <i>div</i> in the <i>li</i>. </p>
+                <p>Size can be decreased by giving a class <i>'dropdown_column'</i> into a <i>div</i> in the <i>li</i> 'column'. In the <i>div</i> of the <i>li</i>, column-number is given so that the user can change the width of block according to him. User can also change the size of the columns by giving different sizes from <i>'column-1'</i> to <i>'column-8'</i>, lesser the column-number, smaller is the width.</p>
+            </div>
+		</div>
+        <div class="step_container">
+            <h3>Navigation Menu Code:</h3>
+            <h4>Mega Menu</h4>        
+            
+            <div class="contents tutorials">
+                <div class="heading"><h3>Wordpress Code</h3></div>
+                <div class="content_container blank">
+                    <pre class="brush: js;">
+                          <div class="dropdown_columns"><!-- Begin 2 columns container -->
+                              <div class="col_8"><!--change here-->
+                                      <h2>Welcome !</h2>
+                                  </div>
+                              <div class="col_3">
+                                      <p><strong>welcome to Welcare medical portal !</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>             
+                                  </div>
+                              <div class="col_3">
+                                  <h2>Site Features</h2>
+                              </div>
+                              <div class="col_2">
+                                  <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                              </div>
+                              <div class="col_1">
+                                  <p>It was popularised in the 1960s with the release of Letraset </p>
+                              </div>
+                           </div>
+                      </pre>
+                </div>
+            </div>
+        </div><!--step_container ends-->
+        <div class="step_container">
+        	<h4>Custom Menu</h4>
+            <div class="contents txt_lineheight">
+            	<div class="heading"><h3>Wordpress Code</h3></div>
+                <div class="content_container blank">
+                      <pre class="brush: js;">
+                          <div class="dropdown_columns"><!-- Begin 4 columns container -->
+                              <div class="col_5"><!--change here-->
+                                  <h2>Doctor's by Department</h2>
+                              </div>
+                              <div class="col_2">
+                                  <h3>Consultants</h3>
+                                  <ul>
+                                      <li><a href="default.htm">Anticoagulation</a></li>
+                                      <li><a href="default.htm">Dermatology Surgery</a></li>
+                                      <li><a href="default.htm">Diabetes Clinic</a></li>
+                                      <li><a href="default.htm">Dermatology Surgery</a></li>
+                                      <li> <a href="default.htm">Diabetes Clinic</a></li>
+                                  </ul>   
+                              </div>
+                          </div>
+                      </pre>
+                  </div>
+            </div>
+        </div><!--step_container ends-->
+        <div class="step_container">
+            <h4>Change Content Layout of Sub-menu</h4>
+            <div class="contents txt_lineheight">
+                <div class="content_container pattern tutorials">
+                    <p>User can change the layout of sub-menus. This is easy as the user just has to change the name of respective <i>div</i>. Change the name from '<i>col_2</i>' to '<i>col_5</i>' and a different layout of sub-menu is appied. Similarly, user can apply these classes from '<i>col_1</i>' to '<i>col_8</i>', greater the '<i>'col_(number)</i>', width will b increasing.</p>
+                </div>
+            </div>
+        </div><!--step_container ends-->
+        <div class="step_container">
+            <div class="contents txt_lineheight">
+                <div class="heading"><h3>Wordpress Code</h3></div>
+                <div class="content_container blank">
+                      <pre class="brush: js;">
+                          <div class="col_2"><!--change here-->
+                                  <h3>Consultants</h3>
+                                  <ul>
+                                      <li><a href="default.htm">Anticoagulation</a></li>
+                                      <li><a href="default.htm">Dermatology Surgery</a></li>
+                                      <li><a href="default.htm">Diabetes Clinic</a></li>
+                                      <li><a href="default.htm">Dermatology Surgery</a></li>
+                                      <li> <a href="default.htm">Diabetes Clinic</a></li>
+                                  </ul>   
+                              </div>
+                      </pre>
+                  </div>
+            </div>
+        </div><!--step_container ends-->
+        <div class="pagination">
+            <ul class="pagination_list">
+                <li><a href="description.html">Description</a></li>
+                <li><a href="custom_tab_width.html">Change tabs Layout</a></li>
+            </ul>
+        </div><!--pagination ends-->
+    </div>
+    <!--sidebaar-->
+    <div class="sidebar tuto">
+        <div class="contents">
+            <div class="heading"><h3>Getting Started</h3></div>
+            <div class="content_container pattern">
+                <div class="clear"></div>
+                <ul class="themes">
+                    <li><a href="intro.html">Introduction</a></li>
+                    <li><a href="intro.html#features">Key Features</a></li>
+                    <li><a href="description.html#navmenu">Navigation Menu</a></li>
+                    <li><a href="description.html#main-slider">Main Slider</a></li>
+                    <li><a href="description.html#symptom-checker">Symptom Checker</a></li>
+                    <li><a href="description.html#color-picker">Color picker</a></li>
+                    <li><a href="description.html#various-layout">Various Width layouts</a></li>
+                    <li><a href="description.html#responsive">Responsive Design</a></li>
+                    <li><a href="description.html#gallery-view">Gallery View</a></li>
+                    <li><a href="description.html#cross-browser">Cross-Browser Compatibility</a></li>
+                </ul>
+           </div>
+        </div><!--contents ends-->
+        <div class="contents">
+            <div class="heading"><h3>Customization</h3></div>
+            <div class="content_container pattern">
+                <div class="clear"></div>
+                <ul class="themes">
+					<li><a href="#change_navmenu">Change navigation menu</a></li>
+					<li><a href="custom_width_layout.html#change_content_width">Change width layout</a></li>
+					<li><a href="custom_tab_width.html#change_content_width">Change tabs layout</a></li>
+					<li><a href="custom_logo.html#change_logo">Change the logo</a></li>
+					<li><a href="custom_copyright.html#change_copyright">Change the copyright code</a></li>
+					<li><a href="custom_colorpicker.html#colorpicker">Color picker</a></li>
+					<li><a href="custom_slide.html#add_slide">Add a slide in slider</a></li>
+                </ul>
+           </div>
+        </div>
+    </div>
+    <!--sidebar ends-->
+</div><!-- container ends -->
+
+<!--footer-->
+<div class="footer">
+    <div class="copy_right">
+    	<div class="footer_content">
+			<p class="left_align">&copy; 2012 <a href="../../../../default.htm" target="_blank">wpnukes</a>, All rights reserved.</p>
+                    <div class="social_network">
+						<div class="social_network_bg">					
+							<a href="../../../../../https@plus.google.com/117687224389542711259" class="gplus" target="_blank"></a>
+							<a href="../../../../../https@twitter.com/wpnukes" class="twitter" target="_blank"></a>
+							<a href="../../../../../www.facebook.com/wpnukes" class="fb" target="_blank"></a>
+							<a href="../../../../../flickr.com/photos/wpnukes" class="linkedIn" target="_blank"></a>
+						</div><!--social_network_bg ends-->
+                    </div>
+          
+          </div><!--footer_content ends-->
+    	</div><!--copy_right ends-->
+</div><!--footer ends-->
+
+</body>
+</html>

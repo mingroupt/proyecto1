@@ -1,0 +1,2385 @@
+/*
+Theme Name: Woodoo!
+Theme URI: http://themes.rusevdimitar.com/woodoo/
+Description: Woodoo! is created by <a href="http://rusevdimitar.com">Dimitar Rusev</a>.
+Version: 1.0.0
+Author: Dimitar Rusev
+Author URI: http://rusevdimitar.com
+*/
+
+/*--------------------------------------------------------------------------------------------------
+
+CSS STRUCTURE:
+
+1. GENERAL 
+	1.1 Global Reset  (line: 32-88)
+	1.2 General Typography  (line: 93-143)
+	1.3 Lists  (line: 157-206)		
+	1.4 Blockquotes (line: 210-252)
+	1.5 Dropcaps  (line: 257-281 )
+	1.6 Tables	(line: 286-344)
+	1.7 Columns (line: 349-419)
+	1.8 Accordions & Tabs (line: 424-451)
+	1.9 Buttons (line: 459-668)
+	1.10 Image Alignments (line: 672-690)
+	
+2. SITE LAYOUT 
+	2.1 General  (line: 696-796)
+	2.2 Header  (line: 798-969)
+	2.4 Navigation (line: 972-1118) 
+	2.4 Home Section (line: 1123-1200)
+	2.5 About Section  (line: 1204-1337)
+	2.6 Portfolio Section  (line: 1340-1478)
+	2.7 Blog Section  (line: 1481-1651)
+	2.8 Features Secton (line: 1846-1857)
+	2.9 Contact Section  (line: 1861-1996)
+	2.10 Footer  (line: 1999-2187)
+	2.11 jQuery Twitter Plugin Styles (line: 2187-2250)
+	2.12 Message-success.html & Message-failure.html Styles (line: 2255-2335)
+	
+--------------------------------------------------------------------------------------------------*/
+
+
+/*
+ ***************************************************************************************************
+ **									         1.GENERAL											  **
+ ***************************************************************************************************
+ **             						     1.1 GLOBAL RESET								      **
+ ***************************************************************************************************
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/*
+ ***************************************************************************************************
+ **             						1.2 GENERAL TYPOGRAPHY								  	  **
+ ***************************************************************************************************
+*/
+
+
+h1 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light","Helvetica Neue", Arial, sans-serif;
+	font-size: 30px;
+	color: #000000;
+	line-height: 45px;
+	margin-bottom: 14px;
+}
+
+h2 {
+	font-size: 25px;
+	color: #000000;
+	line-height: 37px;
+	margin-bottom: 14px;
+}
+
+h3 {
+	font-size: 20px;
+	color: #000000;
+	line-height: 30px;
+	margin-bottom: 12px;
+}
+
+h4 {
+	font-size: 15px;
+	color: #000000;
+	line-height: 22px;
+	margin-bottom: 12px;
+}
+
+h5 {
+	font-size: 13px;
+	color: #000000;
+	line-height: 20px;
+	margin-bottom: 12px;
+}
+
+p {
+	color: #555555;
+	font-size: 13px;
+	line-height: 18px;
+	margin-bottom: 18px;
+}
+
+a { color: #00b4ff; font-size:13px }
+
+
+/*
+ ***************************************************************************************************
+ **             						      1.3 LISTS								     		  **
+ ***************************************************************************************************
+*/
+
+
+ul{ list-style:disc outside; }
+ol{ list-style:decimal outside; }
+li{ margin:2px 0;}
+ol li{ margin-top:5px; margin-bottom:7px; }
+ol li p { margin-top:5px; margin-bottom:7px; }
+ul li p { margin-top:5px; margin-bottom:7px; }
+ul, ol, dd{ margin-left:20px; }
+ul ul, ol ul, ul ol, ol ol{ margin-bottom:0; }
+
+
+/*
+ ***************************************************************************************************
+ **             						   CUSTOM LISTS								     		  **
+ ***************************************************************************************************
+*/
+
+
+.checkList ul,
+.deleteList ul,
+.arrowList ul { margin:0 0 20px 10px; }
+
+.checkList li {
+	list-style:none;
+	background:url(../images/check-icon.png) 0 0 no-repeat;
+	margin:0 0 10px 0;
+	line-height:21px;
+	padding:0 0 0 30px
+}
+
+.deleteList li {
+	list-style:none;
+	background:url(../images/cross-icon.png) 0 0 no-repeat;
+	margin:0 0 10px 0;
+	line-height:21px;
+	padding:0 0 0 30px
+}
+
+.starList li {
+	list-style:none;
+	background:url(../images/star-icon.png) 0 0 no-repeat;
+	margin:0 0 10px 0;
+	line-height:21px;
+	padding:0 0 0 30px
+}
+
+
+/*
+ ***************************************************************************************************
+ **             						1.4 BLOCKQUOTES									  	      **
+ ***************************************************************************************************
+*/
+
+/* Boxed Blockquote */
+blockquote.boxed {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, serif;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 18px;
+  background: #e8e7e6;
+  color: #555555;
+  text-shadow: 0 1px 0 #ffffff;
+  border: 1px solid #eeeeed;  
+  box-shadow: -1px 1px 2px #cacaca;
+  border-radius: 5px;
+  padding: 30px 20px 30px 20px;
+  margin: 18px 0 18px 0;
+}
+  
+blockquote.boxed span {
+     display: block;
+     background-image: url(../images/quotes-icon.png);
+     background-repeat: no-repeat;
+     background-position: left;
+     width:73px;
+     height: 63px;
+     float:left;
+     padding-right: 20px;
+}
+
+/* Modern Blockquote */   
+blockquote.modern {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, serif;
+  font-size: 13px;
+  font-style: italic;
+  text-align: left;
+  line-height: 18px;
+  color: #818080;
+  margin: 18px 0 18px 30px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+}    
+
+
+/*
+ ***************************************************************************************************
+ **             					     1.5 DROPCAPS								  	      	  **
+ ***************************************************************************************************
+*/
+
+/* Dropcaps cross Browser way */
+.firstCharacter { 
+	float: left; 
+	color: #555555; 
+	font-size: 35px; 
+	line-height: 30px; 
+	padding-top: 4px; 
+	padding-right: 8px; 
+	  
+}
+
+/* Dropcaps CSS3 way with pseudo selectors. Does not work in IE */
+.dropcaps p:first-child:first-letter {
+	float: left; 
+	color: #555555; 
+	font-size: 40px; 
+	line-height: 30px; 
+	padding-top: 4px; 
+	padding-right: 8px; 
+	padding-left: 3px;
+}
+
+
+/*
+ ***************************************************************************************************
+ **             						 	 1.6 TABLES								      		  **
+ ***************************************************************************************************
+*/
+
+/* Table styling */
+table {
+	background:#eff0f1;
+	font-size:13px;
+	color: #555555;
+	margin: 18px 0 18px 0;
+	border: 1px solid #cacaca;
+	width:100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	/* Border-raiuds */
+	/* Firefox */
+	-moz-border-radius: 8px;
+	/* Chrome, Firefox */
+	-webkit-border-radius: 8px;
+	/* default */
+	border-radius: 8px;
+	behavior: url(js/PIE.php);
+}
+
+/* Table Head */
+thead {
+font-size:15px;
+text-align:left;
+color:#555555;
+text-shadow: 0 1px 0 #ffffff;
+/* Background */
+	/* Fallback */
+	background: #ffffff;
+	/* Chrome, Safari */
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, #ffffff), color-stop(1, #c0c0be));
+	/* Firefox */
+	background: -moz-linear-gradient( center top, #e7e7e7 20%, #c8c8c8 100% );
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #ffffff, #b5b5b4);
+	/* IE 10+ */
+	background: -ms-linear-gradient(top, #ffffff, #b5b5b4);
+	/* IE 6+ */
+	-pie-background: linear-gradient(#ffffff, #b5b5b4);  
+    behavior: url(js/PIE.php);
+}
+
+/* Table body */
+tbody { background: #ffffff;} 
+
+/* Simple table rollover effect */
+.simpletable tbody tr:hover {background:#e1e1e2; text-shadow: 0 1px 0 #ffffff;}
+
+/* styling the even rows for achieving zebra table effect */
+.even {background-color: #ededee; text-shadow: 0 1px 0 #ffffff;}
+
+th { padding: .7em ;}
+td { padding: .5em .7em; border-bottom: 1px solid #cacaca; border-right: 1px solid #cacaca;}
+td:last-child {border-right:none;}
+tr:last-child td {border-bottom:none;}
+
+
+/*
+ ***************************************************************************************************
+ **             						 1.7 COLUMNS								  		      **
+ ***************************************************************************************************
+*/
+
+
+/* Wrapper for the columns*/
+.contentWrapper {
+	float: left;
+	display:block;
+	width: 710px;
+	margin: 20px;
+}
+
+/* Full-width column */
+.fullwidth {
+	float: left;
+	display: block;
+	width: 710px;
+	padding: 10px 0 10px 0;
+}
+
+/* One-half column */
+.onehalf {
+	float: left;
+	display: block;
+	width: 335px;
+	margin-right: 20px;
+	padding: 10px 0 10px 0;
+}
+
+.onehalf-last {
+	float: left;
+	display: block;
+	width: 335px;
+	margin-right: 0 !important;
+	padding: 10px 0 10px 0;
+}
+
+/* One-third column */
+.onethird {
+	float: left;
+	display: block;
+	width: 216px;
+	margin-right: 20px;
+	padding: 10px 0 10px 0;
+}
+
+.onethird-last {
+	float: left;
+	display: block;
+	width: 216px;
+	margin-right: 0 !important;
+	padding: 10px 0 10px 0;
+}
+
+/* One-fourth column */
+.onefourth {
+	float: left;
+	display: block;
+	width: 157px;
+	margin-right: 20px;
+	padding: 10px 0 10px 0;
+}
+
+.onefourth-last {
+	float: left;
+	display: block;
+	width: 157px;
+	margin-right: 0 !important;
+	padding: 10px 0 10px 0;
+}
+
+
+/*
+ ***************************************************************************************************
+ **             						 1.8 jQuery UI Accordion								  **
+ ***************************************************************************************************
+*/
+
+
+.ui-accordion { width: 100%; }
+.ui-accordion .ui-accordion-header { padding: .5em .5em .5em 2.3em; cursor: pointer; position: relative; margin-top: 1px; zoom: 1;  border-radius: 5px ; border: 1px solid #ffffff;  box-shadow: -1px 1px 2px #cacaca;}
+.ui-accordion .ui-accordion-header:hover { color: #00b4ff;}
+.ui-accordion .ui-accordion-li-fix { display: inline; }
+.ui-accordion .ui-accordion-header .ui-icon { background:url(../images/plus-icon.png) no-repeat; width:20px; height:20px; position: absolute; left: .5em; top: 50%; margin-top: -11px; }
+.ui-accordion .ui-accordion-content { border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 5px; overflow: auto; display: none; zoom: 1; padding: .5em .7em 1.5em .7em;}
+.ui-accordion .ui-accordion-content-active { padding: .5em .7em 1.5em .7em; display: block; }
+
+
+/*
+ ***************************************************************************************************
+ **             						 jQuery UI Tabs								      		  **
+ ***************************************************************************************************
+*/
+
+
+.ui-tabs { border: 1px solid #ffffff;  box-shadow: 0 0 2px #cacaca; border-radius: 5px ;  position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { height:37px; border-bottom:1px solid #e8e9ea; margin: 0; padding: .2em .2em 0;}
+.ui-tabs .ui-tabs-nav li {  border: 1px solid #ffffff;  box-shadow: 0 -1px 1px #cacaca; border-radius: 3px 3px 0 0;  list-style: none; float: left; position: relative; top: 1px; margin: 0 .3em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; color: #000000; }
+.ui-tabs .ui-tabs-nav li a:hover { color: #00b4ff; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { background: #eff0f1; border:none; margin-bottom: 0; padding-bottom: 1px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em .7em .7em .7em; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+
+/*
+ ***************************************************************************************************
+ **             							1.9 BUTTONS							      		  	  **
+ ***************************************************************************************************
+*/
+
+
+.buttonwhite {
+	font-size: 12px;
+	display: inline-block;
+	padding: 8px 22px;
+	border: 1px solid #acacab;
+	color: #939392;
+	text-align: center;
+	text-shadow: 0 1px 0 #e3e3e3;
+	text-decoration: none;
+	/*Border radius*/
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	/* Background */
+	/* Fallback */
+	background: #ffffff;
+	/* Chrome, Safari */
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, #fffffe), color-stop(1, #a8a8a7));
+	/* Firefox */
+	background: -moz-linear-gradient( center top, #fffffe 20%, #a8a8a7 100% );
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #fffffe, #a8a8a7);
+	/* IE 10+ */
+	background: -ms-linear-gradient(top, #fffffe, #a8a8a7);
+	/* IE 6+ */
+	-pie-background: linear-gradient(#fffffe, #a8a8a7);  
+    behavior: url(js/PIE.php); 	
+}
+
+.buttonwhite:hover,
+.buttonwhite.hover,
+.buttonwhite.active {
+	/* Background */
+	/* Fallback */
+	background: #ffffff;
+	/* Chrome, Safari */
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, #ffffff), color-stop(1, #c0c0be));
+	/* Firefox */
+	background: -moz-linear-gradient( center top, #ffffff 20%, #cacaca 100% );
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #ffffff, #b5b5b4);
+	/* IE 10+ */
+	background: -ms-linear-gradient(top, #ffffff, #b5b5b4);
+	/* IE 6+ */
+	-pie-background: linear-gradient(#ffffff, #b5b5b4);  
+    behavior: url(js/PIE.php); 	
+}
+
+.buttonwhite:active,
+.buttonwhite.active {
+	border-color: #8c8c8b;
+	/*Box shadow*/
+	/* Chrome, Safari */
+	-webkit-box-shadow: inset 0 0 7px hsla(0,0%,0%,.3) /*Shine*/, 0 1px 0 hsla(0, 100%, 100%, 1) /*Shadow*/;
+	/* Firefox */
+	-moz-box-shadow: inset 0 0 7px hsla(0,0%,0%,.3) /*Shine*/, 0 1px 0 hsla(0, 100%, 100%, 1) /*Shadow*/;
+	/* default */
+	box-shadow: inset 0 0 7px hsla(0,0%,0%,.3) /*Shine*/, 0 1px 0 hsla(0, 100%, 100%, 1) /*Shadow*/;
+	behavior: url(js/PIE.php); 
+}
+
+.buttonwhite.inactive {
+	border: 1px solid #d5d5d5;
+	border-bottom-color: #e6e2e2;
+	color: #aeaeae;
+	text-shadow: 0 1px 0 white;
+	/* Background */
+	/* Fallback */
+	background: #e8e8e8;
+	/* Chrome, Safari */
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, #f3f3f3), color-stop(1, #e6e6e6));
+	/* Firefox */
+	background: -moz-linear-gradient( center top, #f3f3f3 20%, #e6e6e6 100% );
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #f3f3f3, #e6e6e6);
+	/* IE 10+ */
+	background: -ms-linear-gradient(top, #f3f3f3, #e6e6e6);
+	/* IE 6+ */
+	-pie-background: linear-gradient(#f3f3f3, #e6e6e6);  
+
+	/*Box shadow*/
+	/* Chrome, Safari */
+	-webkit-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.5) /*Top*/, inset 0 0 2px hsla(0,100%,100%,.1) /*Shine*/, 0 1px 0 hsla(0, 100%, 100%, .7) /*Shadow*/;
+	/* Firefox */
+	-moz-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.5) /*Top*/, inset 0 0 2px hsla(0,100%,100%,.1) /*Shine*/, 0 1px 0 hsla(0, 100%, 100%, .7) /*Shadow*/;
+	/* default */
+	box-shadow: inset 0 1px 0 hsla(0,100%,100%,.5) /*Top*/, inset 0 0 2px hsla(0,100%,100%,.1) /*Shine*/, 0 1px 0 hsla(0, 100%, 100%, .7) /*Shadow*/;
+	behavior: url(js/PIE.php);
+}
+
+/* Blue button */
+.buttonred {
+	font-size: 12px;
+	display: inline-block;
+	padding: 8px 22px;
+	border: 1px solid #023560;
+	border-bottom-color: #023560;
+	color: #023a6a;
+	text-align: center;
+	text-shadow: 0 1px 0 #00a8ee;
+	text-decoration: none;
+	/*Border radius*/
+	/* Chrome, Safari */
+	-webkit-border-radius: 8px;
+	/* Firefox */
+	-moz-border-radius: 8px;
+	/* default */
+	border-radius: 8px;
+	
+	/* Background */
+	/* Fallback */
+	background: #ff0000;
+	/* Chrome, Safari */
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, #00b4ff), color-stop(1, #013751));
+	/* Firefox */
+	background: -moz-linear-gradient( center top, #00b4ff 20%, #013751 100%);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #00b4ff, #013751);
+	/* IE 10+ */
+	background: -ms-linear-gradient(top, #00b4ff, #013751);
+	/* IE 6+ */
+	-pie-background: linear-gradient(#00b4ff, #013751); 
+	
+	behavior: url(js/PIE.php);
+}
+
+/* Blue button rollover */
+.buttonred:hover,
+.buttonred.hover,
+.buttonred.active {
+	/* Background */
+	/* Fallback */
+	background: #ff0000;
+	/* Chrome, Safari */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(.2, #00f0ff), color-stop(1, #02486a));
+	/* Firefox */
+	background: -moz-linear-gradient( center top, #00f0ff 20%, #02486a 100%);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #00f0ff, #02486a);
+	/* IE 10+ */
+	background: -ms-linear-gradient(top, #00f0ff, #02486a);
+	/* IE 6+ */
+	-pie-background: linear-gradient(#00f0ff, #02486a);
+	behavior: url(js/PIE.php);
+}
+
+/* Purple button active */
+.buttonred:active,
+.buttonred.active {
+	border-color: #023560;
+	/* Box shadow */
+	/* Chrome, Safari */
+	-webkit-box-shadow: inset 0 0 7px hsla(0,0%,0%,.3) /*Shine*/, 0 1px 0 hsla(0, 100%, 100%, 1) /*Shadow*/;
+	/* Firefox */
+	-moz-box-shadow: inset 0 0 7px hsla(0,0%,0%,.3) /*Shine*/, 0 1px 0 hsla(0, 100%, 100%, 1) /*Shadow*/;
+	/* default */
+	box-shadow: inset 0 0 7px hsla(0,0%,0%,.3) /*Shine*/,0 1px 0 hsla(0, 100%, 100%, 1) /*Shadow*/;
+	behavior: url(js/PIE.php);
+}
+
+.buttonwhite.inactive {
+	border: 1px solid #d5d5d5;
+	border-bottom-color: #e6e2e2;
+	color: #aeaeae;
+	text-shadow: 0 1px 0 white;
+	/* Background */
+	/* Fallback */
+	background: #e8e8e8;
+	/* Chrome, Safari */
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, #f3f3f3), color-stop(1, #e6e6e6));
+	/* Firefox */
+	background: -moz-linear-gradient( center top, #f3f3f3 20%, #e6e6e6 100% );
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #f3f3f3, #e6e6e6);
+	/* IE 10+ */
+	background: -ms-linear-gradient(top, #f3f3f3, #e6e6e6);
+	/* IE 6+ */
+	-pie-background: linear-gradient(#f3f3f3, #e6e6e6);
+	
+	/* Box shadow */
+	/* Chrome, Safari */
+	-webkit-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.5) /*Top*/, inset 0 0 2px hsla(0,100%,100%,.1) /*Shine*/, 0 1px 0 hsla(0, 100%, 100%, .7) /*Shadow*/;
+	/* Firefox */
+	-moz-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.5) /*Top*/, inset 0 0 2px hsla(0,100%,100%,.1) /*Shine*/, 0 1px 0 hsla(0, 100%, 100%, .7) /*Shadow*/;
+	/* default */
+	box-shadow: inset 0 1px 0 hsla(0,100%,100%,.5) /*Top*/, inset 0 0 2px hsla(0,100%,100%,.1) /*Shine*/, 0 1px 0 hsla(0, 100%, 100%, .7) /*Shadow*/;
+	behavior: url(js/PIE.php);
+}
+
+.blogbutton {
+	margin: 0 16px 0 0;
+}
+
+.bigbutton {
+	margin: 20px 0 0 0;
+	padding: 8px 0 8px 0;
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	float: left;
+}
+
+
+/*
+ ***************************************************************************************************
+ **             						  1.10 IMAGE ALIGNMENTS								      **
+ ***************************************************************************************************
+*/
+
+img.alignleft {
+	display: block;
+	float:left;
+	margin:5px 20px 5px 0 !important;}
+img.alignright {
+	display: block;
+	float:right;
+	margin:5px 0 5px 20px !important;}
+img.aligncenter {
+	display:block;
+	float:none;
+	margin: 10px auto;
+}
+
+
+/*
+ ***************************************************************************************************
+ **									       2.SITE LAYOUT										  **
+ ***************************************************************************************************
+ **             						   2.1 GENERAL 								      		  **
+ ***************************************************************************************************
+*/
+
+#pageWrapper { display:none; }
+
+body {
+	background: url(../images/backgroundSample2.jpg) repeat;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light","Helvetica Neue", Arial, serif;
+	font-weight: 300;
+}
+
+/* Bar at the top */
+#topbar {
+	background: url(../images/style3/topBar.png) repeat-x;
+	width: 100%;
+	height: 33px;
+	margin-top: -33px;
+	display: block;
+	position:absolute;
+	top:0;
+}
+
+/* Bar on at the bottom */
+#bottombar {
+	background: url(../images/style3/bottomBar.png) repeat-x;
+	width: 100%;
+	height: 33px;
+	display: block;
+}
+
+/* Wraps all elements */
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+/* Separator between sections */
+.sectionseparator {
+	background: url(../images/style3/sectionSeparator.png) no-repeat;
+	width: 940px;
+	height: 3px;
+	display: block;
+	padding-bottom: 10px;
+}
+
+/* Default content section */
+.contentSection {
+	background: #f6f5f4;
+	float: right;
+	width: 750px;
+	min-height: 480px;
+	height: auto !important;
+	height: 480px;
+	position: relative;
+	z-index: 0;
+	/* Border radius */
+	/* Firefox */
+	-moz-border-radius: 0 2px 2px 0;
+	/* Chrome, Safari */
+	-webkit-border-radius: 0 2px 2px 0;
+	/* Opera */
+	-o-border-radius: 0 2px 2px 0;
+	/* default */
+	border-radius: 0 2px 2px 0;
+	behavior: url(js/PIE.php);
+}
+
+/* Overriding default selection color in the content sections */
+.contentSection p::selection { background: #89d9fc; }
+.contentSection p::-moz-selection { background: #89d9fc; }
+.contentSection a::selection { background: #89d9fc; }
+.contentSection a::-moz-selection { background: #89d9fc; }
+.contentSection h1::selection { background: #89d9fc; }
+.contentSection h1::-moz-selection { background: #89d9fc; }
+.contentSection h2::selection { background: #89d9fc; }
+.contentSection h2::-moz-selection { background: #89d9fc; }
+.contentSection h3::selection { background: #89d9fc; }
+.contentSection h3::-moz-selection { background: #89d9fc; }
+.contentSection h4::selection { background: #89d9fc; }
+.contentSection h4::-moz-selection { background: #89d9fc; }
+.contentSection h5::selection { background: #89d9fc; }
+.contentSection h5::-moz-selection { background: #89d9fc; }
+
+/* Separator in the content section */
+.contentseparator {
+	border-bottom: 1px dotted #cacaca;
+	width: 710px;
+	height: 1px;
+	display: block;
+	margin: 10px 0 10px 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/* Image preloader */
+.preloader {background:url(../images/style3/loading.gif) no-repeat center center; display:inline-block; background-color:#000000;} 
+
+
+/*
+ ***************************************************************************************************
+ **             						     2.2 HEADER								  		      **
+ ***************************************************************************************************
+*/
+
+/* HireMe Bubble */
+#hireMe { padding-top: 83px;}
+
+#hireMe a {
+	background: url(../images/hiremeBubble.png) no-repeat top;
+	width: 103px;
+	height: 71px;
+	display: block;
+	margin-left: 253px;
+}
+
+#hireMe a:hover {
+	background: url(../images/hiremeBubble.png) no-repeat bottom;
+	width: 103px;
+	height: -71px;
+}
+
+/* Header Elements (headerlogo, headerSubtitle, socialIcons, searchForm) Wrapper */ 
+#headerElementsWrapper {
+	width: 940px;
+	text-align: center;
+	display: block;
+	float: left;
+	margin-top: 0px;
+	
+}
+
+
+/* Main logo style */
+.headerLogo {
+	font-family: 'Playball', cursive;
+	font-size: 48px;
+	font-weight: 300;
+	color: #7c3100;
+	float: left;
+	line-height: none;
+	margin-bottom: 0px;
+	text-shadow: 0 1px 0 #b9896c, 0 -1px 0 #4e2306;
+}
+
+.headerLogo:hover {
+	color: #7c3100;
+	text-shadow: 0 1px 0 #b9896c, 0 5px 0 #4e2306;
+	-webkit-transition: 150ms;
+	-moz-transition: 150ms;
+	-o-transition: 150ms;
+	cursor: pointer;
+}
+
+/* Header Subtutle */
+.headerSubtitle {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, serif;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 300;
+	padding-top: 14px;
+	float: left;
+	margin-left: 21px;
+	text-shadow: 0 2px 0 #3a2010;
+}
+
+/* Header Social Icons */
+#headerSocialIcons {
+	float: left;
+	position: relative;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+#headerSocialIcons ul { list-style: none; margin:0;}
+
+#headerSocialIcons li {
+	float: left;
+	padding-left: 5px;
+	margin:0;
+}
+
+.dribbbleIcon a {
+	background: url(../images/dribbleIcon.png) no-repeat top;
+	width: 30px;
+	height: 29px;
+	display: block;
+}
+
+.dribbbleIcon a:hover {
+	background: url(../images/dribbleIcon.png) no-repeat bottom;
+	width: 30px;
+	height: 29px;
+	display: block;
+}
+
+.facebookIcon a {
+	background: url(../images/facebookIcon.png) no-repeat top;
+	width: 30px;
+	height: 29px;
+	display: block;
+}
+
+.facebookIcon a:hover {
+	background: url(../images/facebookIcon.png) no-repeat bottom;
+	width: 30px;
+	height: 29px;
+	display: block;
+}
+
+.twitterIcon a {
+	background: url(../images/twitterIcon.png) no-repeat top;
+	width: 30px;
+	height: 29px;
+	display: block;
+}
+
+.twitterIcon a:hover {
+	background: url(../images/twitterIcon.png) no-repeat bottom;
+	width: 30px;
+	height: 29px;
+	display: block;
+}
+
+/* Search Form */
+#search {
+	margin: 10px 0 0 10px;
+	float:right;
+}
+
+#search input[type="text"] {
+	background: url(../images/magicon.png) no-repeat 110px 9px #ffffff;
+	border: none;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, serif;
+	font-size: 12px;
+	font-weight: 300;
+	color: #c3c3c3;
+	width: 110px;
+	padding: 6px 12px 6px 12px;
+	
+	/* Border Radius */
+	/* Chrome, Safari */
+	-webkit-border-radius: 20px;
+	/* Firefox */
+	-moz-border-radius: 20px;
+	/* default */
+	border-radius: 20px;
+	
+	/* Box Shadow */
+	/* Firefox */
+	-moz-box-shadow: 1px 1px 1px #803f1a, inset 0 2px 2px rgba(0,0,0,.4);
+	/* Chrome, Safari */
+	-webkit-box-shadow: 1px 1px 1px #803f1a, inset 0 2px 2px rgba(0,0,0,.4);
+	/* default */
+	box-shadow: 1px 1px 1px #803f1a, inset 0 2px 2px rgba(0,0,0,.4);
+	
+	-webkit-transition: all 0.7s ease 0s;
+	-moz-transition: all 0.7s ease 0s;
+	-o-transition: all 0.7s ease 0s;
+	transition: all 0.7s ease 0s;
+}
+
+/*
+#search input[type="text"]:focus {
+	background: url(../images/magicon.png) no-repeat 9px #ffffff;
+	background-position: 150px;
+	width: 150px;
+}
+*/
+
+/* Overriding default selection color in the header */
+#headerElementsWrapper p::selection { background: #035091; }
+#headerElementsWrapper p::-moz-selection { background: #035091; }
+#headerElementsWrapper h1::selection { background: #035091; }
+#headerElementsWrapper h1::-moz-selection { background: #035091; }
+
+
+/*
+ ***************************************************************************************************
+ **             						 2.3 NAVIGATION								  		      **
+ ***************************************************************************************************
+*/
+
+
+/* Logo in the navigation */
+.navLogo {
+	font-family: 'Playball', cursive;
+	font-size: 36px;
+	font-weight: 300;
+	color: #a59389;
+	text-shadow: 0 2px 0 #39281d;
+	clear: left;
+	margin-left: 32px;
+	margin-top: 14px;
+}
+
+.navLogo:hover {
+	color: #ffffff;
+	text-shadow: 0 2px 0 #39281d;
+	-webkit-transition: 150ms;
+	-moz-transition: 150ms;
+	-o-transition: 150ms;
+}
+
+/* Navigation Wrap */
+.navigationWrapper {
+	float: left;
+	width: 190px;
+	min-height: 480px;
+	height: auto !important;
+	height: 480px;	
+	margin-bottom: 40px;
+	/* test ie8 */
+	position: relative;
+	z-index:0;
+	/* test ie8  end*/
+	background-color: rgba(0, 0, 0, 0.7);
+	/* Opacity for older browsers */
+	-pie-background: rgba(0,0,0,0.7);
+	/* Border radius */
+	/* Firefox */
+	-moz-border-radius: 2px 0 0 2px;
+	/* Chrome, Safari */
+	-webkit-border-radius: 2px 0 0 2px;
+	/* Opera */
+	-o-border-radius: 2px 0 0 2px;
+	/* default */
+	border-radius: 2px 0 0 2px;
+	/* include PIE */
+	behavior: url(js/PIE.php);
+}
+
+/* Overriding selection color in the navigation */
+.navLogo::selection { background: #ffffff; }
+.navLogo::-moz-selection { background: #ffffff; }
+.navigationWrapper a::selection { background: #ffffff; }
+.navigationWrapper a::-moz-selection { background: #ffffff; }
+
+/* Navigation UL */
+.navigation {
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+	list-style: none;
+}
+
+/* Navigation li a*/
+.navigation li a {
+	color: #a59389;
+	font-size: 14px;
+	text-shadow: 0 1px 0 #000000;
+	float: left;
+	padding: 13px 0 13px 0;
+	background: url(../images/navseparator.png) no-repeat;
+	width: 170px;
+	text-align: center;
+}
+
+/* Navigation li a - rollover */
+.navigation li a:hover {
+	color: #ffffff;
+}
+
+/* Navigation li a - active */
+.navigation li a.active {
+	color: #ffffff;
+	text-indent: 0;
+}
+
+/* First li of the Navigation UL */
+.navigation li:nth-child(1) a {background:none;}
+
+/* Scroll nav */
+.scrollnav {list-style: none; margin:0;}
+
+/* Scroll one section up */
+.scrollUp a {
+	float: left;
+	color: #a59389;
+	font-size: 12px;
+	text-shadow: 0 1px 0 #000000;
+	-webkit-transition: 350ms;
+	-moz-transition: 350ms;
+	margin-top: 50px;
+	padding: 5px 45px 5px 45px;
+	background: url(../images/scrollup.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.scrollUp a:hover {
+	color: #ffffff;
+	background: url(../images/scrolluprollover.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	-webkit-transition: 350ms;
+	-moz-transition: 350ms;
+}
+
+/* Scroll one section down */
+.scrollDown a {
+	float: left;
+	color: #a59389;
+	font-size: 12px;
+	text-shadow: 0 1px 0 #000000;
+	-webkit-transition: 350ms;
+	-moz-transition: 350ms;
+	margin-bottom: 50px;
+	padding: 5px 30px 5px 45px;
+	background: url(../images/scrolldown.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.scrollDown a:hover {
+	color: #ffffff;
+	background: url(../images/scrolldownrollover.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	-webkit-transition: 350ms;
+	-moz-transition: 350ms;
+}
+
+
+/*
+ ***************************************************************************************************
+ **             						   2.4 HOME SECTION								  		  **
+ ***************************************************************************************************
+*/
+
+
+/* Home section wrap */
+#homeSectionWrapper {
+	float: left;
+	margin: 0 0 400px 0;
+}
+
+/* Content section in the home section */
+.homeContentSection {
+	background: rgba(0, 0, 0, 0.8);
+	/* Opacity for older browsers */
+	-pie-background: rgba(0, 0, 0, 0.8);
+	text-align: center;
+}
+
+/* paragraph style in the home content section */
+.homeContentSection p {
+	color: #a59389;
+	font-size: 12px;
+	line-height: 18px;
+	text-shadow: 0 1px 0 #000000;
+}
+
+/* Circle Div */
+.circleDiv {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 20px;
+	background: rgba(0, 0, 0, 0.5);
+	/* Opacity for older browsers */
+	-pie-background: rgba(0, 0, 0, 0.5);
+	/* Box shadow */
+	box-shadow: 0 1px 0 #39281d;
+	
+	/* Border radius */
+	/* Firefox */
+	-moz-border-radius: 100px;
+	/* Chrome, Safari */
+	-webkit-border-radius: 100px;
+	/* Opera */
+	-o-border-radius: 100px;
+	/* default */
+	border-radius: 100px;
+	
+	behavior: url(js/PIE.php);	
+}
+
+/* h1 style in the circle div */
+.circleDiv h1 {
+	font-family: 'Playball', cursive;
+	color: #a59389;
+	font-size: 36px;
+	line-height: 36px;
+	padding: 60px 0 60px 0;
+	text-align: center;
+	text-shadow: 0 1px 0 #39281d;
+}
+
+.circleDiv h1:hover {
+	color: #ffffff;
+	text-shadow: 0 1px 0 #000000;
+}
+
+/* adds top margin to the buttons in the home content section */
+.homeSectionBtn { margin:0 18px 0 18px;}
+
+/* Overriding selection color in the gome content section */
+.homeContentSection p::selection { background: #ffffff; }
+.homeContentSection p::-moz-selection { background: #ffffff; }
+.homeContentSection h1::selection { background: #ffffff; }
+.homeContentSection h1::-moz-selection { background: #ffffff; }
+.homeContentSection a::selection { background: #ffffff; }
+.homeContentSection a::-moz-selection { background: #ffffff; }
+
+
+/*
+ ***************************************************************************************************
+ **             						  2.5 ABOUT SECTION								  		  **
+ ***************************************************************************************************
+*/
+
+
+/* About section wrap */
+#aboutSectionWrapper {
+	float: left;
+	margin-bottom: 400px;
+}
+
+.aboutContentSection {}
+
+.aboutAvatar { 
+	width:100px;
+	height:100px;
+	margin:8px 10px 0 0;
+	float:left;
+}
+
+.aboutAvatarRoundCorners { 
+	width:100px;
+	height:100px;
+	overflow:hidden;
+	display: block;
+	/* Border radius */
+	/* Firefox */
+	-moz-border-radius: 5px;
+	/* Chrome, Safari */
+	-webkit-border-radius: 5px;
+	/* default */
+	border-radius: 5px;
+	behavior: url(js/PIE.php);
+}
+
+/* Skill-bars wrap */
+#mySkillBarsWrapper { margin-top: 20px;}
+
+/* skill ul */
+#skill {
+	list-style: none;
+	padding-top:30px;
+	margin:0;
+}
+
+/* skill li */
+#skill li {
+	margin-top: 0;
+	margin-bottom: 30px;
+	background: #282828;
+	height: 10px;
+	border: 1px solid #000000;
+	/* Border radius */
+	/* Firefox */
+	-moz-border-radius: 6px;
+	/* Chrome, Safari */
+	-webkit-border-radius: 6px;
+	/* default */
+	border-radius: 6px;
+	behavior: url(js/PIE.php);
+}
+
+/* last li of the #skill ul 
+	<- we can't use this 1: it's not cross browser compat. 
+	2. if we use it with jQuery ( which is cross browser compat.) somehow it completely kills CSS3 PIE in IE 8
+	So dont use pseudo selectors if you want CSS3 PIE to work in IE8 and lower
+#skill li:last-child { margin-bottom: 0px;}
+*/
+
+/* insted we will remove the margin this way */
+.skillBarLChild { margin-bottom: 0px !important; }
+
+/* skill li paragraph style */
+#skill li p { position: relative; top: -25px; }
+
+/* Purple bar */
+.expandred {
+	/* Background */
+	/* Firefox */
+	background: -moz-linear-gradient( center top, #00b4ff 20%, #013751 100% );
+	/* Chrome, Safari */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#00b4ff), to(#013751));
+	/* Opera */
+	background: -o-linear-gradient(top, #00b4ff, #013751);
+	/* IE 10+ */
+	background: -ms-linear-gradient(top, #00b4ff, #013751);
+	/* IE 6+ */
+	-pie-background: linear-gradient(#00b4ff, #013751);
+	
+	/* Border radius */
+	/* Firefox */
+	-moz-border-radius: 6px;
+	/* Chrome, Safari */
+	-webkit-border-radius: 6px;
+	/* default */
+	border-radius: 6px;
+	
+	height: 10px;
+	position: absolute;
+	
+	behavior: url(js/PIE.php);
+}
+
+/* White bar */
+.expandwhite {
+	/* Background */
+	/* Firefox */
+	background: -moz-linear-gradient( center top, #ffffff 20%, #8c8c8b 100% );
+	/* Chrome, Safari*/
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#8c8c8b));
+	/* Opera */
+	background: -o-linear-gradient(top, #ffffff, #8c8c8b);
+	/* IE 10+ */
+	background: -ms-linear-gradient(top, #ffffff, #8c8c8b);
+	/* IE 6+ */
+	-pie-background: linear-gradient(#ffffff, #8c8c8b);
+	
+	/* Border radius */
+	/* Firefox */
+	-moz-border-radius: 6px;
+	/* Chrome, Safari */
+	-webkit-border-radius: 6px;
+	/* default */
+	border-radius: 6px;
+	
+	height: 10px;
+	position: absolute;
+	
+	behavior: url(js/PIE.php);
+}
+
+/* Settings for the HTML5 skill bar */
+.html5 { width: 70%; }
+
+/* Settings for the CSS3 skill bar */
+.css3 { width: 60%;}
+
+/* Settings for the jQuery skill bar */
+.jquery { width: 50%; }
+
+/* Settings for the Photoshop skill bar */
+.photoshop { width: 90%; }
+
+
+
+/*
+ ***************************************************************************************************
+ **             						 2.6 PORTFOLIO SECTION								  	  **
+ ***************************************************************************************************
+*/
+
+
+/* Portfolio section wrap */
+#portfolioSectionWrapper {
+	float: left;
+	margin-bottom: 400px;
+}
+
+/* Portfolio content section */
+.portfolioContentSection {}
+
+/* Portfolio sortable content wrap */
+.portfolioSortableContentWrapper {
+	overflow: hidden;
+
+}
+
+/* Portfolio items ul */
+#portfolioItemsList { list-style: none; margin:0; }
+
+/* Portfolio filter nav */
+.filter {
+	list-style: none;
+	float: left;
+	width: 710px;
+	height: 100%;
+	padding: 10px 0 10px 0;
+	margin: 0;
+	border-top: 1px dotted #cacaca;
+	border-bottom: 1px dotted #cacaca;
+	
+}
+
+/* filter nav paragraph style */
+.filter p {
+	font-size: 16px;
+	color:#000;
+	float: left;
+	padding-right: 10px;
+	line-height: 18px;
+	margin: 0;
+}
+
+/* filter nav anchor style */
+.filter a {
+	font-size: 12px;
+	color: #555555;
+	padding: 4px 5px 4px 5px;
+	float: left;
+}
+
+.filter a:hover {
+	color: #00b4ff;
+}
+
+.filter li.active a {
+	color: #00b4ff;
+}
+
+/* image frame */
+.frame {
+	background-color: #ffffff;
+	border: 1px solid #d4cecb;
+	display: block;
+	padding: 5px !important;
+	
+	/* Border radius */
+	/* Firefox */
+	-moz-border-radius: 5px;
+	/* Chrome, Safari */
+	-webkit-border-radius: 5px;
+	/* Opera */
+	-o-border-radius: 5px;
+	/* default */
+	border-radius: 5px;
+	
+	/* Box Shadow */
+	-moz-box-shadow: 0 1px 0 #aca7a4;
+	
+	behavior: url(js/PIE.php);
+}
+
+.frame:hover {
+	background-color: #e3e1e1;
+	-webkit-transition: 350ms;
+	-moz-transition: 350ms;
+}
+
+a.frame {
+	float: left;
+	position: relative;
+	background-color: white;
+	display: inline-block;
+}
+
+/* round corners for portfolio items */
+.round {
+	width: 216px;
+	height: 134px;
+	display: block;
+	overflow: hidden;
+	
+	/* Border radius */
+	/* Chrome, Safari */
+	-webkit-border-radius: 5px;
+	/* Firefox */
+	-moz-border-radius: 5px;
+	/* Opera */
+	-o-border-radius: 5px;
+	/* default */
+	border-radius: 5px;
+	
+	behavior: url(js/PIE.php);
+}
+
+
+/* rollover for portfolio images */
+.rollover {
+	width: 216px;
+	height: 134px;
+	left: 5px;
+	display: none;
+	position: absolute;
+	background: #000000;
+	
+	/* Border radius */
+	/* Firefox */
+	-moz-border-radius: 5px;
+	/* Chrome, Safari */
+	-webkit-border-radius: 5px;
+	/* Opera */
+	-o-border-radius: 5px;
+	/* default */
+	-border-radius: 5px;
+	
+	behavior: url(js/PIE.php);
+}
+
+
+/*
+ ***************************************************************************************************
+ **             						   2.7 BLOG SECTION								  	      **
+ ***************************************************************************************************
+*/
+
+
+/* Blog section wrap */
+#blogSectionWrapper {
+	float: left;
+	margin-bottom: 400px;
+}
+
+#blogSingleSectionWrapper {
+	float: left;
+	margin-top:20px;
+	margin-bottom: 400px;
+}
+
+/* Blog content section */
+#blogContentSection {}
+
+/* Blog post wrap */
+.blogPost {
+	padding: 10px 0 20px 0;
+	border-top: 1px dotted #cacaca;
+	border-bottom: 1px dotted #cacaca;
+}
+
+/* Blog post title wrap */
+.blogPostTitle { margin-bottom: 5px;}
+
+/* style for anchor inside the title */
+.blogPostTitle a { font-size:15px; color:#000;}
+.blogPostTitle a:hover { color:#00b4ff;}
+
+.blogPost.first {
+	border-bottom: none;
+}
+
+.blogPost.last {
+	border-top: none;
+}
+
+/* Blog post image wrap */
+.blogPostImage { 
+	margin: 18px 0 18px 0;
+	display:inline-block; 
+	float:left; 
+	position:relative;
+}
+
+/* Round corners for blog post thumbnails */
+.blogImgRC {
+	width: 700px;
+	height: 152px;
+	display: block;
+	overflow: hidden;
+	
+	/* Border radius */
+	/* Chrome, Safari */
+	-webkit-border-radius: 5px;
+	/* Firefox */
+	-moz-border-radius: 5px;
+	/* Opera */
+	-o-border-radius: 5px;
+	/* default */
+	border-radius: 5px;
+	behavior: url(js/PIE.php);
+}
+
+/* Blog post meta info */
+.postInfo {
+	font-size: 12px;
+	line-height: 18px;
+	margin-bottom: 0;
+	color: #bdbcbc;
+}
+
+.postInfo a {
+	color: #555555;
+}
+
+.postInfo a:hover {
+	color: #00b4ff;
+}
+
+/* Image Rollover for blog thumbnails */
+.blogImageRollover {
+	width: 700px;
+	height: 152px;
+	left: 5px;
+	display: none;
+	position: absolute;
+	background: #000000;
+	
+	/* Border radius */
+	/* Firefox */
+	-moz-border-radius: 5px;
+	/* Chrome, Safari */
+	-webkit-border-radius: 5px;
+	/* Opera */
+	-o-border-radius: 5px;
+	/* default */
+	-border-radius: 5px;
+	behavior: url(js/PIE.php);
+}
+
+/* PrettyPhoto link style (Link inside the blog thumbnail) */
+.blogrollover1 {
+	background: url(../images/style3/blog/blogrollover1.png) no-repeat top;
+	width: 61px;
+	height: 61px;
+	display: block;
+	float: left;
+	position: absolute;
+	z-index: 0;
+	left: 43%;
+	top: 30%;
+}
+
+.blogrollover1:hover {
+	background: url(../images/style3/blog/blogrollover1.png) no-repeat bottom;
+	width: 61px;
+	height: 61px;
+}
+
+/* View post link (Link inside the blog thumbnail) */
+.blogrollover2 {
+	background: url(../images/style3/blog/blogrollover2.png) no-repeat top;
+	width: 61px;
+	height: 61px;
+	display: block;
+	float: left;
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: 30%;
+}
+
+.blogrollover2:hover {
+	background: url(../images/style3/blog/blogrollover2.png) no-repeat bottom;
+	width: 61px;
+	height: 61px;
+}
+
+
+/* Author box style */
+.authorBox {  margin: 40px 0 40px 0; border-radius: 5px ; border: 1px solid #ffffff;  box-shadow: -1px 1px 2px #cacaca; padding: 10px; }
+/* Author box paragraph style */
+.authorBox p {margin-bottom: 0; text-shadow: 0 1px 0 #ffffff;}
+/* Author box heading styles */
+.authorBox h4 {margin-bottom: 0; text-shadow: 0 1px 0 #ffffff;}
+/* Author box image style */
+.authorBoxImg {float:left; position: relative; margin: 0 15px 0 0;}
+/* Round corners for authorBox image */
+.authorBoxImg-round-corners {
+	width: 70px;
+	height: 70px;
+	overflow: hidden;
+	/* Border radius */
+	/* Firefox */
+	-moz-border-radius: 3px;
+	/* Chrome, Safari */
+	-webkit-border-radius: 3px;
+	/* Opera */
+	-o-border-radius: 3px;
+	/* default */
+	border-radius: 3px;
+	behavior: url(js/PIE.php);
+}
+
+
+/*
+ ***************************************************************************************************
+ **             						   	  COMMENTS 			   						  	  	  **
+ ***************************************************************************************************
+*/
+
+
+.comment-list {
+	margin: 40px 0 0 0;
+}
+
+
+.addcomment {
+	position:absolute;
+	right: 0;
+	padding-top:8px;
+	margin-right:20px;
+	color: #000000;
+	font-size:12px;
+	line-height:18px;
+	display:inline-block
+}
+
+.addcomment:hover {color:#00b4ff;}
+
+.comment-list ol, .comment-list ul {
+	margin:0;
+}
+
+.comment-list ul li,
+.comment-list ol li {
+	margin-top:10px;
+	list-style:none
+}
+		
+.comment {
+	clear:both;
+	display:block;
+	min-height:25px;
+	padding:0;
+	color:#404040
+}
+	
+.comment-body {
+	padding:10px;
+	background: #f9f8f7;
+	border:1px solid #dfe0e0;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	behavior: url(js/PIE.php);
+}
+
+.comment-body:hover {
+	background: #ffffff;
+
+}
+	
+.avatar {
+	width:50px;
+	height:50px;
+	float:left;
+	padding-right:50px;
+	
+}
+
+.avatar-round-corners {
+	width:50px;
+	height: 50px;
+	overflow: hidden;
+	
+	/* Border radius */
+	/* Firefox */
+	-moz-border-radius: 3px;
+	/* Chrome, Safari */
+	-webkit-border-radius: 3px;
+	/* Opera */
+	-o-border-radius: 3px;
+	/* default */
+	border-radius: 3px;
+	behavior: url(js/PIE.php);
+}
+
+.avatar img {
+	width:50px;
+	height:50px}
+
+
+.comment-text {
+	width: 590px;
+	float:right;
+	
+}
+
+.comment-text a {
+	color: #000000;
+	font-size:13px
+}
+
+.comment-text a:hover { color: #00b4ff; }
+.comment-author {
+	color:#555555;
+	font-size:15px;
+	padding-bottom:5px
+}
+
+.comment-author .link-author {
+	color:#000000;
+	font-size:15px;
+	text-decoration:none;
+	padding-bottom:3px
+}
+
+.link-author:hover { color: #00b4ff; }
+
+.comment-date {
+	font-size:11px;
+	color:#8f8f8f;
+	margin-left:5px
+}
+
+.comment-entry .link-reply {
+	color:#00b4ff;
+	font-size:12px;
+	line-height:1em;
+	margin-left:5px
+}
+
+.comment-entry {
+	padding-top:8px;
+	font-size:13px;
+	line-height:1.4em;
+	color:#555555}
+
+.children li {
+	background:url(../images/reply-icon.png) 20px 21px no-repeat;
+	padding-left:45px}
+
+.children .comment-text {
+	width:545px;}
+
+.children .children .comment-text {
+	width:500px}
+
+.children .comment {}
+
+.add-comment {
+	position:relative}
+
+.comment-list h2, .add-comment h3 {
+	font-size:19px;
+}
+
+.addComment { margin-top: 40px;}
+
+.input4, .input5, .input6 {
+	width: 210px;
+	height: 34px;
+	
+	
+	
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, serif;
+	font-size: 12px;
+	color: #c3c3c3;
+	
+	
+	padding: 0 10px 0 10px;
+	background-color: #ffffff;
+	border: 1px solid #cecbca;
+	clear: both;
+	
+	
+	/* Border radius */
+	/* Chrome, Safari */
+	-webkit-border-radius: 8px;
+	/* Firefox */
+	-moz-border-radius: 8px;
+	/* default */
+	border-radius: 8px;
+	
+	/* Box shadow */
+	/* Firefox */
+	-moz-box-shadow: 1px 1px 1px #ffffff, inset 0 2px 2px rgba(0,0,0,.2);
+	/* Chrome, Safari */
+	-webkit-box-shadow: 1px 1px 1px #ffffff, inset 0 2px 2px rgba(0,0,0,.2);
+	/* default */
+	box-shadow: 1px 1px 1px #ffffff, inset 0 2px 2px rgba(0,0,0,.2);
+	
+	behavior: url(js/PIE.php);
+	
+}
+
+.input7 { width: 680px;}
+
+
+/*
+ ***************************************************************************************************
+ **             						 2.8 FEATURES SECTION								  	  **
+ ***************************************************************************************************
+*/
+
+
+#featuresSectionWrapper {
+	float: left;
+	margin-bottom: 400px;
+}
+
+
+#featuresSingleSectionWrapper {
+	float: left;
+	margin-top:20px;
+	margin-bottom: 400px;
+}
+
+#featuresContentSection {}
+
+
+/*
+ ***************************************************************************************************
+ **             						2.9 CONTACT SECTION								  	      **
+ ***************************************************************************************************
+*/
+
+/* Contact section wrap */
+#contactSectionWrapper {
+	float: left;
+	margin-bottom: 400px;
+}
+
+/* Contact content section */
+.contactContentSection {}
+
+/* Google Maps Wrapper */
+#googleMapWrapper {
+	width:335px;
+	height:295px;
+	background: #000000;
+	overflow:hidden;
+	border: 1px solid #cecbca;
+	
+	/* Border-radius */
+	/* Firefox */
+	-moz-border-radius: 5px;
+	/* Chrome, Safari */
+	-webkit-border-radius: 5px;
+	/* default */
+	border-radius: 5px;
+	
+	/* Box shadow */
+	/* Firefox */
+	-moz-box-shadow: 1px 1px 1px #ffffff, inset 0 2px 2px rgba(0,0,0,.2);
+	/* Chrome, Safari */
+	-webkit-box-shadow: 1px 1px 1px #ffffff, inset 0 2px 2px rgba(0,0,0,.2);
+	/* default */
+	box-shadow: 1px 1px 1px #ffffff, inset 0 2px 2px rgba(0,0,0,.2);
+	
+	behavior: url(js/PIE.php);
+}
+
+/* Contact form styling */
+input {
+	/* Box shadow */
+	/* Chrome, Safari */
+	-webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+	/* Firefox */
+	-moz-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+	/* default */
+	box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+	behavior: url(js/PIE.php);
+}
+
+input:focus {
+	outline: none;
+	border: 1px solid #cecbca;
+	
+	/* Box shadow */
+	/* Chrome, Safari */
+	-webkit-box-shadow: 0px 0px 4px 0px #cecbca;
+	/* Firefox */
+	-moz-box-shadow: 0px 0px 4px 0px #cecbca;
+	/* default */
+	box-shadow: 0px 0px 4px 0px #cecbca;
+	behavior: url(js/PIE.php);
+}
+
+.input1, .input2 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, serif;
+	font-size: 12px;
+	color: #c3c3c3;
+	width: 322px;
+	height: 14px;
+	padding: 10px;
+	background-color: #ffffff;
+	border: 1px solid #cecbca;
+	clear: both;
+	float: left;
+	
+	/* Border radius */
+	/* Chrome, Safari */
+	-webkit-border-radius: 8px;
+	/* Firefox */
+	-moz-border-radius: 8px;
+	/* default */
+	border-radius: 8px;
+	
+	/* Box shadow */
+	/* Firefox */
+	-moz-box-shadow: 1px 1px 1px #ffffff, inset 0 2px 2px rgba(0,0,0,.2);
+	/* Chrome, Safari */
+	-webkit-box-shadow: 1px 1px 1px #ffffff, inset 0 2px 2px rgba(0,0,0,.2);
+	/* default */
+	box-shadow: 1px 1px 1px #ffffff, inset 0 2px 2px rgba(0,0,0,.2);
+	
+	behavior: url(js/PIE.php);
+	
+}
+
+.input2 {
+	margin-top: 10px;
+}
+
+input::-webkit-input-placeholder {
+	font-size: 12px;
+	color: #c3c3c3;
+}
+
+input:-moz-placeholder {
+	font-size: 13px;
+	color: #c3c3c3;
+}
+
+textarea {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+	font-size: 12px;
+	color: #c3c3c3;
+	width: 320px;
+	height: 181px;
+	margin-top: 10px;
+	padding: 11px;
+	float: left;
+	background-color: #ffffff;
+	border: 1px solid #cecbca;
+	resize: none;
+	
+	/* Border radius */
+	/* Chrome, Safari */
+	-webkit-border-radius: 8px;
+	/* Firefox */
+	-moz-border-radius: 8px;
+	/* default */
+	border-radius: 8px;
+	
+	/* Box shadow */
+	/* Firefox */
+	-moz-box-shadow: 1px 1px 1px #ffffff, inset 0 2px 2px rgba(0,0,0,.2);
+	/* Chrome, Safari */
+	-webkit-box-shadow: 1px 1px 1px #ffffff, inset 0 2px 2px rgba(0,0,0,.2);
+	/* default */
+	box-shadow: 1px 1px 1px #ffffff, inset 0 2px 2px rgba(0,0,0,.2);
+	
+	behavior: url(js/PIE.php);
+}
+
+textarea:focus {
+	outline: none;
+	border: 1px solid #cecbca;
+	
+	/* Box shadow */
+	/* Chrome, Safari */
+	-webkit-box-shadow: 0px 0px 4px 0px #cecbca;
+	/* Firefox */
+	-moz-box-shadow: 0px 0px 4px 0px #cecbca;
+	/* default */
+	box-shadow: 0px 0px 4px 0px #cecbca;
+	
+	behavior: url(js/PIE.php);
+}
+
+
+.submit-btn { margin-top: 18px;}
+
+
+/*
+ ***************************************************************************************************
+ **             						 	 2.10 FOOTER								  	      **
+ ***************************************************************************************************
+*/
+
+#backToTopWrapper {
+	min-height: 81px;
+	padding-bottom: 54px;
+}
+
+.backToTop {
+	background: url(../images/backtotop.png) no-repeat top;
+	width: 87px;
+	height: 81px;
+	float: left;
+	left:46%;
+	display: block;
+	z-index: 1;
+	position: absolute;
+}
+
+.backToTop:hover {
+	background: url(../images/backtotop.png) no-repeat bottom;
+	width: 87px;
+	height: -81px;
+}
+
+
+.footerSeparator {
+	background: url(../images/style3/sectionSeparator.png) no-repeat;
+	width: 940px;
+	height: 3px;
+	display: block;
+	top: 40px;
+	z-index: 0;
+	position: relative;
+}
+
+.footerContentSection {
+	float: left;
+	width: 293px;
+	padding: 10px;
+}
+
+
+.footerContentSection p::selection { background: #035091; }
+.footerContentSection p::-moz-selection { background: #035091; }
+.footerContentSection h1::selection { background: #035091; }
+.footerContentSection h1::-moz-selection { background: #035091; }
+.footerContentSection a::selection { background: #035091; }
+.footerContentSection a::-moz-selection { background: #035091; }
+.footerContentSection em::selection { background: #035091; }
+.footerContentSection em::-moz-selection { background: #035091; }
+
+
+
+.footerContentSection h1 {
+	font-family: 'Playball', cursive;
+	color: #7c3100;
+	text-shadow: 0 1px 0 #b9896c, 0 -1px 0 #4e2306;
+}
+
+.footerContentSection p {
+	color: #ffffff;
+	text-shadow: 0 2px 0 #3a2010;
+	font-size: 14px;
+	font-weight: 300;
+	padding: 10px 0 10px 0;
+	float: left;
+}
+
+.footerContentSection a {
+	color: #cacaca;
+	font-style: italic;
+}
+
+.footerContentSection a:hover {
+	color: #3d018b;
+}
+
+.tweetdivider {
+	background: url(../images/footerseparator.png) no-repeat;
+	width: 293px;
+	height: 2px;
+	float: left;
+	margin: 5px 0 5px 0;
+	display: block;
+}
+
+.twittericon {
+	background: url(../images/twittericon1.png) no-repeat;
+	width: 50px;
+	height: 36px;
+	display: block;
+	float: left;
+	padding-right: 10px;
+}
+
+.frame1 {	
+	display: block;
+	padding: 5px !important;
+	background-color: #ffffff;
+	border: 1px solid #d4cecb;
+	
+	/* Border radius */
+	/* Firefox */
+	-moz-border-radius: 5px;
+	/* Chrome, Safari */
+	-webkit-border-radius: 5px;
+	/* Opera */
+	-o-border-radius: 5px;
+	/* default */
+	border-radius: 5px;
+	
+	/* Box shadow */
+	box-shadow: 0 1px 0 #6e3a1c;
+	
+	behavior: url(js/PIE.php);
+}
+
+.frame1:hover {
+	background-color: #e3e1e1;
+	-webkit-transition: 350ms;
+	-moz-transition: 350ms;
+}
+
+.round2 {
+	width: 53px;
+	height: 43px;
+	display: block;
+	overflow: hidden;
+	
+	/* Border radius */
+	/* Chrome, Safari */
+	-webkit-border-radius: 3px;
+	/* Firefox */
+	-moz-border-radius: 3px;
+	/* Opera */
+	-o-border-radius: 3px;
+	/* default */
+	border-radius: 3px;
+	
+	behavior: url(js/PIE.php);
+}
+
+.flickrimage {
+	display:inline-block; 
+	float:left; 
+	position:relative;
+	margin: 10px 5px 10px 5px;
+}
+
+.flickrimage.last {
+	margin-right: 0px;
+}
+
+.flickrimage.first {
+	margin-left: 0px;
+}
+
+#footersocialicons ul {list-style: none; margin:0;}
+
+#footersocialicons li {
+	float: left;
+	padding: 7px 7px 7px 0;
+}
+
+.copyright {
+	margin: 20px 0 20px 0;
+	float: left;
+	display: block;
+}
+
+.copyright p {
+	color: #ffffff;
+	text-shadow: 0 2px 0 #3a2010;
+	font-size: 12px;
+	font-weight: 300;
+	padding: 10px 0 10px 0;
+	text-align: center;
+}
+
+.copyright p::selection { background: #035091; }
+.copyright p::-moz-selection { background: #035091; }
+
+
+/*
+ ***************************************************************************************************
+ **     							2.11 jQuery Twitter Plugin						  			  **
+ ***************************************************************************************************
+*/
+
+
+.tweet,
+.query {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 300;
+	text-shadow: 0 2px 0 #3a2010;
+	color: #ffffff;
+}
+
+	.tweet_list {
+		-webkit-border-radius: 0.5em;
+		-moz-border-radius: 0.5em;
+		border-radius: 0.5em;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		overflow-y: hidden;
+		
+	}
+	
+		.tweet_list .awesome,
+		.tweet_list .epic {
+			text-transform: uppercase;
+		}
+		
+		.tweet_list li {
+			overflow-y: auto;
+			overflow-x: hidden;
+			padding: 15px 0 15px 0;
+			list-style-type: none;
+			background: url(../images/footerseparator.png) no-repeat;
+			background-position: bottom left;
+		}
+		
+		.tweet_list li:last-child {
+			background: none;
+		}
+		
+			.tweet_list li a {
+				color: #cacaca;
+				font-style: italic;
+			}
+			
+			.tweet_list li a:hover {
+				color: #013751;
+			}
+
+/*
+		.tweet_list .tweet_even {
+			background-color: #91E5E7;
+		}
+*/
+		.tweet_list .tweet_avatar {
+			padding-right: .5em; float: left;
+		}
+		
+			.tweet_list .tweet_avatar img {
+				vertical-align: middle;
+			}
+			
+/*
+ ***************************************************************************************************
+ **     				2.12 Message-success.html & Message-failure.html						  **
+ ***************************************************************************************************
+*/
+
+
+.contactFormNotificationLogo {
+	font-family: 'Playball', cursive;
+	font-size: 55px;
+	font-weight: 300;
+	color: #7c3100;
+	display:block;
+	margin: 150px 0 20px 0;
+	text-shadow: 0 1px 0 #b9896c, 0 -1px 0 #4e2306;
+	text-align: center;
+}
+
+.contactFormNotificationMessage {
+	font-weight: 100;
+	color: #ffffff;
+    display: block;
+    font-size: 25px;
+    line-height: 40px;
+    margin:0 auto;
+    margin-bottom:20px;
+    text-align: center;
+    width: 500px;
+    text-shadow: 0 2px 0 #3a2010;
+}
+
+.contactFormNotificationButton {
+	font-size: 15px;
+	display: block;
+	width:150px;
+	padding: 8px 22px;
+	box-shadow: 0 2px 0 #793d1e;
+	color: #c1aa9d;
+	margin:0 auto;
+	text-align: center;
+	text-shadow: 0 1px 0 #e3e3e3;
+	text-decoration: none;
+	/*Border radius*/
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	/* Background */
+	/* Fallback */
+	background: #ffffff;
+	/* Chrome, Safari */
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, #fffefe), color-stop(1, #c4ac9f));
+	/* Firefox */
+	background: -moz-linear-gradient( center top, #fffefe 20%, #c4ac9f 100% );
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #fffefe, #c4ac9f);
+	/* IE 10+ */
+	background: -ms-linear-gradient(top, #fffefe, #c4ac9f);
+	/* IE 6+ */
+	-pie-background: linear-gradient(#fffefe, #c4ac9f);  
+    behavior: url(js/PIE.php); 
+}
+
+.contactFormNotificationButton:hover {
+/* Background */
+	/* Fallback */
+	background: #ffffff;
+	/* Chrome, Safari */
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, #fffefe), color-stop(1, #d6bbad));
+	/* Firefox */
+	background: -moz-linear-gradient( center top, #fffefe 20%, #d6bbad 100% );
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #fffefe, #d6bbad);
+	/* IE 10+ */
+	background: -ms-linear-gradient(top, #fffefe, #d6bbad);
+	/* IE 6+ */
+	-pie-background: linear-gradient(#fffefe, #d6bbad);  
+    behavior: url(js/PIE.php); 
+}
+
+.contactFormNotificationButton:active {
+    box-shadow: none;
+    behavior: url(js/PIE.php); 
+}

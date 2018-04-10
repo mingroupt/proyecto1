@@ -1,0 +1,64 @@
+/*
+ ***************************************************************************************************
+ **               Overriding the Original CSS for better performance in IE8					      **
+ ***************************************************************************************************
+*/
+
+/*
+ ***************************************************************************************************
+ **               						Header Margin fix 					     		  		  **
+ ***************************************************************************************************
+*/
+
+#headerElementsWrapper { margin-bottom:20px; }
+#slider { margin-top:0 !important; }
+#slides { margin-top:0 !important; }
+
+/*
+ ***************************************************************************************************
+ **               			No round-corners for portfolio and blog images					      **
+ ***************************************************************************************************
+*/
+
+/* image frame */
+.frame {
+	/* Border radius */
+	border-radius: 0 !important;
+	behavior: none !important;
+}
+
+
+/* round corners for portfolio items */
+.round {
+	/* Border radius */
+	border-radius: 0 !important;
+	behavior: none !important;
+}
+
+
+/* rollover for portfolio images */
+.rollover {
+	/* Border radius */
+	-border-radius: 0 !important;
+	behavior: none !important;
+}
+
+/*
+ ***************************************************************************************************
+ **               			  No round-corners for flickr image gallery					      	  **
+ ***************************************************************************************************
+*/
+
+.frame1 {	
+	/* default */
+	border-radius:0 !important;
+	behavior: none !important;
+}
+
+.round2 {
+	/* Border radius */
+	/* default */
+	border-radius: 0 !important;
+	behavior: none !important;
+}
+

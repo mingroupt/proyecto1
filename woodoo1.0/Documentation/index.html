@@ -1,0 +1,645 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	  <hr>
+		
+		<h1 class="center">&ldquo;Woodoo!&rdquo;<br></h1>
+		
+  <div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 03/23/2012<br>
+					By: Dimitar Rusev<br>
+					Email: <a href="mailto:dimitar.rusev@hotmail.com">dimitar.rusev@hotmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/DimiR">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><strong style="font-size:16px"><a href="#general">General</a></li></strong>
+			<li><strong style="font-size:16px"><a href="#templateStructure">Template Structure</a></strong>
+				<ol>
+					<li><a href="#htmlStructure">HTML Structure</a>
+						<ul>
+							<li><a href="#headerStructure">Header Structure</a></li>
+							<li><a href="#contentSectionsStructure">Content Sections Structure</a></li>
+							<li><a href="#footerStructure">Footer Structure</a></li>
+						</ul>
+					</li>
+					<li><a href="#cssStructure">CSS Structure</a></li>
+					<li><a href="#javascriptFiles">JavaScript Files</a>
+						<ul>
+							<li><a href="#includedJqueryLibraries">included jQuery libraries</a></li>
+							<li><a href="#overviewWoodooScript">Overview of woodoo-script.js file</a></li>
+						</ul>
+					</li>
+				</ol>
+			</li>
+			<li><strong style="font-size:16px"><a href="#psdFiles">PSD Files</a></li></strong>
+			<li>
+				<strong style="font-size:16px"><a href="#installTemplate">Customizing and installing the template</a></strong>
+				<ol>
+					<li><a href="#chooseStylesheet">Choosing stylesheet and slider</a></li>
+					<li><a href="#customizeHeader">Customizing the header</a></li>
+					<li><a href="#customizeSlider">Customizing the sliders</a>
+						<ul>
+							<li><a href="#nivoSlider">Nivo slider</a></li>
+							<li><a href="#slidesjsSlider">SlidesJS slider</a></li>
+							<li><a href="#orbitSlider">Orbit slider</a></li>
+						</ul>
+					</li>
+					<li><strong style="font-size:16px"><a href="#customizeHome">Customizing the home section</a></strong>
+					<li><strong style="font-size:16px"><a href="#customizeAbout">Customizing the about section</a></strong>
+						<ul>
+							<li><a href="#skillBars">Customizing the skill bars</a></li>
+						</ul>
+					</li>
+					<li><strong style="font-size:16px"><a href="#customizePortfolio">Customizing the portfolio section</a></strong></li>
+					<li><strong style="font-size:16px"><a href="#customizeBlog">Customizing the blog section</a></strong></li>
+					<li><strong style="font-size:16px"><a href="#customizeContact">Customizing the contact section</a></strong>
+						<ul>
+							<li><a href="#googleMaps">Configure Google Maps</a></li>
+							<li><a href="#mailPhp">woodoo-mail.php</a></li>
+						</ul>
+					</li>
+					<li><strong style="font-size:16px"><a href="#customizeFooter">Customizing the Footer</a></strong>
+						<ul>
+							<li><a href="#configureTweet">Configure jQuery Tweets Plugin</a></li>
+							<li><a href="#configureFlickr">Configure jQuery Flickr Feed Plugin</a></li>
+						</ul>
+					</li>
+				</ol>
+			</li>
+			<li><strong style="font-size:16px"><a href="#credits">Sources and Credits</a></li></strong>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="general"><strong>A) General</strong> - <a href="#toc">top</a></h3> 
+		
+		<p>
+		   This template uses <b>&lt;!DOCTYPE&gt;</b> declaration (which stands for <b>HTML5</b>) and <b>CSS3</b> to control the style and layout of the page.
+		   All effects and animations in the page are powered by <b>JavaScript (jQuery)</b> and mostly all of the functionality like displaying tweets, Google Maps, image sliders and pulling images from Flickr.
+		   The template is a  one page fixed layout (960px wide) and navigating through it is done by vertical scrolling. Since all (mostly) of the information is contained in a single page, the content 
+		   is divided into separate sections each representing its own type of information. For example: personal information and mastered skills in <b>"About section"</b>, latest projects you've 
+		   worked on and simillar information in <b>"Portfolio section"</b>, blog posts in <b>"Blog section"</b> etc. you get the point. I will cover all of the HTML markup contained in this template in a vertical manner, 
+		   starting from top to bottom to help you understand the structure of the template so you can be familiar with it when you customize it to suit your own needs. 
+		</p>
+		
+		<p>Keep in mind that this is not the installation instructions, just a basic overview. You can skip this part and go directly to the <a href="#installTemplate">installation instructuons</a>.</p>
+
+		<h3 id="templateStructure"><strong>B) Template Structure</strong> - <a href="#toc">top</a></h3>	
+		
+		<p>Like i stated above, this is a one page template and most of the content is contained here, divided into sections. The HTML starts with a header, slider, content sections and footer in the end.
+		   There are a couple of CSS files which control the layout and a bunch of JavaScript files to give functionality to the page.
+		</p>
+		
+		<h4 id="htmlStructure"><strong>1) HTML Structure</strong> - <a href="#toc">top</a></h4>
+		<h5 id="headerStructure"><strong>1a) Header Structure</strong> - <a href="#toc">top</a></h5>
+		
+		<p>So, let's start with the <b>&lt;header&gt;</b> first (the image bellow shows an example of it).</br> All the content in the header is wrapped in a container <b>&lt;div&gt;</b> (gives fixed width of 960px). 
+		   </br>Bellow is the <b>&lt;div&gt;</b> tag with an ID of <b>"hireMe"</b> which is pretty much self-explenatory (it is the Hire me bubble) and contains an anchor tag which when clicked scrolls to the contact section of the page. 
+		   </br>Next we have another wrapper with an ID of <b>"headerElementsWrapper"</b> which wraps together the logo, header subtitle, social network icons and the search form. I assume that the only thing you will change here is the logo, header subtitle and the social network 
+		   		icons <b>"href"</b> path of the anchor tags.
+			Nothing much going on here, just a basic header.
+		</p>
+		
+		<img src="assets/images/htmlstructure0.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<h5 id="contentSectionsStructure"><strong>1b) Content Sections Structure</strong> - <a href="#toc">top</a></h5>
+		
+		<p> In the image bellow you can see the typical structure of a content section in this template. The same structure repeats throughout every content section in the template.</p> 
+		
+		<img src="assets/images/htmlstructure.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>
+			All elements in one section are placed in a wrapper <b>&lt;div&gt;</b> (in this case the <b>&lt;div&gt;</b> with an ID of <b>"aboutSectionWrapper"</b>). 
+			</br>The blank div with an ID of <b>"about"</b> is the sections unique identifier (i will explain why we need this later on). 
+			</br>Content sections are divided into two columns: 
+			</br>- One representing the navigation (from line 7 to line 24) floated left. 
+			</br>- and other the actual content (from line 26 to line 34 in this case) floated right. 
+			</br> I recommend you to check this page in Firefox with the <b><a href="http://getfirebug.com/">Firebug</a></b> add-on to give you a better visual overview of the elements in the page.
+			</br>The navigation is wrapped in a <b>&lt;div&gt;</b> with an ID of <b>"navigationWrapper"</b>. 
+			</br>Next the unordered list inside the <b>"navigationWrapper"</b> <b>&lt;div&gt;</b> is the templates main menu. 
+			</br>List items inside the navigation <b>&lt;ul&gt;</b> contain <b>&lt;a&gt;</b> tags with an href pointing to the sections unique identifier (the one i mentioned earlier) so we can scroll through the sections in the page. 
+			</br>Next we have the <b>&lt;ul&gt;</b>  tag with a <b>"scrollnav"</b> class which is pretty much self-explanatory ( helps you to scroll one section up or down from the current section ).
+			</br>We are done with the navigation part, next up is the <b>"contentSection"</b> <b>&lt;div&gt;</b> followed by the <b>"contentWrapper"</b> <b>&lt;div&gt;</b> which gives the content column a nice 20px padding. Everything else is placed in here (don't worry about the other elements at this point as i will explain the important ones later on).
+		</p> 
+		
+		<h5 id="footerStructure"><strong>1c) Footer Structure</strong> - <a href="#toc">top</a></h5>
+
+		<p>Similarly like the <b>&lt;header&gt;</b>, the <b>&lt;footer&gt;</b> also wraps its content in a <b>container</b> <b>&lt;div&gt;</b>. 
+		</br>We have three main sections in the footer: 
+		</br><b>latest tweets</b>, 
+		</br><b>flickr gallery</b> 
+		</br>and <b>get social</b>.
+		</br>The content in the first two sections (<b>latest tweets</b> and <b>flickr gallery</b>) is added dynamically by jQuery (I will explain this later on).
+		</br> So that is pretty much everything you should know about the HTML markup, once again i recommend to check the page with <b><a href="http://getfirebug.com/">Firebug</a></b>, i believe it will help you a lot.</p>
+		
+		<img src="assets/images/htmlstructure2.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<h4 id="cssStructure"><strong>2) CSS Structure</strong> - <a href="#toc">top</a></h4>
+
+		<p>This theme uses a couple of css files. I could've join them into one big file but it ended up this way mainly to avoid the confusion and simplify the styling of some elements. The general ones you will use are the ones shown in the image bellow:</p>
+		
+		<img src="assets/images/htmlstructure3.jpg" alt="HTML Structure" />
+		
+		<p></p>
+		
+		<p>The first one as shown in the image is the main stylesheet, and there are three variants of it included in the download to choose from: 
+			</br><b>Style-White&Red.css</b>, 
+			</br><b>Style-White&Purple.css</b> and
+			</br><b>Style-White&Blue.css</b>. 
+			</br>These stylesheets control almost the whole layout in the template.
+			</br> The second one is a stylesheet wrapped in a conditional statement, it is recognized by Internet Explorer only and it basically means "if the browser who requested this URL is less than IE9, include this stylesheet too". Mostly Microsoft's IE browsers 
+			interpret CSS and HTML behavior of elements differently and that's why we are including this additional <b>ie8.css</b> file, to override some styles in the Main stylesheet, so IE8 can render the elements correctly. All other browsers will ignore this lines of code as they see it as a comment.
+			</br> Next up is <b>the jquery.textshadow.css</b> file (you don't need to worry about this one). You will probably never edit it, it just stands there to help the <b>jquery.textshadow.js</b> to render text-shadows in IE.
+			</br> <b>nivo-slider.css</b> and <b>nivoDefaultTheme.css</b> are stylesheets for the image slider in the template (in this case the Nivo Slider). For example if you use SlidesJS Slider, <b>SlidesJS-Slider.css</b> is included. The same goes for the Orbit Slider, if you use it <b>orbit-1.2.3.css</b> is included.
+			</br> Finally the last stylesheet <b>prettyPhoto.css</b> is a stylesheet for prettyPhoto jQuery plugin which once again, you don't need to bother with that unless you want to apply some custom style.
+		</p>
+		
+		<p>At the very beginning in the main stylesheet(s) you will see the CSS Table Of Contents. Use this as a guide to help you find what your'e searching for. I believe it'll help you. Almost every line of code is well commented take a look at what it says.
+		   </br>The main stylesheet(s) are written in CSS3 and as you probably know, IE is having difficulties to understand it. In order to force IE render the styling correctly <b><a href="http://css3pie.com/">CSS3 PIE</a></b> is used. If you are not familiar with it you should not worry about it (its just those <b>"behavior: url(js/PIE.php);"</b> lines of code), everything is already set up. 
+		   </br>CSS3 PIE generally makes Internet Explorer 6-9 capable of rendering several of the most useful CSS3 decoration features. You can find <a href="http://css3pie.com/">More info here...</a>
+		</p>
+		
+		<img src="assets/images/htmlstructure4.jpg" alt="HTML Structure" />
+		<p></p>
+
+		<h4 id="javascriptFiles"><strong>3) JavaScript Files</strong> - <a href="#toc">top</a></h4>
+		
+		<p>A plenty of <b>.js</b> files are used in this template. Mostly they are just libraries which we are including in the page. However the <b>woodoo-script.js</b> is the one that controls everything. Here i will explain why all of these <b>.js</b> files are here for.</p>
+		
+		<h5 id="includedJqueryLibraries"><strong>3a) Included jQuery Libraries</strong> - <a href="#toc">top</a></h5>
+		
+		<img src="assets/images/htmlstructure5.jpg" alt="HTML Structure" />
+		
+		<p> 
+		   </br> <b><a href="http://www.modernizr.com">Modernizr</a></b> is a small JavaScript library that detects the availability of native implementations for next-generation web technologies, i.e. features that stem from the HTML5 and CSS3 specifications. Many of these features are already implemented in at least one major browser (most of them in two or more), and what Modernizr does is, 
+		   		  very simply, tell you whether the current browser has this feature natively implemented or not. <a href="http://www.modernizr.com/docs/">More info here...</a>
+		   </br> <b><a href="http://jquery.com/">jQuery</a></b> is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript. <a href="http://jquery.com/">More info here...</a>
+		   </br> <b><a href="http://jqueryui.com/">jQuery UI</a></b> is based on jQuery and is included here basically for the Accordions and Tabs. <a href="http://jqueryui.com/">More info here...</a> 
+		   </br> <b><a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery Easing</a></b> is also based on jQuery and gives advanced easing options used mostly for the scrolling effect. <a href="http://gsgd.co.uk/sandbox/jquery/easing/">More info here...</a> 
+		   </br> <b><a href="https://github.com/heygrady/textshadow">jQuery Text shadow</a></b> library is a text-shadow polyfill for Internet Explorer 9 and below. <a href="https://github.com/heygrady/textshadow">More info here...</a>
+		   </br> <b><a href="http://razorjack.net/quicksand/">jQuery Quicksand</a></b> library helps reorder and filter items with a nice shuffling animation. <a href="http://razorjack.net/quicksand/">More info here...</a>
+		   </br> <b><a href="http://net.tutsplus.com/tutorials/javascript-ajax/how-to-create-an-awesome-image-preloader/">jQuery image preloader</a></b> is a nice image preloader script, adds a loading animation while the images are being loaded. <a href="http://net.tutsplus.com/tutorials/javascript-ajax/how-to-create-an-awesome-image-preloader/">More info here...</a>
+		   </br> <b><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">PrettyPhoto</a></b> is a jQuery lightbox clone. Not only does it support images, it also support for videos, flash, YouTube, iframes and ajax. It’s a full blown media lightbox. <a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">More info here...</a>
+		   </br> <b><a href="http://tweet.seaofclouds.com/">jQuery Tweet</a></b> is a plugin that helps put tweets on the site. <a href="http://tweet.seaofclouds.com/">More info here...</a>
+		   </br> <b><a href="http://www.gethifi.com/blog/a-jquery-flickr-feed-plugin">jQuery Flickr Feed</a></b> pulls photos from a public flickr feed. <a href="http://www.gethifi.com/blog/a-jquery-flickr-feed-plugin">More info here...</a>
+		   </br> <b><a href="https://developers.google.com/maps/">Google Maps</a></b> API helps us add an interactive map on our site in a couple of steps. <a href="https://developers.google.com/maps/">More info here...</a>
+		   </br> And Finally <b>woodoo-script.js</b> is our custom script which initializes all the functions.
+		</p>
+		
+		<h5 id="overviewWoodooScript"><strong>3b) Overview of woodoo-script.js file</strong> - <a href="#toc">top</a></h5>
+		
+		<p> Like a said <b>woodoo-script.js</b> is our custom script which initializes all the functions. Check it out, the code is well commented. Make sure you read the comments. Here i will explain shortly what every function is doing.
+			</br> - Line 4 to 12 defines the <b>Active</b> and <b>Blur</b> states of the <b>search input field</b>. When its Active (on click) animates the width and the mag icon position to 150px in 70ms. On blur (when mouse is out) animates the width and the mag icon position back to 110px. Pretty simple.
+		</p>
+			
+			<img src="assets/images/woodooScript1.jpg" alt="Woodoo Script" />
+			<p></p>
+			
+		<p> 
+			- The code in line 15 grabs the <b>pageWrapper</b> and fades in when everything is loaded. All the content is wrapped in the <b>pageWrapper</b> <b>&lt;div&gt;</b> (except the top bar because we animate this one separately). 
+		</p>
+			
+			<img src="assets/images/woodooScript2.jpg" alt="Woodoo Script" />
+			<p></p>
+			
+		<p> 
+			- Line 17 to 25 grabs the navigation links and animates text indentation nicely when hovered and backwards (mouse out). 
+		</p>	
+			
+			<img src="assets/images/woodooScript3.jpg" alt="Woodoo Script" />
+			<p></p>
+			
+		<p> 
+			- Line 27 to 37 defines the scrolling (every link in the main nav has a <b>scroll</b> class applied to it). There are two functions, one has a custom transition (jQuery easing - <b>easeInOutBack</b>) and the other is without (uses jQuery's <b>swing</b> by default). You can play with the timing and animations transition, make sure you check out the available <a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery easing</a> transitions.
+		</p>	
+			 
+			 <img src="assets/images/woodooScript4.jpg" alt="Woodoo Script" />
+			 <p></p>
+			 
+		<p>
+			- Line 39 to 63 defines the skill bars animation. The initial width of the skill bars is defined in the CSS (in the main stylesheet(s)) therefore non-JS user will still be able to see the skill bars, but they won't see the animation. First the width of the bar is set to zero and when that is complete another animation starts, animating the bar from 0% to some percent. Note that the animation starts when element with the <b>.triggeranimation</b> 
+			class applied to it is clicked. This <b>.triggeranimation</b> class is applied to every link in every instance of the main navigation that points to the "about section". This way the animation is displayed every time when the user navigates to the "about section".
+		</p>
+		
+		<img src="assets/images/woodooScript5.jpg" alt="Woodoo Script" />
+		<p></p>
+		
+		<p>
+			- Line 66 to 69 we initialize the image preloader. Basically this is assigning the preloader (loading.gif) to the images inside some particular container. In this case the preloader is assigned to all images inside the <b>#portfolioItemsList</b> and <b>#blogContentSection</b> <b>&lt;div&gt;</b>.
+		</p>
+		
+		<img src="assets/images/woodooScript6.jpg" alt="Woodoo Script" />
+		<p></p>
+		
+		<p>
+			- Similarly the code on line 71 to 79 creates the rollover effect on the images in the prtfolio and blog section. There are two divs on top of each other, inside the first is the thumbnail image and in the second is the rollover image. The one with the rollover image is not displayed by default. So basically what this function does is listening when the mouse is on that rollover <b>&lt;div&gt;</b> it fades it in, when mouse is out it fades it out.
+		</p>
+		
+		<img src="assets/images/woodooScript7.jpg" alt="Woodoo Script" />
+		<p></p>
+		
+		<p>
+			- Example on line 80 to 97 is using Modernizr to check if the users browser supports HTML5 input placeholders or not. If it doesn't it creates them.
+		</p>
+		
+		<img src="assets/images/woodooScript8.jpg" alt="Woodoo Script" />
+		<p></p>
+		
+		<p>
+			- Line 102 to 141 we initialize the (jQuery Quicksand script) sorting on portfolio items and assigning the filter menu. On line 122 to 138 we re-initialize (callback) some functions. This is mainly because Quicksand clones the entire <b>.portfolioSortableContentWrapper</b> <b>&lt;div&gt;</b> and manipulates with its content (displays and hides elements with particual category as we request them by using the filter nav) therefore we need to re-assign every function we 
+			already assingned to the elements inside that container (in this case prettyPhoto and the Rollover effect).
+		</p>
+		
+		<img src="assets/images/woodooScript9.jpg" alt="Woodoo Script" />
+		<p></p>
+		
+		<p>
+			- Line 149 to 152 we initialize prettyPhoto (lightbox) plugin.
+		</p>
+		
+		<img src="assets/images/woodooScript10.jpg" alt="Woodoo Script" />
+		<p></p>
+		
+		<p>
+			- Line 154 to 166 we initialize jQuery Tweet plugin. This function doesn't show thumbnails. You can use the commented one bellow if you want thumbs to be shown. 
+		</p>
+		
+		<img src="assets/images/woodooScript11.jpg" alt="Woodoo Script" />
+		<p></p>
+		
+		<p>
+			- Line 182 to 198 we use jQuery textshadow plugin in conjunction with Modernizr. Modernizr checks if the users browser supports the CSS3 text-shadow property, if it does than nothing happens, if it doesn't then jQuery textshadow takes control (reads the text-shadows from the css and draws them). Personaly i don't like how text-shadows are displayed in IE so i commented out the most of the lines. You can uncomment them if you want to.
+		</p>
+		
+		<img src="assets/images/woodooScript12.jpg" alt="Woodoo Script" />
+		<p></p>
+		
+		<p>
+			- Line 200 to 219 we initialize jQuery Flickr Feed script and assign prettyPhoto to the images pulled from the particular feed.
+		</p>
+		
+		<img src="assets/images/woodooScript13.jpg" alt="Woodoo Script" />
+		<p></p>
+		
+		<p>
+			- Line 224 to 227 initializes jQuery UI Accordions and Tabs.
+		</p>
+		
+		<img src="assets/images/woodooScript14.jpg" alt="Woodoo Script" />
+		<p></p>
+		
+		<p>
+			- Line 231 When everything on the page is loaded animates the top bar.
+		</p>
+		
+		<img src="assets/images/woodooScript15.jpg" alt="Woodoo Script" />
+		<p></p>
+		
+		
+		<h3 id="psdFiles"><strong>C) PSD Files</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I created the PSD to remind me of how the final product should look like, don't rely on it's measurments its just a quick mockup. I also included three nice loading PSD's. Actually they are animated so you can just change their color and create your own loading gif animations :)</p>
+		
+		
+		<h3 id="installTemplate"><strong>D) Configuring and Installing the Template</strong> - <a href="#toc">top</a></h3>
+		
+		<h4 id="chooseStylesheet"><strong>1) Choosing stylesheet and slider</strong></h4>
+		
+		<p>First of all make a copy of the HTML folder and place it wherever you want, i put mine on the desktop as you can see in the image bellow.</p>
+		
+		<img src="assets/images/htmlstructure6.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>Open it up, it should look like the one in the image.</p>
+		
+		<img src="assets/images/htmlstructure7.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>Choose which index page you want to use for your site, rename it to <b>"index.html"</b> and delete the others. (I chose the one with the Nivo Slider which is already named <b>"index.html"</b>)</p>
+		
+		<img src="assets/images/htmlstructure8.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>Next up open the <b>"index.html"</b> page in a text editor or whatever you use for editing html. First you should edit the content in the <b>&lt;title&gt;</b> tag (line 6 in my case). Second chose a style, 
+		i chose <b>White&Blue.css</b> and update the href (link on line 10 in my case).</p>
+		
+		<img src="assets/images/htmlstructure9.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>Open up the <b>nivoDefaultTheme.css</b> file in a text editor (it is located in the <b>css</b> folder) and change the url path on line 12. Since i chose style White&Blue the path to the loading gif is <b>"../images/style3/loading.gif"</b> (for style White&Red the path is <b>"../images/style1/loading.gif)"</b> and similarly for style White&Purple.css the path is <b>"../images/style2/loading.gif)"</b>.</p>
+		
+		<img src="assets/images/htmlstructure10.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>For SlidesJS Slider you should open up <b>SlidesJS-Slider.js</b> (it is located in the <b>js</b> folder) and change the path in line 4 (only here the path must be relative to the HTML file).</p>
+		
+		<img src="assets/images/htmlstructure11.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>If you used Orbit Slider you should open up <b>orbit-1.2.3.css</b> (it is located in the <b>css</b> folder) and change the url path on line 14.</p>
+		
+		<img src="assets/images/htmlstructure12.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>There is one more place you need to update the src of your <b>loading.gif</b>. Open up <b>jquery.preloader.js</b> and change the path on line 72 (Once again in my case it's <b>images/style3/loading.gif</b>). Note that the path here is relative to the <b>index.html</b>.</p>
+		
+		<img src="assets/images/jquerypreloader.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>Save and close.</p>
+		
+		<p>Lets move on to the background image. There are three background images in the <b>images</b> folder: <b>backgroundSample1.jpg</b>, <b>backgroundSample2.jpg</b> and <b>backgroundSample3.jpg</b>. By default <b>backgroundSample2.jpg</b> is set. You can change that in your main stylesheet (again in my case its <b>Style-White&Blue.css</b>) on line 703</p>
+		
+		<img src="assets/images/htmlstructure13.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		
+		<h4 id="customizeHeader"><strong>2) Customizing the Header</strong></h4>
+		
+		<p>You can change the logo in the header on line 74 and header subtitle on line 75. Also you should change the href of the social network icons on line 81,85 and 89.</p>
+		
+		<img src="assets/images/htmlstructure14.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<h4 id="customizeSlider"><strong>3) Customizing the Sliders</strong></h4>
+		
+		<h5 id="nivoSlider"><strong>3a) Nivo Slider</strong></h5>
+		
+		<p>Moving on to the slider (once again in my case its the Nivo slider) change the <b>src</b> path to your images on line 112,113,114,115 (you can add more if you like). Note that the images must be exactly <b>940x350</b>, otherwise the slider will crush or might behave strangely. The text in the <b>&lt;title&gt;</b> tag will result as caption.
+		As you can see in the image, the last slide uses HTML caption. To use HTML caption, simply create a <b>&lt;div&gt;</b> tag inside the div with an ID of <b>slider-wrapper</b> but outside the div with an ID of <b>slider</b>. Add a class <b>nivo-html-caption</b> to it and create some unique ID so you can point to it in the slides <b>title</b> attribute.
+		</br><a href="http://nivo.dev7studios.com/">More info here...</a>
+		</p>
+		
+		<img src="assets/images/htmlstructure15.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<h5 id="slidesjsSlider"><strong>3b) SlidesJS Slider</strong></h5>
+		
+		<p>Here slides are nested inside the <b>slides_container</b> div. A div with a class of <b>slide</b> is representing one slide. Once again note that images must be exactly <b>940x350</b>, otherwise the slider will crush or might behave strangely. Also you can see an example of a caption in the image bellow.</br><a href="http://slidesjs.com/">More info here...</a></p>
+		
+		<img src="assets/images/htmlstructure16.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<h5 id="orbitSlider"><strong>3c) Orbit Slider</strong></h5>
+		
+		<p>This one is pretty straightforward. Images contained in the div with an ID of <b>slider</b> are the actual slides. You can see an examlpe of a caption in the image bellow. Only this time when you point to the caption you use the <b>"data-caption"</b> tag and the id of the caption holder. Like in the other 
+		   examples above images must be exactly <b>940x350</b>, otherwise the slider will crush or might behave strangely.</br><a href="http://www.zurb.com/playground/orbit-jquery-image-slider">More info here ...</a></p>
+		
+		<img src="assets/images/htmlstructure17.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<h4 id="customizeHome"><strong>4) Customizing the home section</strong></h4>
+		
+		<p>This is the first section in the page and is pretty simple. Like i explained earlier, content sections are divided into two columns one representing the navigation and other the actual content. Here in the content column we have three <b>&lt;div&gt;</b> tags with a class of <b>onethird</b> and a buch of text inside. You can modify it, change it, delete it and put whatever you want in it. It's completely up to you.</p>
+		
+		<img src="assets/images/htmlstructure18.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		
+		<h4 id="customizeAbout"><strong>5) Customizing the about section</strong></h5>
+		
+		<p>This section is a placeholder for your personal information and skills. On line 212 change the <b>src</b> of the image and on line 213 put your own text. Once again this is completely up to you, do whatever you want.</p> 
+		
+		<img src="assets/images/htmlstructure19.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<h5 id="skillBars"><strong>5a) Customizing the skill bars</strong></h5>
+		
+		<p>The tricky part is the skill bars since they are being animated by jQuery. So, here is how they work:
+		   </br> Every <b>&lt;span&gt;</b> tag inside an <b>&lt;li&gt;</b> tag has a <b>class</b> and an <b>ID</b> with a same name as the value in the <b>&lt;p&gt;</b> tag.
+		   </br> The <b>class</b> defines the initial width of the skill bar that is applied to.
+		   </br> The <b>ID</b> is unique identifier and helps us to tell jQuery which span to select and animate.
+		   </br> Classes <b>expandred</b> and <b>expandwhite</b> define the color of the skill bar.
+		</p>
+		
+		<img src="assets/images/htmlstructure20.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>I changed the <b>html5</b> skill bar completely for demonstration. Lets say you want to add <b>3D Modeling</b> to your skill list. You can see an example of the changed HTML markup in the image bellow:</p>
+		
+		<img src="assets/images/htmlstructure21.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>Next up open your main stylesheet in a text editor (in my case its <b>Style-White&Blue.css</b>) and go to line 1330. Here we have the initial width of the <b>html5</b> skill bar set to <b>70%</b>. 
+		   Since we changed our skill to 3D Modelling we also need to change the class (and the initial width if you want to) for the changes to take effect.
+		</p>
+		
+		<img src="assets/images/htmlstructure22.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>In the image bellow you can see the changes (i also set the initial width to 45%)</p>
+		
+		<img src="assets/images/htmlstructure23.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>The final result looks like this:</p>
+		
+		<img src="assets/images/htmlstructure24.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>Next up we need to tell jQuery how to animate our newly created skill bar. Open up <b>woodoo-script.js</b> in a text editor (you can find it in the js folder) and go to line 44.
+		   What this function basically does is: 
+		   </br>- listening for a click on a element with a <b>triggeranimaton</b> class applied to it  
+		   </br>- when that happens sets the initial width of the skill bar to 0% (In the css we already set the width to some percantege for the non-JS users)
+		   </br>- and then animates it to the set percantage (in our case 45% for the 3D Modelling skill bar).
+		</p>
+		
+		<img src="assets/images/htmlstructure25.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>In the image bellow you can see an example with the changes applied. And thats it, we have our animation.</p>
+		
+		<img src="assets/images/htmlstructure26.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>You can repeat this proccess for the other skill bars.</p>
+		
+		
+		<h4 id="customizePortfolio"><strong>6) Customizing the portfolio section</strong></h4>
+		
+		<p>The first elements in the portfolio content column are the sections title and the sorting navigation. As you can see in the image bellow they are pretty straightforward. 
+		A couple of classes are applied to the <b>&lt;li&gt;</b> tags in the sorting nav but no need to worry about them at this point as i will explain what they do later on.</p>
+		
+		<img src="assets/images/htmlstructure27.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>Next we have the portfolio items nested in a unordered list with an ID of <b>portfolioItemsList</b> wrapped in a div with a class of <b>portfolioSortableContentWrapper</b>.  
+		   </br>		
+		</p>
+		
+		<img src="assets/images/htmlstructure28.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>The href in the <b>&lt;a&gt;</b> tag nested inside the <b>&lt;li&gt;</b> tag points to the full sized image. The value <b>prettyPhoto[gallery1]</b> in the <b>&lt;rel&gt;</b> 
+		   attribute tells jQuery to open the image in a lightbox(prettyPhoto in this case), create a gallery and name it gallery1. Also a <b>frame</b> class is applied to the <b>&lt;a&gt;</b> tag which gives a nice frame to the thumbnail image.
+		   </br>Nested inside the <b>&lt;a&gt;</b> tag there is a <b>&lt;span&gt;</b> tag with a class of <b>round</b> (gives round corners to the thumbnail image) applied to it. Next is the thumbnail image itself and we have another span with a 
+		   class of <b>rollover</b>. Inside the <b>rollover</b> span is another image. The rollover span and the image inside it are displayed via jQuery when we hover on the thumbnail image. Here you only need to change the src of the thumnail image, 
+		   the title. Everything else already is set-up.
+		</p>
+		
+		<img src="assets/images/htmlstructure29.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>Moving on to the filtering. Here the only thing you need to change is the names of the categories (that's the value in the <b>data-type</b> attribute and add a class with the same name), again everything else is set up.</p>
+		
+		<img src="assets/images/htmlstructure30.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>Lets say that the first portfolio item is an image of a 3d model. So im going to name my category <b>modelling3D</b> for demonstration. In the image bellow you can see the changed example.</p>
+		
+		<img src="assets/images/htmlstructure31.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>Next i need to change the link in the sorting menu to point to that category. Bellow is the image of the sorting nav unchanged.</p>
+		
+		<img src="assets/images/htmlstructure32.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>And the next image shows the changes being done.</p>
+		
+		<img src="assets/images/htmlstructure33.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>As you can see in the final result under the 3D Modelling there is only one item. You can assign that same category to a multiple items in your portfolio to group them.
+		   </br>As you probably know this is effect is done with jQuery <b><a href="http://razorjack.net/quicksand/">Quicksand plugin</a></b>. You can read the full documentation and see an examples on the plugins official site. <a href="http://razorjack.net/quicksand/">More info here...</a>
+		</p>
+		
+		<img src="assets/images/htmlstructure34.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<h4 id="customizeBlog"><strong>7) Blog section</strong></h4>
+		
+		<p>You can see an example of a blog post block of code in the image bellow. It is pretty straightforward, nothing complicated. 
+		   </br>First we have a <b>div</b> on line 347 with a class of <b>blogPost</b> which is a wrapper. 
+		   </br>Lines 348 and 349 are pretty much self explanatory.
+		   </br> Next we have the image and it is nested inside a div with two classes: <b>frame</b> and <b>blogPostImage</b>. 
+		   </br>One level deeper we have another div with a class <b>blogImageRC</b> (gives round corners to the thumbnail) and inside it we have the thumbnail image itself and a div with a class of <b>blogRollover</b> which is displayed when we roll over the image.
+		   </br> Inside the <b>blogRollover</b> div we have two <b>&lt;a&gt;</b> tags. The first one links to the full sized image and displays it in a lightbox (prettyPhoto) and the second one links to the full post. 
+		</p>
+		
+		<img src="assets/images/htmlstructure35.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<h4 id="customizeContact"><strong>8) Customizing the contact section</strong></h4>
+		
+		<p>There are only two things you need to change here:
+		   </br> 1.Add your Google Maps API key and
+		   </br> 2.Add your email address in the <b>woodoo-mail.php</b>
+		</p>
+		
+		<h5 id="googleMaps"><strong>8a) Configure Google Maps</strong></h5>
+		
+		<p> First go to <a href="https://developers.google.com/maps/">developers.google.com/maps/</a>, create account (if you already don't have one) and get your Google Maps API v3 key (you can google it if you dont know how). Once you have the key go to line 51 in the <b>index.html</b> and paste it over the </b>"YOURKEY"</b> keyword.</p> 
+		
+		<img src="assets/images/htmlstructure36.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<p>Next up open up <b>googleMaps.js</b> in a text editor (it is located in the js folder). You need to enter the Latitude and Longitude of your location (You can use <a href="http://itouchmap.com/latlong.html">this site</a>) in line 3 inside the parentheses. Also you can play around with <b>zoom</b> level.</p>
+		
+		<img src="assets/images/htmlstructure37.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<h5 id="mailPhp"><strong>8b) woodoo-mail.php</strong></h5>
+		
+		<p>You are done with setting the map, next you need to add your email address in the <b>woodoo-mail.php</b> so the messages will be sent to your address. Open up <b>woodoo-mail.php</b> in a text-editor and replace <b>youremailhere@somedomain.com</b> on line  6 with your email address. Save and close.</p>
+		
+		<img src="assets/images/htmlstructure38.jpg" alt="HTML Structure" />
+		<p></p>		
+		
+		<h4 id="customizeFooter"><strong>9) Customizing the Footer</strong></h4>
+		<h5 id="configureTweet"><strong>9a) Configure jQuery Tweets plugin</strong></h5>
+		
+		<p>Tweets are displayed dynamically by jQuery. Again everything is already set up, you only need to add your username in the <b>woodoo-script.js</b> file on line 161 (located in the js folder).
+		   </br> As you can see in the image bellow, there is a commented code block, uncomment it if you want to display twitter thumbnails (remember to comment the other code block above or delete it).
+		   </br> You can see more examples on the plugins site. <a href="http://tweet.seaofclouds.com/">More info here...</a>
+		</p>
+		
+		<img src="assets/images/htmlstructure39.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		<h5 id="configureFlickr"><strong>9b) Configure jQuery Flickr Feed plugin</strong></h5>
+		
+		<p>With the jQuery Flickr Feed Plugin you can pull photos from a public feed. The only thing you need to do is add the ID of the public flickr feed or user in the <b>woodoo-script.js</b> (located in the js folder) on line 210.
+		   </br> You can use <a href="http://idgettr.com/">idgettr.com</a> to find a particular flickr id.
+		   </br> Note that the prettyPhoto[gallery2] name is reserved for the flickr images, so if you want to create a new gallery somewhere in your site and don't want the flickr images to interfere with it use some other name (for the gallery).
+		</p>
+		
+		<img src="assets/images/htmlstructure40.jpg" alt="HTML Structure" />
+		<p></p>
+		
+		
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following fonts in this template:</p>
+		
+		<ul>
+			<li>Playball <a href="http://www.google.com/webfonts/specimen/Playball">More info here...</a></li>
+			<li>Helvetica Neue <a href="http://www.linotype.com/1266/neuehelvetica-family.html">More info here...</a></li>
+			<li>Arial <a href="http://www.myfonts.com/fonts/microsoft/arial/">More info here...</a></li>
+		</ul>
+		
+		<p>I've used the following jQuery plugins in this template:</p>
+		
+		<ul>
+			<li>jQuery <a href="http://jquery.com/">More info here...</a></li>
+			<li>jQuery UI <a href="http://jqueryui.com/">More info here...</a></li>
+			<li>jQuery Easing <a href="http://gsgd.co.uk/sandbox/jquery/easing/">More info here...</a></li>
+			<li>jQuery image preloader <a href="http://net.tutsplus.com/tutorials/javascript-ajax/how-to-create-an-awesome-image-preloader/">More info here...</a></li>
+			<li>jQuery Text Shadow <a href="https://github.com/heygrady/textshadow">More info here...</a></li>
+			<li>jQuery QuickSand <a href="http://razorjack.net/quicksand/">More info here...</a></li>
+			<li>PrettyPhoto <a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">More info here...</a></li>
+			<li>jQuery Tweet <a href="http://tweet.seaofclouds.com/">More info here...</a></li>
+			<li>jQuery Flickr Feed <a href="http://www.gethifi.com/blog/a-jquery-flickr-feed-plugin">More info here...</a></li>
+			<li>Google Maps JavaScript API v3 <a href="https://developers.google.com/maps/documentation/javascript/">More info here...</a></li>
+			<li>Modernizr <a href="http://www.modernizr.com/">More info here...</a></li>
+			<li>Nivo Slider <a href="http://nivo.dev7studios.com/">More info here...</a></li>
+			<li>Slidesjs Slider <a href="http://slidesjs.com/">More info here...</a></li>
+			<li>Orbit Slider <a href="http://www.zurb.com/playground/orbit-jquery-image-slider">More info here...</a></li>
+		</ul>
+		
+		<p>Other resources used:</p>
+		
+		<ul>
+			<li>CSS3 PIE <a href="http://css3pie.com/">More info here...</a></li>
+		</ul>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Dimitar Rusev</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

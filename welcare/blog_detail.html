@@ -1,0 +1,674 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>WelCare - Blog Detail</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800' rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="css/ipad.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="css/responsive.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="css/mobile.css" rel="stylesheet" media="screen" type="text/css" />
+
+<!--[if lt IE 7]><link rel="stylesheet" href="css/style-ie-lt7.css" type="text/css" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="css/style-ie7.css" type="text/css" /><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="css/style-ie8.css" type="text/css" /><![endif]-->
+<!--[if IE 9]><link rel="stylesheet" href="css/style-ie-gt8.css" type="text/css" /><![endif]-->
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/jquery.fancydropdown.js"></script>
+<script type="text/javascript" src="js/rating.html"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</head>
+
+<body>
+<div id="main-container"> 
+	<!-- Header -->
+	<div class="header"> 
+    <div class="logo"><a href="index-2.html"><img src="images/logo.png" alt="WelCare" /></a></div>
+   
+    <div class="righthead">
+      <div class="top-menu inline">
+        <ul>
+          <li class="register"><a href="#">Register</a></li>
+          <li class="signin"> <a href="#" id="signin">Sign In</a> 
+            
+            <!-- SignIn Dialog -->
+            <div id="signinbox" class="gray_gradient"> <img src="images/sign_in_arrow.png" alt="" class="boxArrow" />
+              <div id="signin_menu">
+                <div class="box_heading"> Sign In <a href="#" class="close"><img id="fadeouta" src="images/close.png" alt="" width="16" height="16" /></a> </div>
+                <form method="post" action="http://www.wpnukes.com/demo/html/welcare/index.html">
+                  <input type="text" class="textbox" onfocus="if(this.value == 'Email Address') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Email Address'; }" name="s" value="Email Address" />
+                  <input type="password" class="textbox" onfocus="if(this.value == 'Search best hospital') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search best hospital'; }" name="s" value="Search best hospital" />
+                  <div class="signinStrip">
+                    <input id="remember" name="remember_me" value="1" type="checkbox" />
+                    <label for="remember">Remember me</label>
+                    <span class="forgot"> <a href="#" id="resend_password_link">Forgot password?</a> </span>
+                    <input class="signin_submit" value="Submit" type="submit" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </li>
+          <li class="contact"> <a href="#" id="contact">contact</a> 
+            <!-- Contact Dialog -->
+            <div id="contactbox" class="gray_gradient"> <img src="images/sign_in_arrow.png" alt="" class="boxArrow" />
+              <div class="box_heading"> Contact us <a href="#" class="close"><img id="fadeout" src="images/close.png" alt="" width="16" height="16" /></a> </div>
+              <h6>USA OFFICE</h6>
+              <span>Office timings 9 am to 1 pm (EST)</span>
+              <div class="coll_left left">195 State Avenue<br />
+                Suite # 201<br />
+                New York CT 06032</div>
+              <div class="coll_right right">Tel:  +1 (860) 674 8865<br />
+                Fax: +1 (860) 674 9007<br />
+                Email: shkm2@sbcglobal.net</div>
+              <div class="clear"></div>
+              
+              <!-- Google Map -->
+              <div class="google_map margin_bottom margin_top">
+                <iframe width="301" height="135" src="http://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=fenway+park&amp;daddr=uk&amp;hl=en&amp;geocode=FYoohgId1STD-yEEVXpkyw2Aog%3BFYMATQMdO5LL_ympkcdCETtaAjF6JYgyQ6D4xA&amp;aq=&amp;sll=43.084937,-73.740234&amp;sspn=9.530831,19.753418&amp;t=h&amp;mra=dme&amp;ie=UTF8&amp;ll=43.084937,-73.740234&amp;spn=2.16612,6.328125&amp;z=6&amp;output=embed"></iframe>
+              </div>
+              
+              <!-- Contact Form -->
+              <div id="contact_menu">
+                <form method="post" action="http://www.wpnukes.com/demo/html/welcare/index.html">
+                  <input type="text" onfocus="if(this.value == 'Name ') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Name '; }" name="s" value="Name " />
+                  <input type="text" onfocus="if(this.value == 'Email') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Email'; }" name="s" value="Email" />
+                  <input type="text" onfocus="if(this.value == 'Phone ') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Phone '; }" name="s" value="Phone " />
+                  <p>
+                    <textarea name="" cols="5" rows="5"></textarea>
+                  </p>
+                  <input class="contact_submit" value="Submit" tabindex="6" type="submit" />
+                  <input class="contact_submit" value="Reset" tabindex="6" type="submit" />
+                  <div class="clear"></div>
+                </form>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Helpline -->
+      <div class="contactinfo"> <span class="black_text">24/7 HELPLINE</span> <span class="phonenumber">800-5234-987</span> </div>
+      
+      <!-- Live Chat -->
+      <div class="livechat"><span><a href="#">LIVE CHAT</a></span></div>
+    </div>
+  </div>
+
+	<!-- Mega Menu starts -->
+    <div class="menu container">
+        <ul id="menu">
+            <li class="column"><a href="index-2.html">Home</a>
+                <div class="dropdown_columns">
+                    <div class="col_3">
+                        <h2>Welcome !</h2>
+                    </div>
+                    <div class="col_3">
+                        <p><strong>welcome to Welcare medical portal !</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    </div>
+                    <div class="col_3">
+                        <h2>Sample Heading</h2>
+                    </div>
+                    <div class="col_3">
+                        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset </p>
+                    </div>
+                </div>
+            </li>
+            <li><a href="blog_detail.html">Blog Detail</a>
+                <div class="dropdown_full_columns">
+                    <div class="col_8">
+                        <div class="col_2 red">
+                            <h3>Sample Heading One</h3>
+                            <div class="image"><img src="images/resource/pic_01.jpg" alt="pic 01" /></div>
+                            <p>Donec elit orci, interdum eu bibendum quis, sagittis vitae elit. Phasellus semper ligula id elit molestie faucibus, interdum eu bibendum quis. <a href="#">read more</a></p>
+                        </div>
+                        <div class="col_2 orange">
+                            <h3>Sample Heading Two</h3>
+                            <div class="image"><img src="images/resource/pic_02.jpg" alt="pic 02" /></div>
+                            <div class="col_1">
+                                <ul>
+                                    <li><a href="#">Acid Reflux</a></li>
+                                    <li><a href="#">Breast Lumps</a></li>
+                                    <li><a href="#">Breast Pain</a></li>
+                                </ul>
+                            </div>
+                            <div class="col_1">
+                                <ul>
+                                    <li><a href="#">Chest Pain</a></li>
+                                    <li><a href="#">Coughs n Colds</a></li>
+                                    <li><a href="#">Hot Flashes</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col_2 green">
+                            <h3>Sample Heading Three</h3>
+                            <div class="image"><img src="images/resource/pic_03.jpg" alt="pic 03" /></div>
+                            <div class="col_1">
+                                <ul>
+                                    <li><a href="#">Acid Reflux</a></li>
+                                    <li><a href="#">Breast Lumps</a></li>
+                                    <li><a href="#">Breast Pain</a></li>
+                                </ul>
+                            </div>
+                            <div class="col_1">
+                                <ul>
+                                    <li><a href="#">Chest Pain</a></li>
+                                    <li><a href="#">Coughs n Colds</a></li>
+                                    <li><a href="#">Hot Flashes</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col_2 blue">
+                            <h3>Sample Heading Four</h3>
+                            <p>Donec elit orci, interdum eu bibendum quis, ittis vitae elit. Phasellus semper ligula id elit molestie faucibus. Aliquam luctus get.</p>
+                            <ul>
+                                <li><a href="#">Donec elit orci, interdum eu</a></li>
+                                <li><a href="#">Hasellus semper ligula ipoulearn</a></li>
+                                <li><a href="#">Phasellus semper ligula id elit</a></li>
+                                <li><a href="#">Donec elit orci, interdum eu</a></li>
+                                <li><a href="#">Hasellus semper ligula ipoulearn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="column"><a href="blog_listing.html">Blog Listing</a>
+                <div class="dropdown_columns">
+                    <div class="col_5">
+                        <h2>Three Column Menu with different width columns</h2>
+                    </div>
+                    <div class="col_2">
+                        <h3>Sample Heading One</h3>
+                        <ul>
+                            <li><a href="#">Anticoagulation</a></li>
+                            <li><a href="#">Dermatology Surgery</a></li>
+                            <li><a href="#">Diabetes Clinic</a></li>
+                            <li><a href="#">Dermatology Surgery</a></li>
+                            <li> <a href="#">Diabetes Clinic</a></li>
+                        </ul>
+                    </div>
+                    <div class="col_2">
+                        <h3>Sample Heading Two</h3>
+                        <ul>
+                            <li><a href="#">Breast Health Center</a></li>
+                            <li><a href="#">Cardiology Procedures</a></li>
+                            <li><a href="#">Breast Health Center</a></li>
+                            <li><a href="#">Bronchoscopy/PFT</a></li>
+                            <li><a href="#">Cardiology</a></li>
+                        </ul>
+                    </div>
+                    <div class="col_1">
+                        <h3>Heading Three</h3>
+                        <ul>
+                            <li><a href="#">Link One</a></li>
+                            <li><a href="#">Link Two</a></li>
+                            <li><a href="#">Link Three</a></li>
+                            <li><a href="#">Link Four</a></li>
+                            <li><a href="#">Link Five</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="column"><a href="gallery.html">Gallery</a>
+                <div class="dropdown_columns">
+                    <div class="col_4">
+                        <h3>Menu with Grid style links</h3>
+                    </div>
+                    <div class="col_2">
+                        <ul class="greybox">
+                            <li><a href="#">Medical Surgery</a></li>
+                            <li><a href="#">Operation Theater</a></li>
+                            <li><a href="#">Doctor's Award</a></li>
+                            <li><a href="#">Annual Meetings</a></li>
+                            <li><a href="#">Doctor's Award</a></li>
+                        </ul>
+                    </div>
+                    <div class="col_2">
+                        <ul class="greybox">
+                            <li><a href="#">Young Association</a></li>
+                            <li><a href="#">Operation Theater</a></li>
+                            <li><a href="#">Medical Surgery</a></li>
+                            <li><a href="#">Operation Theater</a></li>
+                            <li><a href="#">Medical Surgery</a></li>
+                        </ul>
+                    </div>
+                    <div class="col_4">
+                        <h3>paragraphs with images</h3>
+                    </div>
+                    <div class="col_4"> <img src="images/resource/gallery/sub-gallery-pic-4.jpg" class="left frame" width="70" alt="" />
+                        <p>Maecenas eget eros lorem, nec pellentesque lacus. Aenean dui orci, rhoncus sit amet tristique eu, tristique sed odio. Praesent ut interdum elit. <a href="#">Read more...</a></p>
+                    </div>
+                    <div class="col_4"> <img src="images/resource/gallery/sub-gallery-pic-5.jpg" class="left frame" width="70" alt="" />
+                        <p>Aliquam elementum felis quis felis consequat scelerisque. Fusce sed lectus at arcu mollis accumsan at nec nisi. Aliquam pretium mollis fringilla. <a href="#">Read more...</a></p>
+                    </div>
+                </div>
+            </li>
+            <li class="column"><a href="gallery_side.html">Side Gallery</a>
+                <div class="dropdown_columns">
+                    <div class="col_2">
+                        <ul>
+                            <li><a href="#">Anticoagulation</a></li>
+                            <li><a href="#">Dermatology Surgery</a></li>
+                            <li><a href="#">Diabetes Clinic</a></li>
+                            <li><a href="#">Dermatology Surgery</a></li>
+                            <li> <a href="#">Diabetes Clinic</a></li>
+                            <li><a href="#">Breast Health Center</a></li>
+                            <li><a href="#">Cardiology Procedures</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li> <a href="listing.html">Doctor Listing</a> </li>
+            <li class="column"> <a href="video_detail.html">Video Listing</a>
+                <div class="dropdown_columns align_right">
+                    <div class="col_4">
+                        <h3>Right Aligned Menu</h3>
+                    </div>
+                    <div class="col_2">
+                        <ul class="greybox">
+                            <li><a href="#">Medical Surgery</a></li>
+                            <li><a href="#">Operation Theater</a></li>
+                            <li><a href="#">Doctor's Award</a></li>
+                            <li><a href="#">Annual Meetings</a></li>
+                            <li><a href="#">Doctor's Award</a></li>
+                        </ul>
+                    </div>
+                    <div class="col_2">
+                        <ul class="greybox">
+                            <li><a href="#">Young Association</a></li>
+                            <li><a href="#">Operation Theater</a></li>
+                            <li><a href="#">Medical Surgery</a></li>
+                            <li><a href="#">Operation Theater</a></li>
+                            <li><a href="#">Medical Surgery</a></li>
+                        </ul>
+                    </div>
+                    <div class="col_4">
+                        <h3>Paragraphs with Images</h3>
+                    </div>
+                    <div class="col_4"> <img src="images/resource/gallery/sub-gallery-pic-4.jpg" class="left frame" width="70" alt="" />
+                        <p>Maecenas eget eros lorem, nec pellentesque lacus. Aenean dui orci, rhoncus sit amet tristique eu, tristique sed odio. Praesent ut interdum elit. <a href="#">Read more...</a></p>
+                    </div>
+                    <div class="col_4"> <img src="images/resource/gallery/sub-gallery-pic-5.jpg" class="left frame" width="70" alt="" />
+                        <p>Aliquam elementum felis quis felis consequat scelerisque. Fusce sed lectus at arcu mollis accumsan at nec nisi. Aliquam pretium mollis fringilla. <a href="#">Read more...</a></p>
+                    </div>
+                </div>
+            </li>
+            <li> <a href="typography.html">Typography</a> </li>
+        </ul>
+        <!-- #menu ends -->
+        <div id="searchico"> <a href="#"><img src="images/ico-search.png" alt="" /></a>
+            <div id="quicksearchbox" class="gray_gradient"> <img src="images/sign_in_arrow.png" alt="" class="boxArrow" />
+                <fieldset id="signin_menu2">
+                    <form method="post" action="http://www.wpnukes.com/demo/html/welcare/index.html">
+                        <label>Search</label>
+                        <div class="quickSearchField">
+                            <input id="searchBox" class="txtfield" type="text" onfocus="if(this.value == 'Enter any Keyword') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Enter any Keyword'; }" name="s" value="Enter any Keyword" />
+                            <input id="signin_submit2" value="Submit" tabindex="6" type="submit" />
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+	
+	<div class="container">
+		<div class="page-banner">
+			<div class="banner-image"> <img src="images/resource/blog_detail_header.jpg" alt="" /> </div>
+			<div class="content green">
+				<h1>welcare blog</h1>
+				<p>subscribe to our blog to update yourself</p>
+			</div>
+		</div>
+		<!-- page banner ends -->
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="#"><img width="14" height="13" alt="" src="images/home_icon.png" /></a></li>
+                <li><a href="#">category</a></li>
+                <li><a href="#">subcategory</a></li>
+                <li class="last-child"><a href="#">Doctor Blog</a></li>
+            </ul>
+        </div><!-- breadcrumbs end -->
+		<div id="contents_area">
+			<div class="contents">
+				<div class="block">
+                	<div class="head_section">
+                     	<div class="post_date">
+                        	<div class="day_month">
+                            	<span class="day">31</span>
+                                <span class="month">Dec</span>
+                            </div>
+                            <span class="post_year">2012</span>
+                        </div>
+                        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. etc enim enim, pharetra in sodales at</h1>
+                        <div class="contact_bar">
+                            <ul>
+                                <li class="first-child"><a href="#" class="doctor_icon">Dr. Richard Mile Billean</a></li>
+                                <li><a href="#" class="comments_icon">6 Comments</a></li>
+                                <li class="iphone_articles"><a href="#" class="articles_icon">Articles</a></li>
+                            </ul>
+                        </div>
+                        <!-- contact bar ends -->
+                    </div>
+					<img src="images/resource/journey_blog_detail_pic.jpg" alt="" class="frame" />
+					<div class="details">
+						<p> Lorem lacinia etras et ligula libero. Quisque quis magna vitae ipsum consequat varius in ut ante. Maecenas a mi nibh, eu euismod orci. Vivamus viverra lacus vitae tortor molestie malesuada. In nulla nibh, congue sed molestie nec, dapibus sed purus.</p>
+						<p>Maecenas pulvinar blandit facilisis. Curabitur mollis nisl non purus ultrices convallis. Ut volutpat tristique nisl elementum ultricies. Etiam vitae neque leo. Donec eget turpis lorem. Nulla facilisi. Duis bibendume diam sed ligula euismod a interdum ipsum semper. Curabitur id lectus pulvinar erat pretium aliquet. Uti felis enim, congue ac ullamcorper id, luctus congue neque. Praesent augue mauris, lacinia quis auctoro nec, vestibulum suscipit ligula. Nunc elit nisl, mollis ut consequat a, sodales eu tortor. Aenean egestas, nisi a iaculis lacinia, mauris dui accumsan dui, vel scelerisque neque nibh sed nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        
+                        <div class="comment">
+                        	<blockquote>
+                                <span>
+                                	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam etc enim enim, pharetra in sodales at, interdum sit amet dui. Nullame vulputate euismod urna non adipiscing elitione pharetra.
+                                </span>
+                            </blockquote>
+                        </div>
+
+						<p>Quisque odio urna, ultrices non volutpat lacinia, scelerisque sit amet justo. Quisque venenatis sapien id eros pulvinar sit amet posuere lacus gravida. Aenean accumsan placerat nulla, dictum semper turpis scelerisque sit amet. Cras et quam lorem. Fusce rhoncus consequat nulla ut gravida. Sed adipiscing, lacus ac commodo scelerisque, est erat eleifend augue, nec viverra ligula lacus sed arcu. Suspendisse  massa quis tellus dapibus dignissim suscipit eget est.</p>
+                        
+						<ul class="style2">
+							<li>Etiam rhoncus</li>
+							<li>Maecenas tempus</li>
+							<li>Tellus eget condimentum rhoncus</li>
+							<li>Sem quam semper libero</li>
+							<li>Sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus</li>
+						</ul>
+						<p>Etiam auctor tincidunt augue at pharetra. Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem, eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus scelerisque tincidunt. Maecenas accumsan imperdiet faucibus. Mauris tincidunt, nulla quis rhoncus malesuada, nibh ante pulvinar dolor, ut lacinia libero risus nec orci.
+</p>
+
+                        <div class="paginate">
+                        	<span class="page_numbering">page 1 of 6</span>
+                            <a href="javascript:void(0);" class="prv"></a>
+                            <a href="javascript:void(0);" class="nxt"></a>
+                        </div>
+                    
+					</div>
+					<!-- details end -->
+				</div><!-- block ends --> 
+				
+				<div class="block">
+                	<div class="heading">18 Comments "A Journey to control Diabetes in children aged"</div>
+					<div class="comments_area">
+						<ul>
+							<li>
+								<div class="comment_box">
+									<div class="up">
+										<div class="snap"><a href="#"><img src="images/resource/comments_pic1.jpg" alt="comments" /></a> </div>
+										<div class="upSection"> <strong>Angle Bowen</strong> <span>December 1st, 2012 at 6:00 pm</span> </div>
+									</div>
+									<!-- up ends -->
+									<div class="down">
+										<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et augue orci, sit amet rutrum lectus. Nulla feugiat scelerisque fringilla. Ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et augue orci, sit amet rutrum lectus. </p>
+										<a href="#" class="reply">Reply</a> </div>
+								</div>
+								<ul>
+									<li>
+										<div class="comment_box">
+											<div class="up">
+												<div class="snap"> <a href="#"><img src="images/resource/comments_pic2.jpg" alt="" /></a> </div>
+												<div class="upSection"> <strong>Brown Richered</strong> <span>December 1st, 2012 at 6:00 pm</span> </div>
+											</div>
+											<!-- up ends -->
+											<div class="down">
+												<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et augue orci, sit amet rutrum lectus. Nulla feugiat scelerisque fringilla. Ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et augue orci, sit amet rutrum lectus. </p>
+												<a href="#" class="reply">Reply</a> </div>
+											<span class="connect"></span> </div>
+										<ul>
+											<li  class="last-child">
+												<div class="comment_box">
+													<div class="up">
+														<div class="snap"> <a href="#"><img src="images/resource/comments_pic3.jpg" alt="" /></a> </div>
+														<div class="upSection"> <strong>Toe Kelvien</strong> <span>December 1st, 2012 at 6:00 pm</span> </div>
+													</div>
+													<!-- up ends -->
+													<div class="down">
+														<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+														<a href="#" class="reply">Reply</a> </div>
+													<span class="connect"></span> </div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="last-child">
+								<div class="comment_box">
+									<div class="up">
+										<div class="snap"> <a href="#"><img src="images/resource/comments_pic4.jpg" alt="" /></a> </div>
+										<div class="upSection"> <strong>Dr. John Billean</strong> <span>December 1st, 2012 at 6:00 pm</span> </div>
+									</div>
+									<!-- up ends -->
+									<div class="down">
+										<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et augue orci, sit amet rutrum lectus. Nulla feugiat scelerisque fringilla. Ipsum dolor sit amet, consectetur adipiscing elit. </p>
+										<a href="#" class="reply">Reply</a> </div>
+								</div>
+							</li>
+						</ul>
+					</div><!-- comments end --> 
+				</div><!-- block ends -->
+				
+                <div class="block last">
+            		<div class="heading">Leave your Comment</div>
+					<p>Enter your information below to add a new comment.</p>
+					<div class="comment_form">
+						<form method="post" action="http://www.wpnukes.com/demo/html/welcare/blog_detail.html">
+							<input type="text" name="name" class="text_short name" value="Enter Name" onfocus="if(this.value == 'Enter Name') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Enter Name'; }" />
+							<input type="text" name="email" class="text_short email" value="Enter Email" onfocus="if(this.value == 'Enter Email') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Enter Email'; }" />
+							<input type="text" name="website" class="text website" value="Enter Website" onfocus="if(this.value == 'Enter Website') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Enter Website'; }" />
+							<textarea cols="5"  rows="" name="comment_textarea" class="textarea"></textarea>
+							<input type="submit" class="button" value="submit" />
+                            <input type="reset" class="button" value="reset" />
+						</form>
+					</div>
+				</div><!-- block ends -->
+			</div><!-- contents end -->
+		</div><!-- Content Area ends -->
+		
+		<div id="side_bar">
+        	<div class="block">
+				<div class="heading"> Recent Blog</div>
+                <div class="recent_post">
+                <div class="post_in first-child">
+                    <div class="post"> <img alt="" src="images/resource/robin_stock_pic.jpg" class="left" />
+                        <h3><a href="#">Robbin Stock</a></h3>
+                        <div class="post_info"><span class="post_date">September 12, 2011</span><span class="post_time">at 12:55:39</span><a href="#" class="post_comment">12 comments</a></div>
+                        <div class="matter">
+                            <p>Proin iaculis purus consequat sem cursus dignie. Donec porttitor entume suscipit</p>
+                        </div>
+                    </div>
+                    <!-- post ends --> 
+                </div><!-- post_in ends -->
+                <div class="post_in">
+                    <div class="post"> <img alt="" src="images/resource/richard_mile_pic.jpg" class="left" />
+                        <h3><a href="#">Dr. Richard Mile Billean</a></h3>
+                        <div class="post_info"><span class="post_date">September 12, 2011</span><span class="post_time">at 12:55:39</span><a href="#" class="post_comment">12 comments</a></div>
+                        <div class="matter">
+                            <p>Proin iaculis purus consequat sem cursus dignie. Donec porttitor entume suscipit</p>
+                        </div>
+                    </div>
+                    <!-- post ends --> 
+                </div><!-- post_in ends -->
+                <div class="post_in last-child">
+                    <div class="post"> <img alt="" src="images/resource/willium_brown_pic.jpg" class="left" />
+                        <h3><a href="#">Willium Brown</a></h3>
+                        <div class="post_info"><span class="post_date">September 12, 2011</span><span class="post_time">at 12:55:39</span><a href="#" class="post_comment">12 comments</a></div>
+                        <div class="matter">
+                            <p>Proin iaculis purus consequat sem cursus dignie. Donec porttitor entume suscipit</p>
+                        </div>
+                    </div>
+                    <!-- post ends --> 
+                </div>
+                <!-- post_in ends --> 
+            </div>
+			</div>
+			<!-- Block ends -->
+			<div class="block">
+				<div class="heading"> Archive </div>
+                <div class="archive">
+                    <ul>
+                        <li><a href="#">January <span>(3)</span></a> </li>
+                        <li><a href="#">February <span>(38)</span></a></li>
+                        <li><a href="#">March 2011 <span>(17)</span></a></li>
+                        <li><a href="#">April 2011 <span>(9)</span></a></li>
+                        <li><a href="#">May 2011 <span>(12)</span></a></li>
+                        <li><a href="#">June 2011 <span>(18)</span></a></li>
+                        <li><a href="#">July 2011 <span>(42)</span></a></li>
+                        <li><a href="#">August 2010 <span>(10)</span></a></li>
+                    </ul>
+                </div>
+                <!-- Archive ends --> 
+			</div>
+			<!-- Block ends -->
+			<div class="block">
+				<div class="heading">Categories </div>
+                <div class="categories">
+                    <ul>
+                        <li><a href="#">Allergy</a> </li>
+                        <li><a href="#">Anticoagulation</a></li>
+                        <li><a href="#">Bronchoscopy/PFT</a></li>
+                        <li><a href="#">Cardiology</a></li>
+                        <li><a href="#">Cardiology Procedures</a></li>
+                        <li><a href="#">Cardiothoracic Transplant</a></li>
+                        <li><a href="#">Continence</a></li>
+                        <li><a href="#">Dermatology</a></li>
+                        <li><a href="#">Orthopedic</a></li>
+                        <li><a href="#">Pediatric</a></li>
+                    </ul>
+                </div>
+                <!-- Archive ends --> 
+			</div>
+			<!-- Block ends -->
+            <div class="block">
+				<div class="heading">News</div>
+				<div class="news">
+					<div class="post">
+						<div class="matter">
+							<h3><a href="#">SND Update: New appointments for SND</a></h3>
+							<div class="post_info">By SND Headquarters</div>
+							<div class="post_info"><span>03 April 2012</span>|<span>4:20 PM</span>|<span><a href="#">6 Comments</a></span></div>
+							<div class="matter"></div>
+						</div>
+					</div>
+					<div class="post">
+						<div class="matter">
+							<h3><a href="#">Start-up lessons: A homicide site in DC</a></h3>
+							<div class="post_info">By SND Headquarters</div>
+							<div class="post_info"><span>03 April 2012</span>|<span>4:20 PM</span>|<span><a href="#">6 Comments</a></span></div>
+							<div class="matter"></div>
+						</div>
+					</div>
+					<div class="post">
+						<div class="matter">
+							<h3><a href="#">Major Heart Surgery by Dr. Jacob</a></h3>
+							<div class="post_info">By SND Headquarters</div>
+							<div class="post_info"><span>03 April 2012</span>|<span>4:20 PM</span>|<span><a href="#">6 Comments</a></span></div>
+							<div class="matter"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Block ends -->
+			<div class="block">
+				<div class="heading"> Facebook </div>
+				<div class="facebook">
+					<div id="fb-root"></div>
+					<script type="text/javascript">
+                        (function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "../../../../connect.facebook.net/en_US/all.js#xfbml=1";
+                        fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+                    </script>
+					<div class="fb-like-box" data-href="http://www.facebook.com/wpnukes" data-width="295" data-show-faces="true" data-border-color="#ffffff" data-stream="false" data-header="false"></div>
+				</div>
+				<!-- Facebook ends --> 
+			</div>
+			<!-- Facebook Block ends -->
+			<div class="ad"><a href="#"><img src="images/resource/quality_lab_pic.jpg" alt="" /></a></div>
+			<div class="ad last-child"><a href="#"><img src="images/resource/be_right_pic.jpg" alt="" /></a></div>
+		</div>
+		<!-- Side Bar ends --> 
+	</div>
+	<!-- Container ends -->
+	
+	<div class="container">
+		<div id="footer">
+			<div id="twiterfeed">
+				<div class="leftside">
+					<h1>Our Twitter Feed</h1>
+					<p>Find out what's happening right now with health services you care about.</p>
+				</div>
+				<div class="rightside">
+					<div class="twiterpic left"></div>
+					<p>Welcare Hospital Surgery Milestone: <br />
+						Region to Remove Gallbladder with Single, Belly Button Incision. Welcare Hospital Surgery Milestone.</p>
+					<span class="poparr"></span>
+                </div>
+			</div>
+			<div class="col-4">
+				<div class="block flickr_sect">
+					<div class="title">
+						<h1>Flickr Gallery</h1>
+					</div>
+					<div class="flickrgallery"> <a href="#"><img src="images/resource/flickrimg1.jpg" alt="" /></a> <a href="#"><img src="images/resource/flickrimg2.jpg" alt="" /></a> <a href="#"><img src="images/resource/flickrimg3.jpg" alt="" /></a> <a href="#"><img src="images/resource/flickrimg4.jpg" alt="" /></a> <a href="#"><img src="images/resource/flickrimg5.jpg" alt="" /></a> <a href="#"><img src="images/resource/flickrimg6.jpg" alt="" /></a> <a href="#"><img src="images/resource/flickrimg7.jpg" alt="" /></a> <a href="#"><img src="images/resource/flickrimg8.jpg" alt="" /></a> </div>
+				</div>
+				<div class="block p-care">
+					<div class="title">
+						<h1>Patient Care</h1>
+					</div>
+					<div class="content">
+						<ul class="dotted">
+							<li><a href="#">Improving Medication Adherence</a></li>
+							<li><a href="#">Testing the Re-Engineered Discharge</a></li>
+							<li><a href="#">Reducing Central Line Bloodstream</a></li>
+							<li><a href="#">Improving Medication Adherence</a></li>
+							<li><a href="#">The Emergency Department Pharm</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="block getintouch">
+					<div class="title">
+						<h1>Get in Touch</h1>
+					</div>
+					<div class="content"> <a href="#" class="phone">(907) 555-55555</a> <a href="#" class="email">company@youremail.com</a> <a href="#" class="contactform">Medical Contact form</a> <a href="#" class="skype">Medical Skype Name</a> <a href="#" class="feedback">Give Your Feedback</a> </div>
+				</div>
+				<div class="block newsletter last-child">
+					<div class="title">
+						<h1>Subscribe Newsletter</h1>
+					</div>
+					<div class="content">
+						<p>Our bi - weekly Newsletter about health issues, news, up - coming events.</p>
+						<div id="formnewsletter">
+							<form action="http://www.wpnukes.com/demo/html/welcare/index.html" method="get">
+								<input class="text" type="text" onfocus="if(this.value == 'Enter your email') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Enter your email'; }" name="" value="Enter your email" />
+								<input name="submit" value="submit" class="submit" type="button" />
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer ends -->
+		<div id="copyrightarea">
+			<div id="copyrighttext"> &copy; 2012 Welcare Wordpress Premium Theme by <a href="http://www.wpnukes.com/" title="wordpress premium themes">wp nukes</a>, all rights reserved. </div>
+			<div id="socialicons">
+				<ul class="social-icon">
+					<li><a href="javascript:void(0);" class="facebook_link" ></a></li>
+					<li><a href="javascript:void(0);" class="twiter_link"></a></li>
+					<li><a href="javascript:void(0);" class="linkedin_link"></a></li>
+					<li><a href="javascript:void(0);" class="flicker_link"></a></li>
+				</ul>
+			</div>
+		</div>
+        <a href="#" class="pageup"><img src="images/ico-pup.png" alt="" /></a>
+	</div>
+	<div class="overlay"></div>
+</div>
+
+</body>
+</html>

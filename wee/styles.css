@@ -1,0 +1,573 @@
+﻿@font-face {
+font-family: 'Open Sans', sans-serif;
+ src: url('http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,600,700,800'); 
+ 
+ }
+body {
+	background: white url('images/pat.png') repeat scroll center top;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #434343;
+	width: 780px;
+	margin: 0 auto;
+}
+
+img{
+	
+	border:none;
+}
+
+a {
+	color: #434343;
+	text-decoration: none;
+	-webkit-transition: color 0.3s ease-in; /*safari and chrome */
+ 	-o-transition: color 0.3s ease-in; /* opera */
+}
+a:hover {
+	color: #e24844;
+	-webkit-transition: color 0.3s ease-in; /*safari and chrome */
+ 	-o-transition: color 0.3s ease-in; /* opera */
+
+
+}
+
+a img {
+	border:none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: inherit;
+	font-weight: bold;
+	color: inherit;
+	text-rendering: optimizelegibility;
+	color:#434343;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+	font-weight: normal;
+	color: #434343;
+	
+}
+
+strong {
+	font-weight:bolder;
+	color:#e24844;
+}
+
+p {
+	letter-spacing:-0.5px;
+}
+h1 {
+	font-size: 44px;
+}
+h2 {
+	font-size: 30px;
+	color:#a5a4a4;
+	letter-spacing:-1px;
+	font-weight:lighter;
+	
+	}
+h3 {
+	font-size: 14px;
+}
+h4 {
+	font-size: 16px;
+}
+h5 {
+	font-size: 14px;
+}
+h6 {
+	font-size: 11.9px;
+}
+#main {
+	width: 780px;
+	height: auto;
+	position: relative;
+	margin-top:13px;
+}
+
+header {
+	width:780px;
+	height:67px;
+	position:relative;
+	background:#000000;
+	
+	
+}
+
+#nav {
+	width:600px;
+	height:19px;
+	top: 10px;
+	left: 242px;
+	position:absolute;
+}
+
+
+
+#nav ul
+{
+	list-style:none;
+	
+}
+
+#nav ul li a {
+	list-style:none;
+	color:white;
+	float:left;
+	margin-right:50px;
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+
+}
+
+#nav ul li a:hover {
+	color:#e24844;
+	-webkit-transition: color 0.3s ease-in; /*safari and chrome */
+ 	-o-transition: color 0.3s ease-in; /* opera */
+
+
+}
+
+#nav ul li a.active {
+	color:#e24844;
+
+}
+
+
+
+#slider-area {
+	width:auto;
+	height:430px;
+	position:relative;
+	background:#181818;
+	margin:0;
+	padding:0;
+	
+}
+
+.inner-pages {
+	height:100px;
+	width:auto;
+	position:relative;
+	background:#181818;
+	margin:0;
+	padding:0;
+
+	
+}
+
+
+#grid-gallery {
+	width:741px;
+	height:304px;
+	margin:0 auto;
+	
+}
+
+.headline {
+	width:auto;
+	height:100px;
+	position:relative;
+	background:#181818;
+}
+
+.headline-text {
+	color:#9a9393;
+	font-size:20px;
+	position:absolute;
+	top: 14px;
+	left: 50px;
+	letter-spacing:-1px;
+}
+
+#container {
+	width:auto;
+	height:auto;
+	position:relative;
+	background:#fff;
+	text-align:center;
+	padding-top:48px;
+
+}
+#contact-page{
+	width:auto;
+	height:450px;
+	position:relative;
+}
+
+#features {
+	width:auto;
+	height:300px;
+	position:relative;
+}
+
+#contactus {
+	width:750px;
+	height:80px;
+	position:relative;
+	margin: 0 auto;
+	background-color:#e24844;
+
+}
+
+#contactus p {
+	font-size:26px;
+	color:white;
+	position:absolute;
+	top: 3px;
+	left: 26px;
+	letter-spacing:-1.5px;
+	
+}
+
+#contactus .button {
+	color: #ffffff;
+	font-size: 22px;
+	font-weight:bold;
+	padding: 10px;
+	text-decoration: none;
+	background: #000;
+	width: 140px;
+	margin: 0 auto;
+	position:absolute;
+	top: 20px;
+	left: 550px;
+	letter-spacing:-1px;
+}
+#contactus .button:hover {
+	background: white;
+	color:black;
+}
+
+
+#span2{
+	width:auto;
+	height:350px;
+	position:relative;
+}
+
+#philosophy {
+	width:300px;
+	height:285px;
+	position:relative;
+	float:left;
+	margin: 30px 30px 50px 70px;
+	float:left;
+	text-align:left;
+	
+
+}
+
+
+
+
+#blog-stream {
+	width:330px;
+	height:285px;
+	position:relative;
+	float:left;
+	margin:30px 15px 50px 10px;
+	text-align:left;
+	
+
+}
+
+#blog-stream .post {
+	width:325px;
+	height:80px;
+	float:left;	
+	margin-top:-8px;
+	-webkit-transition: border-color 0.3s ease-in; /*safari and chrome */
+ 	-o-transition: border-color 0.3s ease-in; /* opera */
+ 	margin-left:0px;
+ 	-webkit-transition: margin-left 0.3s ease-in; /*safari and chrome */
+ 	-o-transition: border-color 0.3s ease-in; /* opera */
+
+
+
+}
+
+#blog-stream .post:hover {
+	margin-left:5px;
+	-webkit-transition: margin-left 0.3s ease-in; /*safari and chrome */
+ 	-o-transition: border-color 0.3s ease-in; /* opera */
+
+}	
+	
+
+
+#blog-stream .post p {
+	margin-left:5px;
+	font-weight:bold;
+	
+	
+}
+
+#blog-stream .post .post-thumb {
+	float:left; 
+	padding: 10px;
+}
+
+.read-more {
+	background: url('images/read-more.png') transparent no-repeat scroll center top;
+	width:80px;
+	height:30px;
+	position:absolute;
+	margin-left:0px;
+	-webkit-transition: margin-left 0.1s ease-in; /*safari and chrome */
+ 	-o-transition: border-color 0.1s ease-in;
+	top: 244px;
+	left: 108px;
+}
+.read-more:hover {
+	margin-left:3px;
+	-webkit-transition: margin-left 0.1s ease-in; /*safari and chrome */
+ 	-o-transition: border-color 0.1s ease-in; /* opera */
+
+}
+
+
+
+#clients {
+	width:auto;
+	height:80px;
+	border-top:1px #e3e3e3 solid;
+	padding-top:50px;
+}
+
+#clients ul {
+	margin: 0 auto;
+	list-style: none;
+	
+
+}
+#clients ul li img {
+	width: 160px;
+	height: 33px;
+	float: left;
+	list-style: none;
+	opacity: 0.4;
+	filter: alpha(opacity=50);
+ 	-webkit-transition: opacity 0.5s linear;
+}
+
+#clients ul li img:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+ 	-webkit-transition: opacity 0.5s linear;
+
+}
+
+#clients ul li img.right-margin {
+	margin-right: 15px;
+}
+
+.social-icons {
+	width:180px;
+	height:30px;
+	position:absolute;
+	top: 26px;
+	left: 559px;
+}
+.social-icons img {
+	margin-right:2px;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+ 	-webkit-transition: opacity 0.5s linear;
+
+	
+}
+.social-icons img:hover {
+	opacity:1;
+	filter:alpha(opacity=100); /* For IE8 and earlier */
+	-webkit-transition: opacity 0.2s linear;
+}
+
+
+footer {
+	height:80px;
+	width:780px;
+	position:relative;
+	border-top: #dedede 1px solid;
+}
+
+.footer-logo {
+	position:absolute;
+	top: 29px;
+	left: 34px;
+}
+
+.footer-text {
+	position:absolute;
+	top: 23px;
+	left: 104px;
+
+	
+}
+
+#about-page {
+	width:auto;
+	height:454px;
+	position:relative;
+}
+
+
+#information {
+	
+	width:700px;
+	height:445px;
+	margin-left:50px;
+	float:left;
+}
+
+.title {
+	width:auto;
+	height:50px;
+	position:relative;
+	text-align:left;
+	border-bottom: 1px #dedede solid;
+	margin-bottom:20px;
+
+	
+}
+
+
+.title h3 {
+	font-size:24px;
+	color:#848484;
+	text-align:left;
+	position:absolute;
+	top: -13px;
+	left: 20px;
+}
+
+.feature-box {
+	width:250px;
+	height:182px;
+	float:left;
+	text-align:left;
+	padding-left:60px;
+	position:relative;
+	margin-right:20px;
+	
+	
+}
+
+.feature-box h3 {
+	font-size:18px;
+	font-weight:bold;
+	color:#292929;
+	line-height:0px;
+}
+
+.feature-no {
+	position:absolute;
+	top: 11px;
+	left: 7px;
+}
+
+
+
+#portfolio {
+	position: relative;
+	width: auto;
+	height: 477px;
+	margin-left:40px;
+}
+#portfolio ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+#portfolio ul li img {
+	width: 225px;
+	height: 125px;
+	float: left;
+	margin-bottom: 11px;
+	list-style: none;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+ 	-webkit-transition: opacity 1s linear;
+}
+#portfolio ul li img:hover {
+	opacity:1;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+	-webkit-transition: opacity 0.3s linear;
+}
+
+#portfolio ul li img.right-margin {
+	margin-right: 12px;
+}
+
+
+
+.contact-info{
+	width:333px;
+	height:450px;
+	position:relative;
+	float:left;
+	text-align:left;
+	margin-top:-20px;
+
+}
+
+
+.contact-form {
+	width:333px;
+	height:450px;
+	position:relative;
+	text-align:center;
+	margin-left:40px;
+	float:left;
+	margin-right:20px;
+}
+
+
+
+input {
+	width:300px;
+	height:50px;
+	border:1px #e0e0e0 solid;
+	margin-bottom:10px;
+	padding-left:20px;
+	vertical-align:middle;
+	color:#8d8d8d;
+}
+textarea {
+	height:135px;
+	vertical-align:text-top;
+	border:1px #e0e0e0 solid;
+	width:300px;
+	min-width:300px;
+	max-width:400px;
+	padding-left:20px;
+	padding-top:20px;
+	color:#8d8d8d;
+	font-family:Arial, Helvetica, sans-serif;
+
+}
+button {
+	background: transparent url('images/button.png') no-repeat scroll center top;
+	text-align:center;
+	vertical-align:middle;
+	font-family:'Open Sans', sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	width:122px;
+	height:35px;
+	border: none;
+	margin-top:20px;
+	color:white;
+}
+
+button:active {
+	background-position: 0 -35px;
+}
+
+.google-map {
+	width:auto;
+	height:200px;
+	position:relative;
+}
+
+
